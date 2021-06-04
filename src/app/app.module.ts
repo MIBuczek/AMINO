@@ -13,6 +13,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { LangSwitcherComponent } from './components/lang-switcher/lang-switcher.component';
+import { CompanyComponent } from './views/company/company.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +28,13 @@ import { LangSwitcherComponent } from './components/lang-switcher/lang-switcher.
     NavbarComponent,
     FooterComponent,
     ModalComponent,
-    LangSwitcherComponent
+    LangSwitcherComponent,
+    CompanyComponent,
+    NotFoundComponent,
+    CarouselComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, CarouselComponent],
 })
-export class AppModule { }
+export class AppModule {}
