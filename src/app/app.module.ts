@@ -35,6 +35,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
+
   bootstrap: [AppComponent, CarouselComponent],
 })
 export class AppModule {}

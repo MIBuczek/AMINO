@@ -1,3 +1,7 @@
+div.carousel-item.active {
+  display: flex !important;
+}
+
 .picsum-img-wrapper {
   img {
     width: 100%;
@@ -5,7 +9,44 @@
 }
 
 .carousel-caption {
+  color: #3b4754;
+  background-color: #edf0f4;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  left: 50%;
+  height: 100%;
   text-align: left;
-  background-color: rgba($color: #000, $alpha: 0.4);
-  border-radius: 10px;
+  h1 {
+    padding: 40px 140px 40px 40px;
+    font-weight: 700;
+    font-size: 42px;
+  }
+  p {
+    padding: 40px 60px 40px 40px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  a.read-more {
+    width: 188px;
+    height: 42px;
+    background-color: #29323d;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-left: 40px;
+  }
+}
+
+.carousel.slide {
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 20;
+    color: #29323d;
+  }
+}
+ol.carousel-indicators li {
+  background: yellow;
 }
