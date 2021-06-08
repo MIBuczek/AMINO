@@ -5,7 +5,11 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
+  providers: [NgbCarouselConfig],
 })
 export class CarouselComponent {
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  constructor(config: NgbCarouselConfig) {
+    config.interval = 3000;
+    config.pauseOnHover = false;
+  }
 }

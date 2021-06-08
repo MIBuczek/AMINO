@@ -1,8 +1,9 @@
-div.carousel-item.active {
-  display: flex !important;
-}
+// div.carousel-item.active {
+//   display: flex;
+// }
 
 .picsum-img-wrapper {
+  height: 530px;
   img {
     width: 100%;
   }
@@ -17,15 +18,23 @@ div.carousel-item.active {
   left: 50%;
   height: 100%;
   text-align: left;
+  display: flex;
+  flex-direction: column;
   h1 {
-    padding: 40px 140px 40px 40px;
+    max-width: 534px;
+    min-height: 190px;
+    padding: 40px;
     font-weight: 700;
     font-size: 42px;
+    margin: 0;
   }
   p {
-    padding: 40px 60px 40px 40px;
+    max-width: 534px;
+    min-height: 120px;
+    padding: 20px 10px 20px 40px;
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 0;
   }
   a.read-more {
     width: 188px;
@@ -38,15 +47,4 @@ div.carousel-item.active {
     border-radius: 15px;
     margin-left: 40px;
   }
-}
-
-.carousel.slide {
-  .carousel-control-prev,
-  .carousel-control-next {
-    z-index: 20;
-    color: #29323d;
-  }
-}
-ol.carousel-indicators li {
-  background: yellow;
 }

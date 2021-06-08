@@ -7,3 +7,16 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+ol.carousel-indicators {
+  li {
+    height: 4px;
+    background-color: #29323d;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 100;
+  background-color: #29323d;
+}
