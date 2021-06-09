@@ -16,6 +16,9 @@ import { LangSwitcherComponent } from './components/lang-switcher/lang-switcher.
 import { CompanyComponent } from './views/company/company.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SharedModule } from './shared/shared/shared.module';
+import { PartnersComponent } from './components/partners/partners.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +35,15 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CompanyComponent,
     NotFoundComponent,
     CarouselComponent,
+    PartnersComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    FontAwesomeModule,
+    SharedModule,
+  ],
   providers: [],
   bootstrap: [AppComponent, CarouselComponent],
 })

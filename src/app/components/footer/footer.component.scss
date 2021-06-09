@@ -1,0 +1,34 @@
+footer {
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #627585;
+  }
+}
+
+.back-top {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 40px;
+  color: #627585;
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #01c5ff;
+  }
+}
+.find-us {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: url("../../../assets/contact-map.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+}
