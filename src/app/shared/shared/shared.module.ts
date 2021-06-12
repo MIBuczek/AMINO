@@ -9,6 +9,9 @@ import {
   faPhone,
   faEnvelope,
   faArrowCircleUp,
+  faHome,
+  faGem,
+  faHandshake,
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -18,6 +21,13 @@ import {
 })
 export class SharedModule {
   constructor(public faIconeLibary: FaIconLibrary) {
-    this.faIconeLibary.addIcons(faPhone, faEnvelope, faArrowCircleUp);
+    this.faIconeLibary.addIcons(
+      faPhone,
+      faEnvelope,
+      faArrowCircleUp,
+      faHome,
+      faGem,
+      faHandshake
+    );
   }
 }

@@ -1,26 +1,21 @@
 footer {
+  background: #edf0f4;
   p {
     font-size: 12px;
     font-weight: 300;
     color: #627585;
   }
-}
-
-.back-top {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  font-size: 40px;
-  color: #627585;
-  span {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #01c5ff;
+  .copyrights {
+    background: #29323d7e;
+    color: white;
   }
 }
+
+.fw-bold {
+  font-weight: 700;
+  color: #29323d;
+}
+
 .find-us {
   display: flex;
   width: 100%;
