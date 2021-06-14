@@ -1,0 +1,18 @@
+<div class="card">
+  <img
+    *ngIf="src.length; else showIcone"
+    [src]="'../../../assets/img/' + src"
+    class="card-img-top"
+    [alt]="title"
+  />
+  <ng-template #showIcone>
+    <fa-icon icon="screwdriver" class="mr-2"></fa-icon>
+  </ng-template>
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">
+      {{ description }}
+    </p>
+    <a href="#!" class="btn btn-primary">{{ button }}</a>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.card {
+  align-items: center;
+  border: none;
+  line-height: 1.35;
+  letter-spacing: 0.15px;
+  fa-icon {
+    font-size: 50px;
+  }
+  .card-img-top {
+    width: 170px;
+  }
+  .card-title {
+    font-weight: 700;
+    color: #29323d;
+  }
+  .card-text {
+    font-size: 12px;
+    font-weight: 300;
+    color: #29323dd3;
+  }
+}
+.btn-primary {
+  width: 168px;
+  height: 42px;
+  background-color: #29323d;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}

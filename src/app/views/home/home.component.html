@@ -1,1 +1,48 @@
-<p>home works!</p>
+<!-- <div class="hero"></div> -->
+<div class="row p-4 pt-5">
+  <div class="col-8">
+    <app-text
+      [header]="returnContent('header')"
+      [textBody]="returnContent('textBody')"
+    ></app-text>
+  </div>
+</div>
+<div class="row p-4">
+  <div class="col-4">
+    <div class="service-box navy" wfd-id="308">
+      <i class="ri-discuss-line icon"></i>
+      <h3>Sprzedaż</h3>
+      <p>
+        Oferujemy szeroką gamę produktów znanych i cenionych producentów okien,
+        drzwi, rolet i systemów fotowoltaicznych.
+      </p>
+      <a href="#" class="read-more">
+        <span wfd-id="309">Pełna oferta</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="service-box navy" wfd-id="308">
+      <i class="ri-discuss-line icon"></i>
+      <h3>Montaż i serwis</h3>
+      <p>
+        Montaż i serwisowanie drzwi automatycznych, bram garażowych, rolet
+        zewnętrznych i wiele innych
+      </p>
+      <a href="#" class="read-more">
+        <span wfd-id="309">Pełna oferta</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  <div class="col-4 mt-4">
+    <app-card
+      [title]="returnContent('cardTitle')"
+      [description]="returnContent('cardBody')"
+      [src]="''"
+      [icone]="'screwdriver'"
+      [button]="returnContent('cardButton')"
+    ></app-card>
+  </div>
+</div>

@@ -19,6 +19,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from './shared/shared/shared.module';
 import { PartnersComponent } from './components/partners/partners.component';
+import { TextComponent } from './components/text/text.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { PartnersComponent } from './components/partners/partners.component';
     NotFoundComponent,
     CarouselComponent,
     PartnersComponent,
+    TextComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

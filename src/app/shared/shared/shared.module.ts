@@ -12,6 +12,7 @@ import {
   faHome,
   faGem,
   faHandshake,
+  faScrewdriver,
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -27,7 +28,8 @@ export class SharedModule {
       faArrowCircleUp,
       faHome,
       faGem,
-      faHandshake
+      faHandshake,
+      faScrewdriver
     );
   }
 }
