@@ -17,3 +17,149 @@
     height: 100%;
   }
 }
+
+.customBorder {
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 30px 10px;
+  h2,
+  p {
+    line-height: 1.35;
+    letter-spacing: 0.15px;
+  }
+  h2 {
+    font-weight: 700;
+    color: #29323d;
+    font-size: 40px;
+  }
+  p {
+    color: #29323dd3;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+// start section
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+// end section
+
+// start section offert
+.values .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.values .box img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.values .box h3 {
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.values .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.values .box:hover img {
+  transform: scale(1);
+}
+
+// end section offert
+
+// start section about
+.about {
+  .aos-init {
+    padding: 30px 0;
+  }
+  .content {
+    background-color: #f6f9ff;
+    padding: 40px;
+    .hide {
+      transition: opacity 1s ease-out, height 0.5s linear;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+    .hide.show {
+      opacity: 1;
+      height: 500px;
+    }
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #012970;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4154f1;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 15px 0 30px 0;
+    line-height: 24px;
+  }
+  .btn-read-more {
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+    text-decoration: none;
+    transition: 0.3s;
+    span {
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    i {
+      margin-left: 5px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+// end section about

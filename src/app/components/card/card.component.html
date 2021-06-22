@@ -1,18 +1,182 @@
-<div class="card">
-  <img
-    *ngIf="src.length; else showIcone"
-    [src]="'../../../assets/img/' + src"
-    class="card-img-top"
-    [alt]="title"
-  />
-  <ng-template #showIcone>
-    <fa-icon icon="screwdriver" class="mr-2"></fa-icon>
-  </ng-template>
-  <div class="card-body">
-    <h5 class="card-title">{{ title }}</h5>
-    <p class="card-text">
-      {{ description }}
-    </p>
-    <a href="#!" class="btn btn-primary">{{ button }}</a>
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h2>Nasza oferta</h2>
+      <p>Sprawdz czym sie zajmujemy</p>
+    </header>
+    <div
+      class="row gy-4 portfolio-container"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img
+            src="../../../assets/portfolio/portfolio-2.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>DRZWI AUTOMATYCZNE</h4>
+            <p>
+              W naszej ofercie do nabycia znajdą Państwo drzwi automatyczne oraz
+              systemy do nich firm: GEZE oraz ESCO.
+            </p>
+            <div class="portfolio-links">
+              <a href="portfolio-details.html" title="More Details"
+                ><i class="bi bi-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img
+            src="../../../assets/portfolio/portfolio-3.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>DRZWI WEJŚCIOWE I WEWNĘTRZNE</h4>
+            <p>
+              W naszej ofercie do nabycia znajdą Państwo szeroki asortyment
+              drzwi zwykłych. Zapewniamy serwis i montaż
+            </p>
+            <div class="portfolio-links">
+              <a href="portfolio-details.html" title="More Details"
+                ><i class="bi bi-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img
+            src="../../../assets/portfolio/portfolio-4.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>BRAMY GARAŻOWE</h4>
+            <p>
+              W naszej ofercie do nabycia znajdą Państwo bramy garażowe firm:
+              Wiśniowski, Krispol, Wayne-Dalton.
+            </p>
+            <div class="portfolio-links">
+              <a href="portfolio-details.html" title="More Details"
+                ><i class="bi bi-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img
+            src="../../../assets/portfolio/portfolio-5.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>ROLETY ZEWNĘTRZNE I WEW.</h4>
+            <p>Oferujemy montaż oraz serwis rolet.</p>
+            <div class="portfolio-links">
+              <a href="portfolio-details.html" title="More Details"
+                >czytaj wiecej<i class="bi bi-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img
+            src="../../../assets/portfolio/portfolio-6.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>SYSTEMY ODDYMIANIA</h4>
+            <p>
+              Oferujemy montaż i serwis systemów oddymiania, pożarowych a także
+              zabezpieczeń pożarowych...
+            </p>
+            <div class="portfolio-links">
+              <a href="portfolio-details.html" title="More Details"
+                ><i class="bi bi-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img
+            src="../../../assets/portfolio/portfolio-7.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>BRAMY PRZEMYSŁOWE</h4>
+            <p>Oferujemy szeroką gamę bram przemysłowych.</p>
+            <div class="portfolio-links">
+              <a href="portfolio-details.html" title="More Details"
+                ><i class="bi bi-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img
+            src="../../../assets/portfolio/portfolio-8.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>USŁUGI NAPRAWCZE</h4>
+            <p>
+              Oferujemy szeroki zakres usług serwisowych mdz. innymi z zakresu
+              stolarki otworowej, naprawy zamków...
+            </p>
+            <div class="portfolio-links">
+              <a href="portfolio-details.html" title="More Details"
+                ><i class="bi bi-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img
+            src="../../../assets/portfolio/portfolio-9.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>CAŁA OFERTA</h4>
+            <p>Sprawdz cała wachlaż naszych usług</p>
+            <div class="portfolio-links">
+              <a href="portfolio-details.html" title="More Details"
+                ><i class="bi bi-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+<!-- End Portfolio Section -->

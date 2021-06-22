@@ -7,11 +7,11 @@ import { Component, Input, OnInit, TemplateRef } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
-  @Input() title: string = '';
-  @Input() description: string = '';
-  @Input() src: string = '';
-  @Input() icone: string = '';
-  @Input() button: string = '';
+  @Input() title = '';
+  @Input() description = '';
+  @Input() src = '';
+  @Input() icone = '';
+  @Input() button = '';
   constructor() {}
 
   ngOnInit(): void {}
