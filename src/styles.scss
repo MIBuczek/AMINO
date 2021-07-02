@@ -20,6 +20,7 @@ body {
       text-decoration: none;
     }
   }
+
   h1,
   h2,
   h3,
@@ -41,6 +42,10 @@ ol.carousel-indicators {
 .carousel-control-prev {
   z-index: 100;
   background-color: #29323d;
+  width: 60px;
+  height: 80px;
+  margin: auto;
+  /* border-radius: 50%; */
 }
 
 .partnerImg {
@@ -128,5 +133,31 @@ section {
     line-height: 42px;
     font-weight: 700;
     color: #012970;
+  }
+}
+
+.btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  text-decoration: none;
+  transition: 0.3s;
+  span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  &:hover {
+    transform: scale(1.05);
   }
 }
