@@ -1,11 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">AMINO</a>
+<header id="header" class="header fixed-top" [class.sticky]="checkPosition()">
+  <div
+    class="
+      container-fluid container-xl
+      d-flex
+      align-items-center
+      justify-content-between
+    "
+  >
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo.png" alt="" />
+      <span>Animo</span>
+    </a>
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -13,55 +21,136 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div
-      class="collapse navbar-collapse"
-      id="navbarNavAltMarkup"
-      [class.show]="isActive"
-    >
-      <div class="navbar-nav ml-auto">
-        <a
-          class="nav-link"
-          [routerLink]="['/']"
-          routerLinkActive="router-link-active"
-        >
-          Strona Główna
-        </a>
-        <a
-          class="nav-link"
-          [routerLink]="['/oferta']"
-          routerLinkActive="router-link-active"
-        >
-          Oferta
-        </a>
-        <a
-          class="nav-link"
-          [routerLink]="['/firma']"
-          routerLinkActive="router-link-active"
-        >
-          O firmie
-        </a>
-        <a
-          class="nav-link"
-          [routerLink]="['/referencje']"
-          routerLinkActive="router-link-active"
-        >
-          Reference
-        </a>
-        <a
-          class="nav-link"
-          [routerLink]="['/blog']"
-          routerLinkActive="router-link-active"
-        >
-          Blog
-        </a>
-        <a
-          class="nav-link"
-          [routerLink]="['/kontakt']"
-          routerLinkActive="router-link-active"
-        >
-          Kontakt
-        </a>
-      </div>
-    </div>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/']"
+            routerLinkActive="router-link-active"
+          >
+            Strona Główna
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/oferta']"
+            routerLinkActive="router-link-active"
+          >
+            Oferta
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/firma']"
+            routerLinkActive="router-link-active"
+          >
+            O firmie
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/referencje']"
+            routerLinkActive="router-link-active"
+          >
+            Reference
+          </a>
+        </li>
+        <li class="dropdown">
+          <a
+            class="nav-link"
+            [routerLink]="['/blog']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Blog</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/kontakt']"
+            routerLinkActive="router-link-active"
+          >
+            Kontakt
+          </a>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <nav id="navbar" class="navbar navbar-mobile" [class.show]="isActive">
+      <ul (click)="toggle()">
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/']"
+            routerLinkActive="router-link-active"
+          >
+            Strona Główna
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/oferta']"
+            routerLinkActive="router-link-active"
+          >
+            Oferta
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/firma']"
+            routerLinkActive="router-link-active"
+          >
+            O firmie
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/referencje']"
+            routerLinkActive="router-link-active"
+          >
+            Reference
+          </a>
+        </li>
+        <li class="dropdown">
+          <a
+            class="nav-link"
+            [routerLink]="['/blog']"
+            routerLinkActive="router-link-active"
+          >
+            <span>Blog</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/kontakt']"
+            routerLinkActive="router-link-active"
+          >
+            Kontakt
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-</nav>
+</header>

@@ -3,9 +3,32 @@
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", "Open Sans", sans-serif;
+  color: #444444;
+  a {
+    color: #4154f1;
+    text-decoration: none;
+    &:hover {
+      color: #717ff5;
+      text-decoration: none;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Nunito", sans-serif;
+  }
 }
 
 ol.carousel-indicators {
@@ -19,8 +42,122 @@ ol.carousel-indicators {
 .carousel-control-prev {
   z-index: 100;
   background-color: #29323d;
+  width: 60px;
+  height: 80px;
+  margin: auto;
+  /* border-radius: 50%; */
 }
 
-// div.carousel-item.active {
-//   display: flex;
-// }
+.partnerImg {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+.service-box {
+  box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: white;
+  background: #29323d;
+  h3 {
+    font-weight: 700;
+  }
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+
+.navy {
+  border-bottom: 3px solid #29323d7e;
+}
+
+.service-box.navy {
+  &:hover {
+    color: #444444;
+    background: white;
+  }
+}
+
+.homeCard {
+  .card {
+    height: 335px;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .card-body {
+      padding: 0.5rem;
+      .card-title {
+        height: 48px;
+      }
+      .card-text {
+        height: 64px;
+      }
+    }
+  }
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+  h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #012970;
+  }
+}
+
+.btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  text-decoration: none;
+  transition: 0.3s;
+  span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}

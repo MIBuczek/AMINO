@@ -1,1 +1,246 @@
-<p>home works!</p>
+<section class="about">
+  <div class="container">
+    <div class="row gx-0">
+      <div class="col-lg-12 d-flex flex-column justify-content-center">
+        <div class="content">
+          <h3>Nasze wartości</h3>
+          <h2>
+            Niezawodność, funkcjonalność, solidne wykonanie, terminowość i
+            profesjonalizm – to cechy, które zdecydowanie wyróżniają naszą firmę
+            na rynku.
+          </h2>
+          <p>
+            W asortymencie posiadamy produkty pochodzące wyłącznie od
+            renomowanych i cenionych marek, które są gwarancją asortymentu
+            wysokiej jakości. Oferujemy m.in. najlepszej klasy żaluzje, bramy
+            garażowe, drzwi automatyczne lub wewnętrzne z montażem, a także okna
+            aluminiowe i rolety zewnętrzne oraz wewnętrzne.
+          </p>
+          <div class="col-12 hide" [class.show]="show">
+            <p>
+              Z naszą pomocą postawią Państwo również dom kontenerowy, a także
+              dom na wodzie. Dzięki współpracy z markami starannie wykonującymi
+              tego typu produkty jesteśmy również w stanie zapewnić wyposażenie
+              nowoczesnych, ekologicznych obiektów, jakimi są pasywne domy
+              energooszczędne. Animo to również remonty domów standardowych czy
+              energooszczędnych, a także serwis drzwi i okien aluminiowych oraz
+              bram garażowych. Nasi wykwalifikowani konsultanci są do Państwa
+              dyspozycji we Wrocławiu. Tam, oprócz naprawy i ogólnego serwisu
+              proponowanych rozwiązań, z przyjemnością udzielą wielu
+              wartościowych porad ułatwiających wybór idealnie dopasowanego do
+              Państwa potrzeb produktu (jak na przykład łóżko w ścianie, które
+              pozwoli na oszczędność miejsca w małych mieszkaniach).
+              Niezależnie, czy będzie to brama garażowa, drzwi wewnętrzne z
+              montażem lub automatyczne bądź okna – jesteśmy przekonani, że z
+              naszym wsparciem dokonają Państwo dobrego wyboru.
+            </p>
+            <p>
+              Specjalnością naszej firmy jest również montaż rolet oraz żaluzji
+              zewnętrznych. Pomożemy także przy doborze rozwiązań, wzbogacając
+              Państwa energooszczędne domy pasywne, mając przy tym na uwadze
+              optymalne zagospodarowanie dostępnej przestrzeni.
+            </p>
+            <p>
+              Zapraszamy do kontaktu i współpracy mieszkańców Wrocławia i nie
+              tylko. Nasze usługi - zarówno serwis bram garażowych, rolet, okien
+              aluminiowych oraz drzwi automatycznych, jak i ich montaż - zostały
+              docenione przez klientów indywidualnych i przedsiębiorstwa nie
+              tylko z Wrocławia, ale i całej Polski.
+            </p>
+          </div>
+          <div class="text-center text-lg-start">
+            <a
+              role="button"
+              (click)="show = !show"
+              class="
+                btn-read-more
+                d-inline-flex
+                align-items-center
+                justify-content-center
+                align-self-center
+              "
+            >
+              <span>{{ show ? "Zwiń" : "Rozwiń" }}</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="values" class="values">
+  <div class="container">
+    <header class="section-header">
+      <h2>Nasze usługi</h2>
+      <p>Zapoznaj sie z nasza kompleksową ofertą</p>
+    </header>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="box">
+          <img
+            src="../../../assets/service/sell.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <h3>Sprzedaż</h3>
+          <p>
+            Oferujemy szeroką gamę produktów znanych i cenionych producentów
+            okien, drzwi, rolet i systemów fotowoltaicznych.
+          </p>
+          <div class="text-center text-lg-start">
+            <a
+              href="#"
+              class="
+                btn-read-more
+                d-inline-flex
+                align-items-center
+                justify-content-center
+                align-self-center
+              "
+            >
+              <span>Oferta</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="box">
+          <img
+            src="../../../assets/service/service.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <h3>Montaż i Serwis</h3>
+          <p>
+            Montaż i serwisowanie drzwi automatycznych, bram garażowych, rolet
+            zewnętrznych i wiele innych
+          </p>
+          <div class="text-center text-lg-start">
+            <a
+              href="#"
+              class="
+                btn-read-more
+                d-inline-flex
+                align-items-center
+                justify-content-center
+                align-self-center
+              "
+            >
+              <span>Oferta</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="box">
+          <img
+            src="../../../assets/service/help.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <h3>Zgłoś usterkę</h3>
+          <p>
+            Zajmujemy się naprawą, serwisem oraz doradztwem w zakresie drzwi
+            automatycznych, bram garażowych, rolet oraz systemów oddymiania.
+          </p>
+          <div class="text-center text-lg-start">
+            <a
+              href="#"
+              class="
+                btn-read-more
+                d-inline-flex
+                align-items-center
+                justify-content-center
+                align-self-center
+              "
+            >
+              <span>Zgłoś</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about">
+  <div class="container">
+    <div class="row gx-0">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <div class="content">
+          <h3>O nas</h3>
+          <h2>
+            Ponad 20 lat doświadczenie w branży oraz dbanie o zadowolenie
+            Klienta pozwoliło zająć nam znaczącą pozycję na rynku.
+          </h2>
+          <p>
+            Firma Animo istnieje od 1992 roku. Jakość naszych usług oraz
+            kwalifikacje pracowników pozwalają na profesjonalne, rzetelne oraz
+            szybkie realizacje. Wychodząc na przeciw oczekiwaniom naszych
+            klientów dopasowujemy ofertę do ich potrzeb.
+          </p>
+          <div class="text-center text-lg-start">
+            <a
+              href="#"
+              class="
+                btn-read-more
+                d-inline-flex
+                align-items-center
+                justify-content-center
+                align-self-center
+              "
+            >
+              <span>Czytaj wiecej</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center">
+        <img src="../../../assets/about-us.jpg" class="img-fluid" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="container mt-md-5 mt-sm-5">
+    <div class="row gx-0">
+      <div class="col-lg-6 d-flex align-items-center">
+        <img src="../../../assets/about-door.jpg" class="img-fluid" alt="" />
+      </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <div class="content">
+          <h3>Zajmujemy się</h3>
+          <h2>
+            Montażem oraz serwisem drzwi automatycznych, bram garażowych, rolet,
+            systemów oddymiania oraz bramami przemysłowymi.
+          </h2>
+          <p>
+            Firma Animo oferuje profesjonalne usługi związane z montażem i
+            serwisem szerokiej gamy drzwi, bram, rolet oraz systemów
+            oddymiających. Najnowocześniejsze rozwiązania zapewniają
+            niezawodność i niebywałą żywotność naszych produktów.
+          </p>
+          <div class="text-center text-lg-start" wfd-id="401">
+            <a
+              href="#"
+              class="
+                btn-read-more
+                d-inline-flex
+                align-items-center
+                justify-content-center
+                align-self-center
+              "
+            >
+              <span wfd-id="402">Czytaj wiecej</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-card></app-card>

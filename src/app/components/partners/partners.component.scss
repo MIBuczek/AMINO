@@ -1,0 +1,24 @@
+.clients {
+  .clients-slider {
+    .swiper-slide {
+      img {
+        opacity: 0.5;
+        transition: 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .clients {
+    .clients-slider {
+      .swiper-slide {
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}
