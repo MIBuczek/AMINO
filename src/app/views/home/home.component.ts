@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   returnContent(content: string): string {
-    return homeContext['PL'][`${content}`];
+    return homeContext.PL[`${content}`];
   }
 
   ngOnInit(): void {}
