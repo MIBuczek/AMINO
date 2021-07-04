@@ -1,0 +1,154 @@
+.blog {
+  padding: 40px 0 20px 0;
+  .entry {
+    padding: 30px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+    .entry-img {
+      max-height: 440px;
+      margin: -30px -30px 20px -30px;
+      overflow: hidden;
+    }
+    .entry-title {
+      font-size: 28px;
+      font-weight: bold;
+      padding: 0;
+      margin: 0 0 20px 0;
+      a {
+        color: #012970;
+        transition: 0.3s;
+        &:hover {
+          color: #4154f1;
+        }
+      }
+    }
+    .entry-meta {
+      margin-bottom: 15px;
+      color: #4084fd;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        li + li {
+          padding-left: 20px;
+        }
+        i {
+          font-size: 16px;
+          margin-right: 8px;
+          line-height: 0;
+        }
+        a {
+          color: #777777;
+          font-size: 14px;
+          display: inline-block;
+          line-height: 1;
+        }
+      }
+    }
+    .entry-content {
+      p {
+        line-height: 24px;
+      }
+      .read-more {
+        -moz-text-align-last: right;
+        text-align-last: right;
+        a {
+          display: inline-block;
+          background: #4154f1;
+          color: #fff;
+          padding: 6px 20px;
+          transition: 0.3s;
+          font-size: 14px;
+          border-radius: 4px;
+          &:hover {
+            background: #5969f3;
+          }
+        }
+        h3 {
+          font-size: 22px;
+          margin-top: 30px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .sidebar {
+    padding: 30px;
+    margin: 0 0 60px 20px;
+    box-sha .sidebar-title {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 0 0 0 0;
+      margin: 0 0 15px 0;
+      color: #012970;
+      position: relative;
+    }
+    .sidebar-item {
+      margin-bottom: 30px;
+    }
+    .sidebar-item {
+      margin-bottom: 30px;
+    }
+    .recent-posts {
+      .post-item + .post-item {
+        margin-top: 15px;
+      }
+      img {
+        width: 80px;
+        float: left;
+      }
+      h4 {
+        font-size: 15px;
+        margin-left: 95px;
+        font-weight: bold;
+        a {
+          color: #012970;
+          transition: 0.3s;
+          &:hover {
+            color: #4154f1;
+          }
+        }
+      }
+      time {
+        display: block;
+        margin-left: 95px;
+        font-style: italic;
+        font-size: 14px;
+        color: #aaaaaa;
+      }
+    }
+    .tags {
+      margin-bottom: -10px;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          display: inline-block;
+        }
+        a {
+          color: #0257ee;
+          font-size: 14px;
+          padding: 6px 14px;
+          margin: 0 6px 8px 0;
+          border: 1px solid #d7e6ff;
+          display: inline-block;
+          transition: 0.3s;
+          span {
+            padding-left: 5px;
+            color: #a5c5fe;
+            font-size: 14px;
+          }
+          &:hover {
+            color: #fff;
+            border: 1px solid #4154f1;
+            background: #4154f1;
+          }
+        }
+      }
+    }
+  }
+}

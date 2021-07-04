@@ -21,6 +21,7 @@ import { SharedModule } from './shared/shared/shared.module';
 import { PartnersComponent } from './components/partners/partners.component';
 import { TextComponent } from './components/text/text.component';
 import { CardComponent } from './components/card/card.component';
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { CardComponent } from './components/card/card.component';
     PartnersComponent,
     TextComponent,
     CardComponent,
+    BreadcrumbsComponent,
   ],
   imports: [
     BrowserModule,
