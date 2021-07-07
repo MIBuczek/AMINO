@@ -22,6 +22,8 @@ import { PartnersComponent } from './components/partners/partners.component';
 import { TextComponent } from './components/text/text.component';
 import { CardComponent } from './components/card/card.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { PostComponent } from './components/post/post.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.compo
     TextComponent,
     CardComponent,
     BreadcrumbsComponent,
+    PostComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,

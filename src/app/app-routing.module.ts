@@ -7,10 +7,12 @@ import { CompanyComponent } from './views/company/company.component';
 import { ReferenceComponent } from './views/reference/reference.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
+import { PostComponent } from './components/post/post.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'blog/:id', component: PostComponent },
   { path: 'oferta', component: OffertComponent },
   { path: 'firma', component: CompanyComponent },
   { path: 'referencje', component: ReferenceComponent },
