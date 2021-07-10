@@ -1,20 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { homeOffert } from './text-content-data/home-offert';
-import { homeContext } from './text-content-data/home-text-content';
+import { Component } from '@angular/core';
+import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
+import {
+  homeValue,
+  homeOffert,
+  homeAbout,
+} from './text-content-data/home-text-content';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   public show = false;
-  public homeTextContent = homeContext;
-  public homeOfferContent = homeOffert;
-  constructor() {}
+  public homeValue = homeValue;
+  public homeOffert = homeOffert;
+  public homeAbout = homeAbout;
 
-  returnContent(content: string): string {
-    return homeContext.PL[`${content}`];
+  constructor(public langSwitcher: LangSwitcherService) {}
+
+  get currentLang(): string {
+    return this.langSwitcher.currentLang.getValue();
   }
-
-  ngOnInit(): void {}
 }

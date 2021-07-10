@@ -1,18 +1,18 @@
-import { NgIfContext } from '@angular/common';
-import { Component, Input, OnInit, TemplateRef } from '@angular/core';
+import { Component } from '@angular/core';
+import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
+import { cardContent } from './card-lang-data';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })
-export class CardComponent implements OnInit {
-  @Input() title = '';
-  @Input() description = '';
-  @Input() src = '';
-  @Input() icone = '';
-  @Input() button = '';
-  constructor() {}
+export class CardComponent {
+  public cardContent = cardContent;
 
-  ngOnInit(): void {}
+  constructor(public langSwitcher: LangSwitcherService) {}
+
+  get currentLang(): string {
+    return this.langSwitcher.currentLang.getValue();
+  }
 }

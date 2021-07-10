@@ -1,18 +1,20 @@
 <ngb-carousel>
-  <ng-template ngbSlide>
+  <ng-template
+    ngbSlide
+    *ngFor="let item of carouselContent[langSwitcher.getCurrentLang]"
+  >
     <section id="hero" class="hero d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h1>Drzwi automatyczne</h1>
+            <h1>{{ item.header }}</h1>
             <h2>
-              W naszej ofercie znajdziecie Państwo pełną ofertę drzwi
-              automatycznych oraz systemów drzwiowych.
+              {{ item.description }}
             </h2>
             <div>
               <div class="text-center text-lg-start">
                 <a
-                  href="#about"
+                  [routerLink]="item.rout"
                   class="
                     btn-get-started
                     scrollto
@@ -22,92 +24,14 @@
                     align-self-center
                   "
                 >
-                  <a href="#">Zobacz wiecej</a>
+                  <a href="#">{{ item.buttonText }}</a>
                 </a>
               </div>
             </div>
           </div>
           <div class="col-lg-6 hero-img">
             <img
-              src="../../../assets/carousel-img/drzewi-automatyczne.jpg"
-              class="img-fluid"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  </ng-template>
-  <ng-template ngbSlide>
-    <section id="hero" class="hero d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h1>Bramy garażowe</h1>
-            <h2>
-              Posiadamy szeroki asortyment drzwi garażowych firm: Wiśniowski,
-              Krispol, Wayne-Dalton.
-            </h2>
-            <div>
-              <div class="text-center text-lg-start">
-                <a
-                  href="#about"
-                  class="
-                    btn-get-started
-                    scrollto
-                    d-inline-flex
-                    align-items-center
-                    justify-content-center
-                    align-self-center
-                  "
-                >
-                  <a href="#">Zobacz wiecej</a>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 hero-img">
-            <img
-              src="../../../assets/carousel-img/drzewi-garazowe.jpg"
-              class="img-fluid"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  </ng-template>
-  <ng-template ngbSlide>
-    <section id="hero" class="hero d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h1>Rolety zewnętrzne i wewnętrzne</h1>
-            <h2>
-              Zapraszamy do zapoznania się z naszą szeroką gamą rolet
-              zewnętrznych oraz wewnętrznych.
-            </h2>
-            <div>
-              <div class="text-center text-lg-start">
-                <a
-                  href="#about"
-                  class="
-                    btn-get-started
-                    scrollto
-                    d-inline-flex
-                    align-items-center
-                    justify-content-center
-                    align-self-center
-                  "
-                >
-                  <a href="#">Zobacz wiecej</a>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 hero-img">
-            <img
-              src="../../../assets/carousel-img/rolety.jpg"
+              [src]="'../../../assets/carousel-img/' + item.img"
               class="img-fluid"
               alt=""
             />

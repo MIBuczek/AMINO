@@ -3,135 +3,32 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 entries">
-          <article class="entry">
+          <article
+            class="entry"
+            *ngFor="let post of blogContent[langSwitcher.getCurrentLang]"
+          >
             <div class="entry-img">
               <img
-                src="../../../assets/blog/containers.jpg"
+                [src]="'../../../assets/blog/' + post.img"
                 alt=""
                 class="img-fluid"
               />
             </div>
-            <h2 class="entry-title">Czy da się mieszkać w kontenerach?</h2>
+            <h2 class="entry-title">{{ post.header }}</h2>
             <div class="entry-meta">
               <ul>
                 <li class="d-flex align-items-center">
                   <i class="bi bi-clock"></i>
                   <a href="blog-single.html"
-                    ><time datetime="2020-01-01">Jan 1, 2020</time></a
+                    ><time datetime="2020-01-01">{{ post.date }}</time></a
                   >
                 </li>
               </ul>
             </div>
             <div class="entry-content">
-              <p>
-                Od kilku lat zauważalny jest nowy trend w architekturze – Polacy
-                powoli odchodzą od klasycznego budownictwa i stawiają na proste,
-                ekologiczne, a przy tym niebanalne rozwiązania. Mieszkanie w
-                kontenerze? Choć dla wielu osób wciąż brzmi to abstrakcyjnie,
-                konstrukcje te mają coraz większe grono zwolenników. I wbrew
-                ogólnemu wyobrażeniu w niczym nie przypominają one popularnych
-                baraków robotniczych. Wręcz przeciwnie – pozwolą w krótkim
-                czasie i bez dużych nakładów finansowych stworzyć wyjątkowe,
-                stylowe lokum.
-              </p>
+              <p>{{ post.textBody }}</p>
               <div class="read-more">
-                <a href="blog-single.html">Czytaj wiecej</a>
-              </div>
-            </div>
-          </article>
-          <article class="entry">
-            <div class="entry-img">
-              <img
-                src="../../../assets/blog/home-water.jpg"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <h2 class="entry-title">Czy warto inwestować w domy na wodzie?</h2>
-            <div class="entry-meta">
-              <ul>
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-clock"></i>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </li>
-              </ul>
-            </div>
-            <div class="entry-content">
-              <p>
-                Niegdyś można było o nich tylko pomarzyć. Rozwój technologii
-                sprawił, że dziś dom na wodzie wcale nie musi być odległą
-                mrzonką i jest możliwy do wykonania. Niestandardowe lokum to
-                przede wszystkim wyjątkowe widoki na co dzień, bliskość
-                przyrody, a także synonim luksusu i prestiżu społecznego.
-              </p>
-              <div class="read-more">
-                <a href="blog-single.html">Czytaj wiecej</a>
-              </div>
-            </div>
-          </article>
-          <article class="entry">
-            <div class="entry-img">
-              <img
-                src="../../../assets/blog/renovation.jpg"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <h2 class="entry-title">Przygotowania do remontu krok po kroku</h2>
-            <div class="entry-meta">
-              <ul>
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-clock"></i>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </li>
-              </ul>
-            </div>
-            <div class="entry-content">
-              <p>
-                Remont domu czy mieszkania to poważne przedsięwzięcie i wymaga
-                odpowiedniego przygotowania. Pozwoli to oszacować koszty,
-                rozsądnie rozplanować wydatki, zakupić odpowiednie materiały,
-                wynająć rzetelną ekipę bądź też ustalić harmonogram
-                samodzielnych prac. Dzięki temu remont zostanie wykonany
-                sprawnie i bez większych niespodzianek! Pamiętajmy jednak, że
-                zawsze należy liczyć się z dodatkowymi kosztami, dlatego warto
-                uwzględnić w budżecie pewną rezerwę finansową na ten cel.
-              </p>
-              <div class="read-more">
-                <a href="blog-single.html">Czytaj wiecej</a>
-              </div>
-            </div>
-          </article>
-          <article class="entry">
-            <div class="entry-img">
-              <img
-                src="../../../assets/blog/rails.jpg"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-            <h2 class="entry-title">
-              Jak uniknąć błędów przy układaniu płytek ceramicznych?
-            </h2>
-            <div class="entry-meta">
-              <ul>
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-clock"></i>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </li>
-              </ul>
-            </div>
-            <div class="entry-content">
-              <p>
-                Układanie płytek ceramicznych wymaga wyjątkowej precyzji,
-                cierpliwości, a także wprawy. Tylko dzięki odpowiedniej wiedzy,
-                staranności i umiejętnościom można uzyskać zadowalający efekt
-                końcowy. Tutaj nie ma miejsca na pośpiech i improwizację –
-                okładzina z płytek musi być trwała i estetyczna, a często zdarza
-                się, że mają z tym problem nawet zatrudnieni przez nas fachowcy.
-              </p>
-              <div class="read-more">
-                <a href="blog-single.html">Czytaj wiecej</a>
+                <a [routerLink]="post.rout">{{ post.textButton }}</a>
               </div>
             </div>
           </article>

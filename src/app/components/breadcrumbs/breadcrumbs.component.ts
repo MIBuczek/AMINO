@@ -30,7 +30,7 @@ export class BreadcrumbsComponent {
   preparePath(url: string): void {
     const pathArray = url.split('/').filter((s) => s.length);
     if (!pathArray.length) {
-      return;
+      this.path = [];
     } else if (pathArray.length === 1) {
       this.path = [{ title: pathArray[0], path: pathArray[0] }];
     } else {

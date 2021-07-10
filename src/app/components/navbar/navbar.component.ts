@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
+import { navbarContent } from './navbar-lang-data';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +8,14 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  public textLangContent = navbarContent;
   public isActive = false;
+
+  constructor(public langSwitcher: LangSwitcherService) {}
+
+  get currentLang(): string {
+    return this.langSwitcher.currentLang.getValue();
+  }
 
   @HostListener('window:scroll', ['$event'])
   checkPosition(): boolean {
