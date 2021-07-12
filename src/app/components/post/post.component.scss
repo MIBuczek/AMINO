@@ -32,13 +32,12 @@
         font-size: 14px;
         li {
           display: inline-block;
-        }
-        li + li {
-          &:before {
-            padding-right: 6px;
-            color: #6c757d;
-            content: ",";
-          }
+          background: #4154f1;
+          border-radius: 5px;
+          color: white;
+          padding: 2px 5px;
+          text-align: center;
+          margin-right: 5px;
         }
       }
       .share {
