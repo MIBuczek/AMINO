@@ -51,8 +51,6 @@
       padding: 0;
       li {
         display: inline-block;
-      }
-      a {
         color: #0257ee;
         font-size: 14px;
         padding: 6px 14px;
@@ -60,16 +58,16 @@
         border: 1px solid #d7e6ff;
         display: inline-block;
         transition: 0.3s;
-        span {
-          padding-left: 5px;
-          color: #a5c5fe;
-          font-size: 14px;
-        }
         &:hover {
           color: #fff;
           border: 1px solid #4154f1;
           background: #4154f1;
         }
+      }
+      li.active {
+        color: #fff;
+        border: 1px solid #4154f1;
+        background: #4154f1;
       }
     }
   }

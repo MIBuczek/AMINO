@@ -54,66 +54,31 @@
     </nav>
     <nav id="navbar" class="navbar navbar-mobile" [class.show]="isActive">
       <ul (click)="toggle()">
-        <li>
+        <li
+          *ngFor="let item of textLangContent[currentLang]"
+          [class.dropdown]="item?.children?.length"
+        >
           <a
             class="nav-link"
-            [routerLink]="['/']"
+            [routerLink]="[item.route]"
             routerLinkActive="router-link-active"
           >
-            Strona Główna
+            {{ item.name }}
           </a>
-        </li>
-        <li>
-          <a
-            class="nav-link"
-            [routerLink]="['/oferta']"
-            routerLinkActive="router-link-active"
-          >
-            Oferta
-          </a>
-        </li>
-        <li>
-          <a
-            class="nav-link"
-            [routerLink]="['/firma']"
-            routerLinkActive="router-link-active"
-          >
-            O firmie
-          </a>
-        </li>
-        <li>
-          <a
-            class="nav-link"
-            [routerLink]="['/referencje']"
-            routerLinkActive="router-link-active"
-          >
-            Reference
-          </a>
-        </li>
-        <li class="dropdown">
-          <a
-            class="nav-link"
-            [routerLink]="['/blog']"
-            routerLinkActive="router-link-active"
-          >
-            <span>Blog</span>
-            <i class="bi bi-chevron-down"></i>
-          </a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li><a href="#">Drop Down 2</a></li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
+          <ul *ngIf="item?.children?.length">
+            <li *ngFor="let subItem of item?.children">
+              <a [routerLink]="[subItem.route]">{{ subItem.name }}</a>
+            </li>
           </ul>
         </li>
         <li>
-          <a
-            class="nav-link"
-            [routerLink]="['/kontakt']"
-            routerLinkActive="router-link-active"
-          >
-            Kontakt
-          </a>
+          <button class="lang-switcher" (click)="langSwitcher.langToggle()">
+            <img
+              [src]="'../../../assets/flags/' + currentLang + '.png'"
+              alt="flag"
+              class="img-fluid"
+            />
+          </button>
         </li>
       </ul>
     </nav>

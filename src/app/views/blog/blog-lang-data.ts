@@ -1,4 +1,14 @@
-export const blogContent: { [x: string]: any } = {
+export interface IBlog {
+  header: string;
+  textBody: string;
+  date: string;
+  img: string;
+  rout: string;
+  textButton: string;
+  tags: string[];
+}
+
+export const blogContent: { [x: string]: IBlog[] } = {
   PL: [
     {
       header: 'Czy da się mieszkać w kontenerach?',
@@ -15,6 +25,7 @@ export const blogContent: { [x: string]: any } = {
       img: 'containers.jpg',
       rout: '/blog/1',
       textButton: 'czytaj wiecej',
+      tags: ['Kontener', 'Kreatywnie', 'Dom'],
     },
     {
       header: 'Czy warto inwestować w domy na wodzie?',
@@ -27,6 +38,7 @@ export const blogContent: { [x: string]: any } = {
       img: 'home-water.jpg',
       rout: '/blog/2',
       textButton: 'czytaj wiecej',
+      tags: ['Dom', 'Woda', 'Pieniadze', 'Inwestycja'],
     },
     {
       header: 'Jak przygotować się do remontu krok po kroku?',
@@ -42,6 +54,7 @@ export const blogContent: { [x: string]: any } = {
       img: 'renovation.jpg',
       rout: '/blog/3',
       textButton: 'czytaj wiecej',
+      tags: ['Remont', 'Hint'],
     },
     {
       header: 'Jak uniknąć błędów przy układaniu płytek ceramicznych?',
@@ -55,6 +68,7 @@ export const blogContent: { [x: string]: any } = {
       img: 'rails.jpg',
       rout: '/blog/4',
       textButton: 'czytaj wiecej',
+      tags: ['Błedy', 'Hint', 'Remont'],
     },
   ],
   EN: [
@@ -73,6 +87,7 @@ export const blogContent: { [x: string]: any } = {
       img: 'containers.jpg',
       rout: '/blog/1',
       textButton: 'read more',
+      tags: ['Container', 'Creative', 'Home'],
     },
     {
       header: 'Is it worth investing in homes on the water?',
@@ -85,6 +100,7 @@ export const blogContent: { [x: string]: any } = {
       img: 'home-water.jpg',
       rout: '/blog/2',
       textButton: 'read more',
+      tags: ['Home', 'Wather', 'Money', 'Investitionen'],
     },
     {
       header: 'How to prepare for a renovation step by step?',
@@ -100,6 +116,7 @@ export const blogContent: { [x: string]: any } = {
       img: 'renovation.jpg',
       rout: '/blog/3',
       textButton: 'read more',
+      tags: ['Renovation', 'Hint'],
     },
     {
       header: 'How to avoid mistakes when installing ceramic tiles?',
@@ -113,6 +130,7 @@ export const blogContent: { [x: string]: any } = {
       img: 'rails.jpg',
       rout: '/blog/4',
       textButton: 'read more',
+      tags: ['Mistakes', 'Hint', 'Renovation'],
     },
   ],
 };

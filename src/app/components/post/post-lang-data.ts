@@ -86,7 +86,7 @@ export const postsContent: { [x: string]: IPost[] } = {
         `,
         },
       ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
+      tags: ['Kontener', 'Kreatywnie', 'Dom'],
     },
     {
       id: 2,
@@ -144,7 +144,7 @@ export const postsContent: { [x: string]: IPost[] } = {
           ],
         },
       ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
+      tags: ['Dom', 'Woda', 'Pieniadze', 'Inwestycja'],
     },
     {
       id: 3,
@@ -208,71 +208,7 @@ export const postsContent: { [x: string]: IPost[] } = {
             Przy pracach o większym zakresie może być konieczne także całkowite opuszczenie mieszkania przez domowników.`,
         },
       ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
-    },
-    {
-      id: 3,
-      header: 'Przygotowania do remontu krok po kroku',
-      date: 'Jan 1, 2020',
-      img: 'renovation.jpg',
-      textBody: [
-        {
-          type: 'PARAGRAPH',
-          content: `Remont domu czy mieszkania to poważne przedsięwzięcie i wymaga
-            odpowiedniego przygotowania. Pozwoli to oszacować koszty, rozsądnie rozplanować
-            wydatki, zakupić odpowiednie materiały, wynająć rzetelną ekipę bądź też ustalić
-            harmonogram samodzielnych prac. Dzięki temu remont zostanie wykonany sprawnie i bez
-            większych niespodzianek! Pamiętajmy jednak, że zawsze należy liczyć się z dodatkowymi
-            kosztami, dlatego warto uwzględnić w budżecie pewną rezerwę finansową na ten cel.`,
-        },
-        {
-          type: 'HEADER',
-          content: 'Na sam początek',
-        },
-        {
-          type: 'PARAGRAPH',
-          content: `Przede wszystkim musimy dokładnie określić, co chcemy zmienić bądź naprawić.
-             W tym celu należy sporządzić projekt roboczy z uwzględnieniem planów mieszkania.
-             Następnie ustalamy kolejność działań jak np. zdarcie tapet, skucie tynków,
-             poprowadzenie nowej instalacji wodno-kanalizacyjnej bądź elektrycznej, itp.
-             Pozwoli to na porządek podczas prac i jasne określenie priorytetów, co usprawni remont.
-             Przy opracowywaniu harmonogramu działań warto uwzględnić pory roku – niektóre prace
-             najlepiej wykonywać podczas cieplejszych pór roku, ponieważ wymagają częstego wietrzenia pomieszczeń
-             czy też szybkiego osuszania tynków. Warto tak rozplanować prace, by na okres zimowy pozostały
-             czynności związane na przykład z wykończeniem wnętrza.`,
-        },
-        {
-          type: 'PARAGRAPH',
-          content: `Zatrudniając ekipę remontową, warto upewnić się, że znajdują się w niej osoby
-              posiadające odpowiednie kwalifikacje i uprawnienia (ma to szczególne znaczenie przy pracach
-                  związanych z wszelkiego rodzaju instalacjami). Przy wyborze wykonawcy nie należy kierować się
-                  głównie ceną usług – warto zaczerpnąć opinii znajomych czy też sprawdzić referencje.
-                  Nie warto również oszczędzać na materiałach – należy zrobić dokładne rozeznanie na rynku
-                  i zainwestować w materiały wysokiej jakości, które zapewnią nie tylko spektakularny, ale i
-                  trwały efekt. Zakupy należy poprzedzić dokładnymi pomiarami i obliczeniami oraz konsultacjami
-                  z ekipą remontową. Zadbajmy też o odpowiedni zapas materiałów, by uniknąć sytuacji,
-                  gdy zabraknie ich w trakcie remontu i nie będzie możliwy ich zakup np. z powodu braku
-                  asortymentu w hurtowniach.`,
-        },
-        {
-          type: 'HEADER',
-          content: 'Tuż przed rozpoczęciem remontu',
-        },
-        {
-          type: 'PARAGRAPH',
-          content: `Gdy już mamy wszystko rozplanowane, należy odpowiednio przygotować mieszkanie,
-              by mogła do niego wkroczyć ekipa remontowa. Należy tak zorganizować przestrzeń, by nie
-              utrudniała pracy. Najlepiej wynieść meble, a jeśli nie jest to możliwe – odpowiednio je
-              przestawić. By uniknąć przykrych niespodzianek w postaci zabrudzeń czy uszkodzeń pozostawionych przedmiotów,
-              należy je dokładnie zabezpieczyć na przykład przy użyciu folii malarskiej oraz taśmy. Zabezpieczyć należy
-              nie tylko meble czy żyrandole, ale również drzwi, okna, parapety czy też pozostawione sprzęty.
-              Zaleca się jednak wyniesienie sprzętów AGD oraz RTV, ponieważ dostanie się kurzu i pyłów do układów elektronicznych
-              może negatywnie wpłynąć na ich funkcjonowanie. Jeśli mamy zwierzęta domowe, warto pomyśleć o zapewnieniu im lokum tymczasowego
-              np. u kogoś z rodziny, ponieważ obecność ekipy oraz hałasy spowodowane remontem mogą okazać się dla nich wyjątkowo stresujące.
-              Przy pracach o większym zakresie może być konieczne także całkowite opuszczenie mieszkania przez domowników.`,
-        },
-      ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
+      tags: ['Remont', 'Hint'],
     },
     {
       id: 4,
@@ -335,7 +271,7 @@ export const postsContent: { [x: string]: IPost[] } = {
             większej ilości zaprawy poprzez dolanie większej ilości wody sprawi, że zaprawa straci swoje właściwości.`,
         },
       ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
+      tags: ['Błedy', 'Hint', 'Remont'],
     },
   ],
   EN: [
@@ -415,7 +351,7 @@ export const postsContent: { [x: string]: IPost[] } = {
         `,
         },
       ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
+      tags: ['Container', 'Creative', 'Home'],
     },
     {
       id: 2,
@@ -475,7 +411,7 @@ export const postsContent: { [x: string]: IPost[] } = {
           ],
         },
       ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
+      tags: ['Home', 'Wather', 'Money', 'Investitionen'],
     },
     {
       id: 3,
@@ -539,71 +475,7 @@ export const postsContent: { [x: string]: IPost[] } = {
           In case of larger scope of works, it may be necessary for the household members to leave the apartment completely.`,
         },
       ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
-    },
-    {
-      id: 3,
-      header: 'Preparing for a renovation step by step',
-      date: 'Jan 1, 2020',
-      img: 'renovation.jpg',
-      textBody: [
-        {
-          type: 'PARAGRAPH',
-          content: `Renovating a house or an apartment is a serious undertaking and requires
-          appropriate preparation. This will allow you to estimate costs, reasonably plan expenses, purchase
-          purchase appropriate materials, hire a reliable team or establish a schedule of work on your own.
-          schedule the works on your own. Thanks to that the renovation will be done efficiently and without
-          bigger surprises! However, remember that you should always take into account additional
-          costs, that is why it is worth to include a certain financial reserve in the budget for this purpose.`,
-        },
-        {
-          type: 'HEADER',
-          content: 'Just for starters',
-        },
-        {
-          type: 'PARAGRAPH',
-          content: `First of all, we need to determine exactly what we want to change or repair.
-          For this purpose, you need to draw up a working project taking into account the plans of the apartment.
-          Then we determine the order of activities such as removing wallpaper, scraping off plaster,
-          running a new plumbing or electrical system, etc.
-          This will allow for order during the works and a clear determination of priorities, which will improve the renovation.
-          When preparing the schedule of activities, it is worth taking into account the time of the year - some works are
-          are best performed during warmer seasons of the year because they require frequent ventilation of rooms
-          or quick drying of plaster. It is worth to plan the works in such a way that the following activities are left for the winter
-          activities related to, for example, interior finishing.`,
-        },
-        {
-          type: 'PARAGRAPH',
-          content: `When hiring a renovation team, it is worth making sure that the team consists of people
-          with appropriate qualifications and licenses (this is especially important for works related to
-          related to all kinds of installations). When choosing a contractor you should not be guided
-          mainly the price of the services - it is worth getting friends' opinions or checking references.
-          It is also not worth saving on materials - do a thorough research on the market and invest
-          and invest in high quality materials that will provide not only a spectacular, but also
-          lasting effect. Purchases should be preceded by accurate measurements and calculations and consultations
-          with the renovation team. We should also take care of an appropriate stock of materials in order to avoid situations when they run out during the renovation,
-          when they run out during the renovation and it will not be possible to buy them e.g. due to lack of assortment in warehouses.
-          of assortment in wholesalers.`,
-        },
-        {
-          type: 'HEADER',
-          content: 'Just before the renovation began',
-        },
-        {
-          type: 'PARAGRAPH',
-          content: `When you have everything planned out, you need to properly prepare the apartment,
-          so that the renovation team can enter it. The space should be organized in such a way that it does
-          make the work difficult. It is best to remove the furniture, and if this is not possible - properly
-          rearrange them. To avoid unpleasant surprises in the form of dirt or damage to items left behind,
-          protect them carefully with, for example, painter's foil and tape. It is necessary to protect
-          not only furniture or chandeliers, but also doors, windows, window sills and left-over equipment.
-          It is recommended, however, to remove household appliances and audiovisual equipment, because the ingress of dust into electronic circuits may adversely affect their functioning.
-          may adversely affect their functioning. If you have pets, it is worth thinking about providing them with temporary accommodation
-          For example, at the home of a family member, because the presence of the crew and the noise caused by the renovation can be extremely stressful for them.
-          In case of larger scope of works, it may be necessary for the household members to leave the apartment completely.`,
-        },
-      ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
+      tags: ['Renovation', 'Hint'],
     },
     {
       id: 4,
@@ -666,7 +538,7 @@ export const postsContent: { [x: string]: IPost[] } = {
           trying to save and obtain more grout by adding more water will cause the grout to lose its properties.`,
         },
       ],
-      tags: ['Business', 'Creative', 'Tips', 'Marketing'],
+      tags: ['Mistakes', 'Hint', 'Renovation'],
     },
   ],
 };

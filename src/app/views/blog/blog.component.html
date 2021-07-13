@@ -5,7 +5,12 @@
         <div class="col-lg-8 entries">
           <article
             class="entry"
-            *ngFor="let post of blogContent[langSwitcher.getCurrentLang]"
+            *ngFor="
+              let post of printPostPerActiveTags(
+                blogContent,
+                langSwitcher.getCurrentLang
+              )
+            "
           >
             <div class="entry-img">
               <img
@@ -18,11 +23,11 @@
             <div class="entry-meta">
               <ul>
                 <li class="d-flex align-items-center">
-                  <i class="bi bi-clock"></i>
-                  <a href="blog-single.html"
-                    ><time datetime="2020-01-01">{{ post.date }}</time></a
-                  >
+                  <time datetime="2020-01-01">{{ post.date }}</time>
                 </li>
+              </ul>
+              <ul class="tags">
+                <li *ngFor="let tag of post.tags">{{ tag.toLowerCase() }}</li>
               </ul>
             </div>
             <div class="entry-content">
@@ -34,7 +39,7 @@
           </article>
         </div>
         <div class="col-lg-4">
-          <app-sidebar></app-sidebar>
+          <app-sidebar [activeTags]="activeTags"></app-sidebar>
         </div>
       </div>
     </div>

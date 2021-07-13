@@ -68,6 +68,18 @@ export const sideContent: { [x: string]: ISideContent } = {
         title: 'Kontener',
         active: false,
       },
+      {
+        title: 'Hint',
+        active: false,
+      },
+      {
+        title: 'Kreatywnie',
+        active: false,
+      },
+      {
+        title: 'Pieniądze',
+        active: false,
+      },
     ],
   },
   EN: {
@@ -99,27 +111,39 @@ export const sideContent: { [x: string]: ISideContent } = {
     ],
     tags: [
       {
-        title: 'Inwestycja',
+        title: 'Investment',
         active: false,
       },
       {
-        title: 'Dome',
+        title: 'Home',
         active: false,
       },
       {
-        title: 'Woda',
+        title: 'Wather',
         active: false,
       },
       {
-        title: 'Remont',
+        title: 'Renovation',
         active: false,
       },
       {
-        title: 'Błedy',
+        title: 'Mistakes',
         active: false,
       },
       {
-        title: 'Kontener',
+        title: 'Container',
+        active: false,
+      },
+      {
+        title: 'Hint',
+        active: false,
+      },
+      {
+        title: 'Creative',
+        active: false,
+      },
+      {
+        title: 'Money',
         active: false,
       },
     ],

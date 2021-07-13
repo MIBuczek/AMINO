@@ -22,6 +22,7 @@
       }
     }
     .entry-meta {
+      display: flex;
       margin-bottom: 15px;
       color: #4084fd;
       ul {
@@ -31,19 +32,21 @@
         align-items: center;
         padding: 0;
         margin: 0;
-        li + li {
-          padding-left: 20px;
-        }
-        i {
-          font-size: 16px;
-          margin-right: 8px;
-          line-height: 0;
-        }
-        a {
-          color: #777777;
-          font-size: 14px;
+      }
+      ul.tags {
+        list-style: none;
+        display: inline;
+        padding: 0;
+        font-size: 14px;
+        margin-left: 15px;
+        li {
           display: inline-block;
-          line-height: 1;
+          background: #4154f1;
+          border-radius: 5px;
+          color: white;
+          padding: 2px 5px;
+          text-align: center;
+          margin-right: 5px;
         }
       }
     }

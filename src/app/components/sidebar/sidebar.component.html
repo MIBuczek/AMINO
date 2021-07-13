@@ -15,7 +15,14 @@
   <h3 class="sidebar-title">Tags</h3>
   <div class="sidebar-item tags">
     <ul>
-      <li *ngFor="let item of sideContent[langSwitcher.getCurrentLang].tags">
+      <li
+        *ngFor="
+          let item of sideContent[langSwitcher.getCurrentLang].tags;
+          let i = index
+        "
+        [class.active]="item.active"
+        (click)="markTagToggle(i)"
+      >
         {{ item.title }}
       </li>
     </ul>
