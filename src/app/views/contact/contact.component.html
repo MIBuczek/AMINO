@@ -1,1 +1,160 @@
-<p>contact works!</p>
+<section class="contact">
+  <div class="container">
+    <header class="section-header">
+      <h2>{{ contactContent[langSwitcher.getCurrentLang].header }}</h2>
+      <p>{{ contactContent[langSwitcher.getCurrentLang].subHeader }}</p>
+    </header>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="info-box">
+              <i class="bi bi-geo-alt"></i>
+              <h3>
+                {{ contactContent[langSwitcher.getCurrentLang].hAddress }}
+              </h3>
+              <p
+                *ngFor="
+                  let p of contactContent[langSwitcher.getCurrentLang].address
+                "
+              >
+                {{ p }}
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="info-box">
+              <i class="bi bi-telephone"></i>
+              <h3>{{ contactContent[langSwitcher.getCurrentLang].hPhone }}</h3>
+              <p
+                *ngFor="
+                  let p of contactContent[langSwitcher.getCurrentLang].phones
+                "
+              >
+                {{ p }}
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <h3>{{ contactContent[langSwitcher.getCurrentLang].hEmial }}</h3>
+              <p
+                *ngFor="
+                  let p of contactContent[langSwitcher.getCurrentLang].emails
+                "
+              >
+                {{ p }}
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="info-box">
+              <i class="bi bi-clock"></i>
+              <h3>{{ contactContent[langSwitcher.getCurrentLang].hOpen }}</h3>
+              <p
+                *ngFor="
+                  let p of contactContent[langSwitcher.getCurrentLang].hours
+                "
+              >
+                {{ p }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form
+          action="forms/contact.php"
+          method="post"
+          class="php-email-form"
+          #contactForm="ngForm"
+          (submit)="handleSubmit(contactForm)"
+        >
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                name="name"
+                ngModel
+                class="form-control"
+                #name="ngModel"
+                [placeholder]="
+                  contactContent[langSwitcher.getCurrentLang].form.name
+                "
+                required
+                minlength="3"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                ngModel
+                class="form-control"
+                #email="ngModel"
+                [placeholder]="
+                  contactContent[langSwitcher.getCurrentLang].form.email
+                "
+                required
+              />
+            </div>
+            <div class="col-md-12 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                ngModel
+                #subject="ngModel"
+                [placeholder]="
+                  contactContent[langSwitcher.getCurrentLang].form.temat
+                "
+                required
+                minlength="3"
+              />
+            </div>
+            <div class="col-md-12 mb-3">
+              <textarea
+                class="form-control"
+                name="message"
+                ngModel
+                #message="ngModel"
+                rows="6"
+                [placeholder]="
+                  contactContent[langSwitcher.getCurrentLang].form.message
+                "
+                required
+              ></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                {{ contactContent[langSwitcher.getCurrentLang].sentMessage }}
+              </div>
+              <button type="submit">
+                {{ contactContent[langSwitcher.getCurrentLang].buttonText }}
+              </button>
+              <div class="sendMessage" *ngIf="mailMessage">
+                <a [href]="mailMessage">opis</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <header class="section-header">
+      <h2>{{ contactContent[langSwitcher.getCurrentLang].headerMap }}</h2>
+      <p>{{ contactContent[langSwitcher.getCurrentLang].subHeaderMap }}</p>
+    </header>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10026.949870634226!2d17.0886207!3d51.0763962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19ef8064eea7b91d!2sAnimo%20Krystyna%20Sas!5e0!3m2!1spl!2spl!4v1626555570684!5m2!1spl!2spl"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</section>

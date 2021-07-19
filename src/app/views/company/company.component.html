@@ -1,1 +1,70 @@
-<p>company works!</p>
+<main class="row">
+  <aside class="col-lg-4">
+    <div class="sidebar sticky-top">
+      <div class="box">
+        <img
+          class="img-fluid"
+          [src]="'../../../assets/service/' + contentBody.sideBarImg"
+          alt="Sprzedaż"
+        />
+        <h3>{{ contentBody.sideBarTitle }}</h3>
+        <p>
+          {{ contentBody.sideBarText }}
+        </p>
+        <div class="text-center text-lg-start">
+          <a
+            class="
+              btn-read-more
+              d-inline-flex
+              align-items-center
+              justify-content-center
+              align-self-center
+            "
+            [routerLink]="contentBody.sideBarRout"
+            ><span>{{ contentBody.sideBarBtn }}</span
+            ><i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <section class="services col-lg-8">
+    <header class="section-header">
+      <h2>{{ contentBody.subHeader }}</h2>
+      <p>{{ contentBody.header }}</p>
+    </header>
+    <div class="container about">
+      <div class="row">
+        <div class="col-lg-12 d-flex flex-column justify-content-center">
+          <div class="content">
+            <h3>{{ contentBody.intro }}</h3>
+            <h2>
+              {{ contentBody.introTitle }}
+            </h2>
+            <p>
+              {{ contentBody.introBody }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-6 col-md-12 mb-3"
+          *ngFor="let item of contentBody.values"
+        >
+          <div class="service-box" [class]="item.color">
+            <h3>
+              <fa-icon [icon]="getIcone(item.icon)"></fa-icon>
+              {{ item.title }}
+            </h3>
+            <p>
+              {{ item.body }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

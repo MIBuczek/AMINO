@@ -402,7 +402,7 @@ export const postsContent: { [x: string]: IPost[] } = {
             'Possible difficulties in connecting some utilities',
             // tslint:disable-next-line: max-line-length
             'Lack of possibility to obtain a mortgage from a bank for a house on water (according to the law this structure is not a house)',
-            `high risk of moisture creeping into the structure of the house (that's why PVC or aluminum windows are used and not, for example, 
+            `high risk of moisture creeping into the structure of the house (that's why PVC or aluminum windows are used and not, for example,
              wooden ones, which could start to swell under the influence of moisture)`,
             'Going down the gangway to the house (which can be a bit uncomfortable)',
             'Not inconsiderable maintenance costs in the case of electric heating',

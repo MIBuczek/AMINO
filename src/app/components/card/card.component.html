@@ -1,15 +1,11 @@
 <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
-  <div class="container" data-aos="fade-up">
+  <div class="container">
     <header class="section-header">
       <h2>{{ cardContent[currentLang].title }}</h2>
       <p>{{ cardContent[currentLang].description }}</p>
     </header>
-    <div
-      class="row gy-4 portfolio-container"
-      data-aos="fade-up"
-      data-aos-delay="200"
-    >
+    <div class="row gy-4 portfolio-container">
       <div
         class="col-lg-4 col-md-6 p-2 portfolio-item filter-web"
         *ngFor="let item of cardContent[currentLang].cards"

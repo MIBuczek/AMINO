@@ -24,6 +24,7 @@ import { CardComponent } from './components/card/card.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 import { PostComponent } from './components/post/post.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NgbModule,
     FontAwesomeModule,
     SharedModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent, CarouselComponent],
