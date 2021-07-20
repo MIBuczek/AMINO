@@ -1,1 +1,63 @@
-<p>reference works!</p>
+<main class="row">
+  <aside class="col-lg-4">
+    <div class="sidebar sticky-top">
+      <div class="box">
+        <img
+          class="img-fluid"
+          [src]="'../../../assets/service/' + referenceTextContent.sideBarImg"
+          alt="Sprzedaż"
+        />
+        <h3>{{ referenceTextContent.sideBarTitle }}</h3>
+        <p>{{ referenceTextContent.sideBarText }}</p>
+        <div class="text-center text-lg-start">
+          <a
+            class="
+              btn-read-more
+              d-inline-flex
+              align-items-center
+              justify-content-center
+              align-self-center
+            "
+            [routerLink]="referenceTextContent.sideBarRout"
+            ><span> {{ referenceTextContent.sideBarBtn }} </span
+            ><i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <section class="testimonials col-lg-8">
+    <div class="container">
+      <header class="section-header">
+        <h2>{{ referenceTextContent.subHeader }}</h2>
+        <p>{{ referenceTextContent.header }}</p>
+      </header>
+      <div
+        class="testimonials-slider swiper-container"
+        *ngFor="let item of referenceTextContent.reference"
+      >
+        <div class="swiper-wrapper">
+          <div class="testimonial-item row">
+            <div class="testimonial-img col-4">
+              <img [src]="'../../../assets/references/' + item.img" />
+            </div>
+            <div class="col-8 comment">
+              <div class="stars">
+                <fa-icon [icon]="faStar"></fa-icon>
+                <fa-icon [icon]="faStar"></fa-icon>
+                <fa-icon [icon]="faStar"></fa-icon>
+                <fa-icon [icon]="faStar"></fa-icon>
+                <fa-icon [icon]="faStar"></fa-icon>
+              </div>
+              <p>
+                <fa-icon [icon]="faQuoteLeft"></fa-icon>
+                {{ item.comment }}
+                <fa-icon [icon]="faQuoteRight"></fa-icon>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
