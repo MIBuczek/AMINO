@@ -20,10 +20,16 @@ export class BreadcrumbsComponent {
   }
 
   preparePageTitle(url: string): void {
-    if (url.length === 1) {
+    const checkUrl = url.split('/').filter((s) => s.length).length;
+    if (checkUrl === 0) {
       this.actualPage = 'Strona Główna';
-    } else {
+    } else if (checkUrl === 1) {
       this.actualPage = url.split('/')[1];
+    } else {
+      const subPageTitle = url.split('/')[2];
+      this.actualPage = ['1', '2', '3', '4'].includes(subPageTitle)
+        ? 'Post'
+        : subPageTitle;
     }
   }
 
