@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
+import { referenceContent } from './reference-lang-data';
+import {
+  faQuoteLeft,
+  faQuoteRight,
+  faStar,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-reference',
   templateUrl: './reference.component.html',
-  styleUrls: ['./reference.component.scss']
+  styleUrls: ['./reference.component.scss'],
 })
-export class ReferenceComponent implements OnInit {
+export class ReferenceComponent {
+  public referenceContent = referenceContent;
+  public faQuoteLeft = faQuoteLeft;
+  public faQuoteRight = faQuoteRight;
+  public faStar = faStar;
 
-  constructor() { }
+  constructor(public langSwitcher: LangSwitcherService) {}
 
-  ngOnInit(): void {
+  get referenceTextContent() {
+    return referenceContent[this.langSwitcher.getCurrentLang];
   }
-
 }

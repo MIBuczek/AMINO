@@ -147,9 +147,14 @@
       color: #f51f9c;
       background: #feecf7;
     }
-
     &:hover {
       background: #f51f9c;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
   }
 }

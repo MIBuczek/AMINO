@@ -14,6 +14,9 @@ import {
   faUniversity,
   faClock,
   faCheckSquare,
+  faQuoteRight,
+  faQuoteLeft,
+  faStar,
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -31,7 +34,10 @@ export class SharedModule {
       faUniversity,
       faClock,
       faCheckSquare,
-      faHandshake
+      faHandshake,
+      faQuoteRight,
+      faQuoteLeft,
+      faStar
     );
   }
 }
