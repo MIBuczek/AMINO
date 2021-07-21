@@ -17,6 +17,8 @@ import {
   faQuoteRight,
   faQuoteLeft,
   faStar,
+  faExclamationCircle,
+  faMapMarked,
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -37,7 +39,9 @@ export class SharedModule {
       faHandshake,
       faQuoteRight,
       faQuoteLeft,
-      faStar
+      faStar,
+      faExclamationCircle,
+      faMapMarked
     );
   }
 }

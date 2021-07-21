@@ -24,8 +24,16 @@ export const contactContent: { [x: string]: any } = {
       email: 'Twoje email',
       temat: 'Temat wiadomosci',
       message: 'Wiadomość',
+      error: 'To pole jest wymagane',
     },
-    sentMessage: 'Twoja wiadomość zostałą wysłana. Dziękujemy!',
+    police: `
+    Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
+    złożenia mi zapytania ofertowego lub oferty, zgodnie z ustawą z
+    dnia 29.08.1997r. o ochronie danych osobowych (Dz. U. z 2002
+    roku, nr 101, poz. 926 tekst jednolity z późniejszymi zmianami).
+    `,
+    policeError:
+      'Przed wysłaniem wiadomości prosze wyrazic zgode na przetworzenie danych',
     buttonText: 'Wyślij wiadomość',
     headerMap: 'Znajdz nas',
     subHeaderMap: 'Sprawdz jak do nas dojechać',
@@ -55,8 +63,16 @@ export const contactContent: { [x: string]: any } = {
       email: 'Your email',
       temat: 'Subject',
       message: 'Message',
+      error: 'This field is required',
     },
-    sentMessage: 'Your message has been sent. Thank you!',
+    police: `
+    I agree to the processing of my personal data in order to
+    submitting me an inquiry or an offer, in accordance with the Act of
+    29.08.1997r. on the protection of personal data (Journal of Laws of 2002
+    No. 101, item 926 uniform text with later changes).
+    `,
+    policeError:
+      'Please give your consent to the processing of your data before sending the message',
     buttonText: 'Send Message',
     headerMap: 'Find us',
     subHeaderMap: 'Check how to get to us',

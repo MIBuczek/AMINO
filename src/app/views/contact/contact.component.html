@@ -1,62 +1,46 @@
 <section class="contact">
   <div class="container">
     <header class="section-header">
-      <h2>{{ contactContent[langSwitcher.getCurrentLang].header }}</h2>
-      <p>{{ contactContent[langSwitcher.getCurrentLang].subHeader }}</p>
+      <h2>{{ contactTextContent.header }}</h2>
+      <p>{{ contactTextContent.subHeader }}</p>
     </header>
     <div class="row">
       <div class="col-lg-6">
         <div class="row">
           <div class="col-md-6 mb-3">
             <div class="info-box">
-              <i class="bi bi-geo-alt"></i>
+              <fa-icon [icon]="faMapMarked"></fa-icon>
               <h3>
-                {{ contactContent[langSwitcher.getCurrentLang].hAddress }}
+                {{ contactTextContent.hAddress }}
               </h3>
-              <p
-                *ngFor="
-                  let p of contactContent[langSwitcher.getCurrentLang].address
-                "
-              >
+              <p *ngFor="let p of contactTextContent.address">
                 {{ p }}
               </p>
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <div class="info-box">
-              <i class="bi bi-telephone"></i>
-              <h3>{{ contactContent[langSwitcher.getCurrentLang].hPhone }}</h3>
-              <p
-                *ngFor="
-                  let p of contactContent[langSwitcher.getCurrentLang].phones
-                "
-              >
+              <fa-icon [icon]="faPhone"></fa-icon>
+              <h3>{{ contactTextContent.hPhone }}</h3>
+              <p *ngFor="let p of contactTextContent.phones">
                 {{ p }}
               </p>
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <div class="info-box">
-              <i class="bi bi-envelope"></i>
-              <h3>{{ contactContent[langSwitcher.getCurrentLang].hEmial }}</h3>
-              <p
-                *ngFor="
-                  let p of contactContent[langSwitcher.getCurrentLang].emails
-                "
-              >
+              <fa-icon [icon]="faEnvelope"></fa-icon>
+              <h3>{{ contactTextContent.hEmial }}</h3>
+              <p *ngFor="let p of contactTextContent.emails">
                 {{ p }}
               </p>
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <div class="info-box">
-              <i class="bi bi-clock"></i>
-              <h3>{{ contactContent[langSwitcher.getCurrentLang].hOpen }}</h3>
-              <p
-                *ngFor="
-                  let p of contactContent[langSwitcher.getCurrentLang].hours
-                "
-              >
+              <fa-icon [icon]="faClock"></fa-icon>
+              <h3>{{ contactTextContent.hOpen }}</h3>
+              <p *ngFor="let p of contactTextContent.hours">
                 {{ p }}
               </p>
             </div>
@@ -67,9 +51,9 @@
         <form
           action="forms/contact.php"
           method="post"
-          class="php-email-form"
+          class="message-form"
           #contactForm="ngForm"
-          (submit)="handleSubmit(contactForm)"
+          (change)="handleSubmit(contactForm)"
         >
           <div class="row">
             <div class="col-md-6 mb-3">
@@ -79,12 +63,14 @@
                 ngModel
                 class="form-control"
                 #name="ngModel"
-                [placeholder]="
-                  contactContent[langSwitcher.getCurrentLang].form.name
-                "
+                [placeholder]="contactTextContent.form.name"
                 required
                 minlength="3"
               />
+              <div class="error-message" *ngIf="name.touched && name.invalid">
+                {{ contactTextContent.form.error }}
+                <fa-icon [icon]="faExclamationCircle"></fa-icon>
+              </div>
             </div>
             <div class="col-md-6 mb-3">
               <input
@@ -94,11 +80,13 @@
                 ngModel
                 class="form-control"
                 #email="ngModel"
-                [placeholder]="
-                  contactContent[langSwitcher.getCurrentLang].form.email
-                "
+                [placeholder]="contactTextContent.form.email"
                 required
               />
+              <div class="error-message" *ngIf="email.touched && email.invalid">
+                T{{ contactTextContent.form.error }}
+                <fa-icon [icon]="faExclamationCircle"></fa-icon>
+              </div>
             </div>
             <div class="col-md-12 mb-3">
               <input
@@ -107,12 +95,17 @@
                 name="subject"
                 ngModel
                 #subject="ngModel"
-                [placeholder]="
-                  contactContent[langSwitcher.getCurrentLang].form.temat
-                "
+                [placeholder]="contactTextContent.form.temat"
                 required
                 minlength="3"
               />
+              <div
+                class="error-message"
+                *ngIf="subject.touched && subject.invalid"
+              >
+                {{ contactTextContent.form.error }}
+                <fa-icon [icon]="faExclamationCircle"></fa-icon>
+              </div>
             </div>
             <div class="col-md-12 mb-3">
               <textarea
@@ -121,24 +114,56 @@
                 ngModel
                 #message="ngModel"
                 rows="6"
-                [placeholder]="
-                  contactContent[langSwitcher.getCurrentLang].form.message
-                "
+                [placeholder]="contactTextContent.form.message"
                 required
               ></textarea>
+              <div
+                class="error-message"
+                *ngIf="message.touched && message.invalid"
+              >
+                {{ contactTextContent.form.error }}
+                <fa-icon [icon]="faExclamationCircle"></fa-icon>
+              </div>
             </div>
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                {{ contactContent[langSwitcher.getCurrentLang].sentMessage }}
+            <div class="agree">
+              <label for="agree">
+                <input
+                  type="checkbox"
+                  name="agree"
+                  ngModel
+                  #agree="ngModel"
+                  required
+                />
+              </label>
+              <p>
+                {{ contactTextContent.police }}
+              </p>
+              <div
+                class="error-message"
+                *ngIf="agree.touched && agree.value === false"
+              >
+                {{ contactTextContent.policeError }}
+                <fa-icon [icon]="faExclamationCircle"></fa-icon>
               </div>
-              <button type="submit">
-                {{ contactContent[langSwitcher.getCurrentLang].buttonText }}
+            </div>
+            <div class="col-md-12 text-center button-pannel">
+              <button
+                type="submit"
+                *ngIf="
+                  contactForm.invalid && !contactForm.value.agree;
+                  else anhore
+                "
+              >
+                {{ contactTextContent.buttonText }}
               </button>
-              <div class="sendMessage" *ngIf="mailMessage">
-                <a [href]="mailMessage">opis</a>
-              </div>
+              <ng-template #anhore>
+                <a
+                  *ngIf="mailMessage"
+                  [href]="mailMessage"
+                  class="sendMessage"
+                  >{{ contactTextContent.buttonText }}</a
+                >
+              </ng-template>
             </div>
           </div>
         </form>
@@ -147,8 +172,8 @@
   </div>
   <div class="container mt-5">
     <header class="section-header">
-      <h2>{{ contactContent[langSwitcher.getCurrentLang].headerMap }}</h2>
-      <p>{{ contactContent[langSwitcher.getCurrentLang].subHeaderMap }}</p>
+      <h2>{{ contactTextContent.headerMap }}</h2>
+      <p>{{ contactTextContent.subHeaderMap }}</p>
     </header>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10026.949870634226!2d17.0886207!3d51.0763962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19ef8064eea7b91d!2sAnimo%20Krystyna%20Sas!5e0!3m2!1spl!2spl!4v1626555570684!5m2!1spl!2spl"
