@@ -25,7 +25,7 @@
   .message-form {
     background: #fafbff;
     padding: 30px;
-    height: 100%;
+    min-height: 450px;
     .error-message {
       display: block;
       color: #ed3c0d;

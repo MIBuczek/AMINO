@@ -56,6 +56,7 @@
           </p>
           <div class="text-center text-lg-start">
             <a
+              *ngIf="item.rout; else btn"
               [routerLink]="item.rout"
               class="
                 btn-read-more
@@ -66,8 +67,23 @@
               "
             >
               <span>{{ item.buttonText }}</span>
-              <i class="bi bi-arrow-right"></i>
             </a>
+            <ng-template #btn>
+              <button
+                (click)="modal.next(!modal.getValue())"
+                class="
+                  btn-read-more
+                  d-inline-flex
+                  align-items-center
+                  justify-content-center
+                  align-self-center
+                "
+              >
+                <span>
+                  {{ item.buttonText }}
+                </span>
+              </button>
+            </ng-template>
           </div>
         </div>
       </div>
@@ -112,3 +128,4 @@
   </div>
 </section>
 <app-card></app-card>
+<app-modal [modal]="modal"></app-modal>

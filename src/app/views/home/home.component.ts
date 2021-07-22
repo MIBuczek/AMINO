@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
 import {
   homeValue,
@@ -12,6 +13,8 @@ import {
 })
 export class HomeComponent {
   public show = false;
+  public modal = new BehaviorSubject<boolean>(false);
+
   public homeValue = homeValue;
   public homeOffert = homeOffert;
   public homeAbout = homeAbout;

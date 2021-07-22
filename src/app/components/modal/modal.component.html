@@ -1,1 +1,133 @@
-<p>modal works!</p>
+<div class="modal fade" [class.show]="modal.getValue()">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ modalTextContent.modalTitle }}</h5>
+        <button
+          type="button"
+          class="btn"
+          (click)="modal.next(!modal.getValue())"
+        >
+          <fa-icon [icon]="faTimes"></fa-icon>
+        </button>
+      </div>
+      <form
+        action="forms/contact.php"
+        method="post"
+        class="message-form"
+        #reportForm="ngForm"
+        (change)="handleSubmit(reportForm)"
+      >
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input
+              type="text"
+              name="name"
+              ngModel
+              class="form-control"
+              #name="ngModel"
+              [placeholder]="modalTextContent.form.name"
+              required
+              minlength="3"
+            />
+            <div class="error-message" *ngIf="name.touched && name.invalid">
+              {{ modalTextContent.form.error }}
+              <fa-icon [icon]="faExclamationCircle"></fa-icon>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              ngModel
+              class="form-control"
+              #email="ngModel"
+              [placeholder]="modalTextContent.form.email"
+              required
+            />
+            <div class="error-message" *ngIf="email.touched && email.invalid">
+              {{ modalTextContent.form.error }}
+              <fa-icon [icon]="faExclamationCircle"></fa-icon>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              ngModel
+              #subject="ngModel"
+              [placeholder]="modalTextContent.form.temat"
+              required
+              minlength="3"
+            />
+            <div
+              class="error-message"
+              *ngIf="subject.touched && subject.invalid"
+            >
+              {{ modalTextContent.form.error }}
+              <fa-icon [icon]="faExclamationCircle"></fa-icon>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <textarea
+              class="form-control"
+              name="message"
+              ngModel
+              #message="ngModel"
+              rows="6"
+              [placeholder]="modalTextContent.form.message"
+              required
+            ></textarea>
+            <div
+              class="error-message"
+              *ngIf="message.touched && message.invalid"
+            >
+              {{ modalTextContent.form.error }}
+              <fa-icon [icon]="faExclamationCircle"></fa-icon>
+            </div>
+          </div>
+          <div class="agree">
+            <label for="agree">
+              <input
+                type="checkbox"
+                name="agree"
+                ngModel
+                #agree="ngModel"
+                required
+              />
+            </label>
+            <p>
+              {{ modalTextContent.police }}
+            </p>
+            <div
+              class="error-message"
+              *ngIf="agree.touched && agree.value === false"
+            >
+              {{ modalTextContent.policeError }}
+              <fa-icon [icon]="faExclamationCircle"></fa-icon>
+            </div>
+          </div>
+          <div class="col-md-12 text-center button-pannel">
+            <button
+              type="submit"
+              *ngIf="reportForm.invalid && !reportForm.value.agree; else anhore"
+            >
+              {{ modalTextContent.buttonText }}
+            </button>
+            <ng-template #anhore>
+              <a
+                *ngIf="mailMessage"
+                [href]="mailMessage"
+                class="sendMessage"
+                (click)="clearForm(reportForm)"
+                >{{ modalTextContent.buttonText }}</a
+              >
+            </ng-template>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

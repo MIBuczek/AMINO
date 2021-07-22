@@ -9,7 +9,7 @@ import {
   faExclamationCircle,
   faMapMarked,
 } from '@fortawesome/free-solid-svg-icons';
-import { BehaviorSubject } from 'rxjs';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -27,7 +27,7 @@ export class ContactComponent {
 
   constructor(public langSwitcher: LangSwitcherService) {}
 
-  get contactTextContent() {
+  get contactTextContent(): any {
     return contactContent[this.langSwitcher.getCurrentLang];
   }
 

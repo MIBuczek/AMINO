@@ -1,0 +1,94 @@
+.modal.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffffad;
+  transition: 0.4s;
+  visibility: hidden;
+  .modal-header {
+    background: #4154f1;
+    .btn {
+      border: 1px solid white;
+      transition: 0.4s;
+      &:hover {
+        opacity: 0.6;
+      }
+      fa-icon {
+        color: white;
+      }
+    }
+  }
+  .modal-title {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 18px;
+    margin: 0 auto;
+  }
+  .message-form {
+    background: #fafbff;
+    padding: 30px;
+    min-height: 450px;
+    .error-message {
+      display: block;
+      color: #ed3c0d;
+      padding: 3px 15px;
+      font-size: 12px;
+      fa-icon {
+        margin-left: 5px;
+      }
+    }
+
+    input,
+    textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      border-radius: 0;
+      &:focus {
+        border-color: #4154f1;
+      }
+    }
+    input {
+      padding: 10px 15px;
+    }
+    textarea {
+      padding: 12px 15px;
+    }
+    .agree {
+      font-size: 10px;
+      padding: 0 15px 20px 15px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      p {
+        width: 95%;
+      }
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+    }
+    .sendMessage,
+    button[type="submit"] {
+      background: #4154f1;
+      border: 0;
+      padding: 10px 30px;
+      color: #fff;
+      transition: 0.4s;
+      border-radius: 4px;
+      &:hover {
+        background: #5969f3;
+      }
+    }
+    .sendMessage {
+      position: relative;
+      top: 10px;
+    }
+  }
+}
