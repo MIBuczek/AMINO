@@ -3,7 +3,7 @@
   <div class="sidebar-item recent-posts">
     <div
       class="post-item clearfix"
-      *ngFor="let item of sideContent[langSwitcher.getCurrentLang].postItems"
+      *ngFor="let item of sidebarContent.postItems"
     >
       <img [src]="'../../../assets/blog/' + item.img" alt="" />
       <h4>
@@ -16,10 +16,7 @@
   <div class="sidebar-item tags">
     <ul>
       <li
-        *ngFor="
-          let item of sideContent[langSwitcher.getCurrentLang].tags;
-          let i = index
-        "
+        *ngFor="let item of sidebarContent.tags; let i = index"
         [class.active]="item.active"
         (click)="markTagToggle(i)"
       >

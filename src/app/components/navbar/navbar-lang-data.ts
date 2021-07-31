@@ -13,6 +13,28 @@ export const navbarContent: { [x: string]: INavItem[] } = {
     {
       name: 'Oferta',
       route: '/oferta',
+      children: [
+        {
+          name: 'Montaż i serwis',
+          route: '/oferta/montaz-serwis',
+        },
+        {
+          name: 'Usługi naprawcze',
+          route: '/oferta/uslugi-naprawcze',
+        },
+        {
+          name: 'Sprzedaż',
+          route: '/oferta/sprzedaz',
+        },
+        {
+          name: 'Remonty budowlane',
+          route: '/oferta/remonty-budowlane',
+        },
+        {
+          name: 'Domy energoszczędne',
+          route: '/oferta/domy-energoszczedne',
+        },
+      ],
     },
     {
       name: 'O firmie',
@@ -57,6 +79,28 @@ export const navbarContent: { [x: string]: INavItem[] } = {
     {
       name: 'Offer',
       route: '/oferta',
+      children: [
+        {
+          name: 'Installation and service',
+          route: '/oferta/serwis',
+        },
+        {
+          name: 'Repair services',
+          route: '/oferta/naprawa',
+        },
+        {
+          name: 'Sprzedaż',
+          route: '/oferta/sprzedaz',
+        },
+        {
+          name: 'Sales',
+          route: '/oferta/remont',
+        },
+        {
+          name: 'Energy efficient houses',
+          route: '/oferta/domy',
+        },
+      ],
     },
     {
       name: 'About us',

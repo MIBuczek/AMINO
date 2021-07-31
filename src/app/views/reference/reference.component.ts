@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { referenceContent } from './reference-lang-data';
+import { IReferenceContent, referenceContent } from './reference-lang-data';
 import {
   faQuoteLeft,
   faQuoteRight,
@@ -13,14 +13,13 @@ import {
   styleUrls: ['./reference.component.scss'],
 })
 export class ReferenceComponent {
-  public referenceContent = referenceContent;
   public faQuoteLeft = faQuoteLeft;
   public faQuoteRight = faQuoteRight;
   public faStar = faStar;
 
   constructor(public langSwitcher: LangSwitcherService) {}
 
-  get referenceTextContent() {
+  get referenceTextContent(): IReferenceContent {
     return referenceContent[this.langSwitcher.getCurrentLang];
   }
 }

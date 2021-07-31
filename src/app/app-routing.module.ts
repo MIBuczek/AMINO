@@ -8,13 +8,17 @@ import { ReferenceComponent } from './views/reference/reference.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { PostComponent } from './components/post/post.component';
+import { SingleOfertComponent } from './components/single-ofert/single-ofert.component';
+import { GaleryComponent } from './views/galery/galery.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:id', component: PostComponent },
   { path: 'oferta', component: OffertComponent },
+  // { path: 'oferta/:title', component: OffertComponent },
   { path: 'firma', component: CompanyComponent },
+  { path: 'galeria', component: GaleryComponent },
   { path: 'referencje', component: ReferenceComponent },
   { path: 'kontakt', component: ContactComponent },
   { path: '*', component: NotFoundComponent },

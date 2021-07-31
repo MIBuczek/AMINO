@@ -5,10 +5,9 @@ import {
   SimpleChanges,
   OnDestroy,
 } from '@angular/core';
-import { faTags } from '@fortawesome/free-solid-svg-icons';
 import { BehaviorSubject } from 'rxjs';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { sideContent } from './side-lang-data';
+import { ISideContent, sideContent } from './side-lang-data';
 
 @Component({
   selector: 'app-sidebar',
@@ -19,9 +18,11 @@ export class SidebarComponent implements OnChanges, OnDestroy {
   @Input() currentPost: any;
   @Input() activeTags: BehaviorSubject<string[]> | undefined;
 
-  public sideContent = sideContent;
-
   constructor(public langSwitcher: LangSwitcherService) {}
+
+  get sidebarContent(): ISideContent {
+    return sideContent[this.langSwitcher.getCurrentLang];
+  }
 
   public markTagToggle(index: number): void {
     if (this.currentPost) {

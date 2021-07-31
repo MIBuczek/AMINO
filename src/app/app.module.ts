@@ -25,6 +25,8 @@ import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.compo
 import { PostComponent } from './components/post/post.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FormsModule } from '@angular/forms';
+import { SingleOfertComponent } from './components/single-ofert/single-ofert.component';
+import { GaleryComponent } from './views/galery/galery.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { FormsModule } from '@angular/forms';
     BreadcrumbsComponent,
     PostComponent,
     SidebarComponent,
+    SingleOfertComponent,
+    GaleryComponent,
   ],
   imports: [
     BrowserModule,

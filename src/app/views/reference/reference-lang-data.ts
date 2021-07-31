@@ -1,4 +1,20 @@
-export const referenceContent: { [x: string]: any } = {
+export interface ISingleReferecne {
+  img: string;
+  comment: string;
+}
+
+export interface IReferenceContent {
+  sideBarImg: string;
+  sideBarTitle: string;
+  sideBarText: string;
+  sideBarRout: string;
+  sideBarBtn: string;
+  subHeader: string;
+  header: string;
+  reference: ISingleReferecne[];
+}
+
+export const referenceContent: { [x: string]: IReferenceContent } = {
   PL: {
     sideBarImg: 'sell.jpg',
     sideBarTitle: 'Nasza Oferta',

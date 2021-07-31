@@ -1,1 +1,33 @@
-<p>offert works!</p>
+<main>
+  <section class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="sidebar">
+            <ng-container *ngFor="let item of offerTextContent.navigation">
+              <h3 class="sidebar-title">
+                {{ item.title }}
+              </h3>
+              <div class="sidebar-item categories">
+                <ul>
+                  <li *ngFor="let link of item.subLinks">
+                    <a
+                      routerLink="/oferta"
+                      [queryParams]="{ title: item.rout, single: link.rout }"
+                    >
+                      {{ link.name }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+        <div class="col-lg-6 entries">
+          <app-single-ofert></app-single-ofert>
+        </div>
+        <div class="col-lg-3 entries">Galeria</div>
+      </div>
+    </div>
+  </section>
+</main>

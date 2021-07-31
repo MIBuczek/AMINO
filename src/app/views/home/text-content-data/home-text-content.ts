@@ -1,4 +1,11 @@
-export const homeValue: { [x: string]: any } = {
+export interface IHomeContentValue {
+  starter: string;
+  header: string;
+  content: string;
+  hideContent: string[];
+}
+
+export const homeValue: { [x: string]: IHomeContentValue } = {
   PL: {
     starter: 'NASZE WARTOŚCI',
     header:
@@ -74,7 +81,21 @@ export const homeValue: { [x: string]: any } = {
   },
 };
 
-export const homeOffert: { [x: string]: any } = {
+export interface IHomeSingleService {
+  title: string;
+  body: string;
+  img: string;
+  buttonText: string;
+  rout?: string;
+}
+
+export interface IHomeContentServices {
+  starte: string;
+  header: string;
+  offert: IHomeSingleService[];
+}
+
+export const homeServices: { [x: string]: IHomeContentServices } = {
   PL: {
     starte: 'NASZE USŁUGI',
     header: 'Zapoznaj sie z nasza kompleksową ofertą',
@@ -131,45 +152,50 @@ export const homeOffert: { [x: string]: any } = {
   },
 };
 
-export const homeAbout: { [x: string]: any } = {
-  PL: {
-    about: [
-      {
-        starter: 'O NAS',
-        header:
-          'Ponad 20 lat doświadczenie w branży oraz dbanie o zadowolenie Klienta pozwoliło zająć nam znaczącą pozycję na rynku.',
-        content: `Firma Animo istnieje od 1992 roku. Jakość naszych usług oraz kwalifikacje pracowników pozwalają na profesjonalne, rzetelne oraz szybkie realizacje. Wychodząc na przeciw oczekiwaniom naszych klientów dopasowujemy ofertę do ich potrzeb.`,
-        img: 'about-us.jpg',
-        buttonText: 'Czytaj wiecej',
-      },
-      {
-        starter: 'ZAJMUJEMY SIĘ',
-        header:
-          'Montażem oraz serwisem drzwi automatycznych, bram garażowych, rolet, systemów oddymiania oraz bramami przemysłowymi.',
-        content: `Firma Animo oferuje profesjonalne usługi związane z montażem i serwisem szerokiej gamy drzwi, bram, rolet oraz systemów oddymiających. Najnowocześniejsze rozwiązania zapewniają niezawodność i niebywałą żywotność naszych produktów.`,
-        img: 'about-door.jpg',
-        buttonText: 'Czytaj wiecej',
-      },
-    ],
-  },
-  EN: {
-    about: [
-      {
-        starter: 'ABOUT US',
-        header:
-          'Over 20 years of experience in the industry and attention to customer satisfaction has allowed us to occupy a significant position in the market.',
-        content: `Animo company has existed since 1992. The quality of our services and qualifications of our employees allow for professional, reliable and fast realizations. To meet the expectations of our customers we adjust our offer to their needs.`,
-        img: 'about-us.jpg',
-        buttonText: 'Read more',
-      },
-      {
-        starter: 'WE DO',
-        header:
-          'Installation and service of automatic doors, garage doors, roller shutters, smoke removal systems and industrial doors.',
-        content: `Animo company offers professional services related to installation and maintenance of a wide range of doors, gates, roller blinds and smoke ventilation systems. State-of-the-art solutions ensure reliability and incredible durability of our products.`,
-        img: 'about-door.jpg',
-        buttonText: 'Read more',
-      },
-    ],
-  },
+export interface IHomeContentAbout {
+  starter: string;
+  header: string;
+  content: string;
+  img: string;
+  buttonText: string;
+}
+
+export const homeAbout: { [x: string]: IHomeContentAbout[] } = {
+  PL: [
+    {
+      starter: 'O NAS',
+      header:
+        'Ponad 20 lat doświadczenie w branży oraz dbanie o zadowolenie Klienta pozwoliło zająć nam znaczącą pozycję na rynku.',
+      content: `Firma Animo istnieje od 1992 roku. Jakość naszych usług oraz kwalifikacje pracowników pozwalają na profesjonalne, rzetelne oraz szybkie realizacje. Wychodząc na przeciw oczekiwaniom naszych klientów dopasowujemy ofertę do ich potrzeb.`,
+      img: 'about-us.jpg',
+      buttonText: 'Czytaj wiecej',
+    },
+    {
+      starter: 'ZAJMUJEMY SIĘ',
+      header:
+        'Montażem oraz serwisem drzwi automatycznych, bram garażowych, rolet, systemów oddymiania oraz bramami przemysłowymi.',
+      content: `Firma Animo oferuje profesjonalne usługi związane z montażem i serwisem szerokiej gamy drzwi, bram, rolet oraz systemów oddymiających. Najnowocześniejsze rozwiązania zapewniają niezawodność i niebywałą żywotność naszych produktów.`,
+      img: 'about-door.jpg',
+      buttonText: 'Czytaj wiecej',
+    },
+  ],
+
+  EN: [
+    {
+      starter: 'ABOUT US',
+      header:
+        'Over 20 years of experience in the industry and attention to customer satisfaction has allowed us to occupy a significant position in the market.',
+      content: `Animo company has existed since 1992. The quality of our services and qualifications of our employees allow for professional, reliable and fast realizations. To meet the expectations of our customers we adjust our offer to their needs.`,
+      img: 'about-us.jpg',
+      buttonText: 'Read more',
+    },
+    {
+      starter: 'WE DO',
+      header:
+        'Installation and service of automatic doors, garage doors, roller shutters, smoke removal systems and industrial doors.',
+      content: `Animo company offers professional services related to installation and maintenance of a wide range of doors, gates, roller blinds and smoke ventilation systems. State-of-the-art solutions ensure reliability and incredible durability of our products.`,
+      img: 'about-door.jpg',
+      buttonText: 'Read more',
+    },
+  ],
 };

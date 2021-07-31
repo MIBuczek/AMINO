@@ -1,4 +1,11 @@
-export const homeOffert = {
+export interface IHomeContentOffert {
+  cardTitle: string;
+  cardBody: string;
+  cardImgSrc: string;
+  cardButton: string;
+}
+
+export const homeOffert: { [x: string]: IHomeContentOffert[] } = {
   PL: [
     {
       cardTitle: 'DRZWI AUTOMATYCZNE',

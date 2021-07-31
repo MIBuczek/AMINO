@@ -3,15 +3,15 @@
     <div class="row">
       <div class="col-lg-12 d-flex flex-column justify-content-center">
         <div class="content">
-          <h3>{{ homeValue[currentLang].starter }}</h3>
+          <h3>{{ homeContentValue.starter }}</h3>
           <h2>
-            {{ homeValue[currentLang].header }}
+            {{ homeContentValue.header }}
           </h2>
           <p>
-            {{ homeValue[currentLang].content }}
+            {{ homeContentValue.content }}
           </p>
           <div class="col-12 hide" [class.show]="show">
-            <p *ngFor="let item of homeValue[currentLang].hideContent">
+            <p *ngFor="let item of homeContentValue.hideContent">
               {{ item }}
             </p>
           </div>
@@ -39,11 +39,11 @@
 <section id="values" class="values">
   <div class="container">
     <header class="section-header">
-      <h2>{{ homeOffert[currentLang].starte }}</h2>
-      <p>{{ homeOffert[currentLang].header }}</p>
+      <h2>{{ homeContentService.starte }}</h2>
+      <p>{{ homeContentService.header }}</p>
     </header>
     <div class="row">
-      <div class="col-lg-4" *ngFor="let item of homeOffert[currentLang].offert">
+      <div class="col-lg-4" *ngFor="let item of homeContentService.offert">
         <div class="box">
           <img
             [src]="'../../../assets/service/' + item.img"
@@ -93,7 +93,7 @@
 <section class="about">
   <div
     class="container container mt-md-5 mt-sm-5"
-    *ngFor="let item of homeAbout[currentLang].about"
+    *ngFor="let item of homeContentAbout"
   >
     <div class="row">
       <div class="col-lg-6 d-flex flex-column justify-content-center">
