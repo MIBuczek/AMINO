@@ -1,4 +1,31 @@
-<h1>{{ currentOffert.title }}</h1>
-<div>
-  <p *ngFor="let item of currentOffert.content">{{ item }}</p>
-</div>
+<section class="offer">
+  <div class="container">
+    <article class="entry offer-single">
+      <h2 class="offer-title">
+        {{ currentOffert.title }}
+      </h2>
+      <div class="offer-content">
+        <ng-container *ngFor="let text of currentOffert.body">
+          <ng-template [ngIf]="text.type === 'PARAGRAPH'">
+            <p>{{ text.content }}</p>
+          </ng-template>
+          <ng-template [ngIf]="text.type === 'HEADER'">
+            <h3>{{ text.content }}</h3>
+          </ng-template>
+          <ng-template [ngIf]="text.type === 'LIST'">
+            <ul>
+              <h3>
+                {{ text.headerList }}
+              </h3>
+              <li *ngFor="let item of text.items">{{ item }}</li>
+            </ul>
+          </ng-template>
+        </ng-container>
+        <p *ngFor="let item of currentOffert.content">
+          {{ item }}
+        </p>
+      </div>
+      <div class="offer-contact">Kontakt</div>
+    </article>
+  </div>
+</section>

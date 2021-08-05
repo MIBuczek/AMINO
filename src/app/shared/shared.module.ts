@@ -19,6 +19,9 @@ import {
   faStar,
   faExclamationCircle,
   faMapMarked,
+  faChevronRight,
+  faChevronLeft,
+  faWindowClose,
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -41,7 +44,10 @@ export class SharedModule {
       faQuoteLeft,
       faStar,
       faExclamationCircle,
-      faMapMarked
+      faMapMarked,
+      faChevronRight,
+      faChevronLeft,
+      faWindowClose
     );
   }
 }

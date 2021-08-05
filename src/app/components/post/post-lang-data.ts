@@ -181,14 +181,14 @@ export const postsContent: { [x: string]: IPost[] } = {
           type: 'PARAGRAPH',
           content: `Zatrudniając ekipę remontową, warto upewnić się, że znajdują się w niej osoby
             posiadające odpowiednie kwalifikacje i uprawnienia (ma to szczególne znaczenie przy pracach
-                związanych z wszelkiego rodzaju instalacjami). Przy wyborze wykonawcy nie należy kierować się
-                głównie ceną usług – warto zaczerpnąć opinii znajomych czy też sprawdzić referencje.
-                Nie warto również oszczędzać na materiałach – należy zrobić dokładne rozeznanie na rynku
-                i zainwestować w materiały wysokiej jakości, które zapewnią nie tylko spektakularny, ale i
-                trwały efekt. Zakupy należy poprzedzić dokładnymi pomiarami i obliczeniami oraz konsultacjami
-                z ekipą remontową. Zadbajmy też o odpowiedni zapas materiałów, by uniknąć sytuacji,
-                gdy zabraknie ich w trakcie remontu i nie będzie możliwy ich zakup np. z powodu braku
-                asortymentu w hurtowniach.`,
+            związanych z wszelkiego rodzaju instalacjami). Przy wyborze wykonawcy nie należy kierować się
+            głównie ceną usług – warto zaczerpnąć opinii znajomych czy też sprawdzić referencje.
+            Nie warto również oszczędzać na materiałach – należy zrobić dokładne rozeznanie na rynku
+            i zainwestować w materiały wysokiej jakości, które zapewnią nie tylko spektakularny, ale i
+            trwały efekt. Zakupy należy poprzedzić dokładnymi pomiarami i obliczeniami oraz konsultacjami
+            z ekipą remontową. Zadbajmy też o odpowiedni zapas materiałów, by uniknąć sytuacji,
+            gdy zabraknie ich w trakcie remontu i nie będzie możliwy ich zakup np. z powodu braku
+            asortymentu w hurtowniach.`,
         },
         {
           type: 'HEADER',
@@ -197,15 +197,15 @@ export const postsContent: { [x: string]: IPost[] } = {
         {
           type: 'PARAGRAPH',
           content: `Gdy już mamy wszystko rozplanowane, należy odpowiednio przygotować mieszkanie,
-            by mogła do niego wkroczyć ekipa remontowa. Należy tak zorganizować przestrzeń, by nie
-            utrudniała pracy. Najlepiej wynieść meble, a jeśli nie jest to możliwe – odpowiednio je
-            przestawić. By uniknąć przykrych niespodzianek w postaci zabrudzeń czy uszkodzeń pozostawionych przedmiotów,
-            należy je dokładnie zabezpieczyć na przykład przy użyciu folii malarskiej oraz taśmy. Zabezpieczyć należy
-            nie tylko meble czy żyrandole, ale również drzwi, okna, parapety czy też pozostawione sprzęty.
-            Zaleca się jednak wyniesienie sprzętów AGD oraz RTV, ponieważ dostanie się kurzu i pyłów do układów elektronicznych
-            może negatywnie wpłynąć na ich funkcjonowanie. Jeśli mamy zwierzęta domowe, warto pomyśleć o zapewnieniu im lokum tymczasowego
-            np. u kogoś z rodziny, ponieważ obecność ekipy oraz hałasy spowodowane remontem mogą okazać się dla nich wyjątkowo stresujące.
-            Przy pracach o większym zakresie może być konieczne także całkowite opuszczenie mieszkania przez domowników.`,
+          by mogła do niego wkroczyć ekipa remontowa. Należy tak zorganizować przestrzeń, by nie
+          utrudniała pracy. Najlepiej wynieść meble, a jeśli nie jest to możliwe – odpowiednio je
+          przestawić. By uniknąć przykrych niespodzianek w postaci zabrudzeń czy uszkodzeń pozostawionych przedmiotów,
+          należy je dokładnie zabezpieczyć na przykład przy użyciu folii malarskiej oraz taśmy. Zabezpieczyć należy
+          nie tylko meble czy żyrandole, ale również drzwi, okna, parapety czy też pozostawione sprzęty.
+          Zaleca się jednak wyniesienie sprzętów AGD oraz RTV, ponieważ dostanie się kurzu i pyłów do układów elektronicznych
+          może negatywnie wpłynąć na ich funkcjonowanie. Jeśli mamy zwierzęta domowe, warto pomyśleć o zapewnieniu im lokum tymczasowego
+          np. u kogoś z rodziny, ponieważ obecność ekipy oraz hałasy spowodowane remontem mogą okazać się dla nich wyjątkowo stresujące.
+          Przy pracach o większym zakresie może być konieczne także całkowite opuszczenie mieszkania przez domowników.`,
         },
       ],
       tags: ['Remont', 'Hint'],
@@ -246,14 +246,14 @@ export const postsContent: { [x: string]: IPost[] } = {
           content: `Układanie płytek powinno być poprzedzone dokładnym rozplanowaniem ich układu
             oraz obliczeniami. Często konieczne jest bowiem przycięcie płytek, dlatego warto wcześniej
             o tym pomyśleć, by nie obniżyło to estetyki wykończenia (najlepiej, by zostały przyklejone
-                w miejscach mniej widocznych). Są dwie opcje rozpoczęcia układania płytek – zaczynamy całą
-                płytką od krawędzi ściany bądź od osi ściany. Pierwszy rząd układamy na listwach pomocniczych,
-                a dla zachowania równych odstępów wkładamy pomiędzy płytki krzyżyki dystansowe. Warto też
-                używać poziomicy i sprawdzać płaszczyznę, by móc na bieżąco korygować ewentualne odchyły płytek.
-                Przy użyciu gumowego młotka można je też docisnąć do podłoża, co da pewność równomiernego
-                rozłożenia kleju pod spodem i zwiększenia przyczepności. Podczas prac korzystamy z takich narzędzi
-                jak poziomica, krzyżyki dystansowe, specjalne narzędzia do cięcia płytek, kielnia prostokątna,
-                sznur do trasowania, młotek gumowy, packa zębata, listwy pomocnicze.`,
+            w miejscach mniej widocznych). Są dwie opcje rozpoczęcia układania płytek – zaczynamy całą
+            płytką od krawędzi ściany bądź od osi ściany. Pierwszy rząd układamy na listwach pomocniczych,
+            a dla zachowania równych odstępów wkładamy pomiędzy płytki krzyżyki dystansowe. Warto też
+            używać poziomicy i sprawdzać płaszczyznę, by móc na bieżąco korygować ewentualne odchyły płytek.
+            Przy użyciu gumowego młotka można je też docisnąć do podłoża, co da pewność równomiernego
+            rozłożenia kleju pod spodem i zwiększenia przyczepności. Podczas prac korzystamy z takich narzędzi
+            jak poziomica, krzyżyki dystansowe, specjalne narzędzia do cięcia płytek, kielnia prostokątna,
+            sznur do trasowania, młotek gumowy, packa zębata, listwy pomocnicze.`,
         },
         {
           type: 'HEADER',

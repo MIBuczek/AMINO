@@ -32,7 +32,6 @@ export class ContactComponent {
   }
 
   handleSubmit(myForm: NgForm): void {
-    console.log(myForm);
     if (!myForm.valid) {
       return;
     }

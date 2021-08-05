@@ -1,1 +1,37 @@
-<p>galery works!</p>
+<section class="gallery">
+  <div class="container">
+    <header class="section-header">
+      <h2>{{ galeryTextContent.header }}</h2>
+      <p>{{ galeryTextContent.description }}</p>
+    </header>
+    <div class="row gallery-container">
+      <div
+        class="col-lg-4 col-md-6 gallery-item filter-app"
+        *ngFor="let img of galeryTextContent.images"
+      >
+        <div class="gallery-wrap">
+          <img [src]="'../../../assets/galery/' + img" class="img-fluid" />
+          <div class="gallery-links">
+            <button (click)="showImg(img)" class="gallery-lightbox">
+              {{ galeryTextContent.buttonText }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-img" [class.show]="showPicture" *ngIf="showPicture">
+    <div class="gallery-details">
+      <button type="button" (click)="hideImg()" class="btn_close">
+        <fa-icon [icon]="faWindowClose"></fa-icon>
+      </button>
+      <button type="button" (click)="toggleImg('left')" class="btn_right">
+        <fa-icon [icon]="faChevronRight"></fa-icon>
+      </button>
+      <button type="button" (click)="toggleImg('right')" class="btn_left">
+        <fa-icon [icon]="faChevronLeft"></fa-icon>
+      </button>
+      <img [src]="'../../../assets/galery/' + showPicture" class="img-fluid" />
+    </div>
+  </div>
+</section>

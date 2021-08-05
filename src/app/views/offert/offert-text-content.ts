@@ -51,19 +51,16 @@ export const offerContent: { [x: string]: any } = {
         subLinks: [
           {
             name: 'Drzwi zewnętrzne',
-            rout: 'drzwi zewnetrzne',
+            rout: 'drzwi-zewnetrzne',
           },
-          {
-            name: 'Domy kontenerowe',
-            rout: 'domy-kontenerowe',
-          },
+
           {
             name: 'Drzwi wewnętrzne',
-            rout: 'drzwi-zewnetrzne',
+            rout: 'drzwi-wewnętrzne',
           },
           {
             name: 'Drzwi automatyczne',
-            rout: 'drzwi-automatyczne',
+            rout: 'drzwi-automatyczne-sprzedaz',
           },
           {
             name: 'Bramy garażowe',
@@ -71,11 +68,7 @@ export const offerContent: { [x: string]: any } = {
           },
           {
             name: 'Rolety zewnętrzne i wewętrzne',
-            rout: 'rolety-zewnetrzne',
-          },
-          {
-            name: 'Fotowoltaika',
-            rout: 'fotowoltanika',
+            rout: 'rolety-zewnetrzne-sprzedaz',
           },
           {
             name: 'Okna PVC i Aluminium',
@@ -165,19 +158,15 @@ export const offerContent: { [x: string]: any } = {
         subLinks: [
           {
             name: 'Exterior doors',
-            rout: 'drzwi zewnetrzne',
-          },
-          {
-            name: 'Container homes',
-            rout: 'domy-kontenerowe',
-          },
-          {
-            name: 'Internal doors',
             rout: 'drzwi-zewnetrzne',
           },
           {
+            name: 'Internal doors',
+            rout: 'drzwi-wewnętrzne',
+          },
+          {
             name: 'Automatic doors',
-            rout: 'drzwi-automatyczne',
+            rout: 'drzwi-automatyczne-sprzedaz',
           },
           {
             name: 'Garage doors',
@@ -185,11 +174,7 @@ export const offerContent: { [x: string]: any } = {
           },
           {
             name: 'External and internal roller blinds',
-            rout: 'rolety-zewnetrzne',
-          },
-          {
-            name: 'Photovoltaics',
-            rout: 'fotowoltanika',
+            rout: 'rolety-zewnetrzne-sprzedaz',
           },
           {
             name: 'PVC and aluminium windows',
