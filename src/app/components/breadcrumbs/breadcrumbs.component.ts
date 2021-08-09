@@ -24,7 +24,12 @@ export class BreadcrumbsComponent {
     if (checkUrl === 0) {
       this.actualPage = 'Strona Główna';
     } else if (checkUrl === 1) {
-      this.actualPage = url.split('/')[1];
+      const index = url.lastIndexOf('=');
+      if (index > -1) {
+        this.actualPage = url.substring(index + 1).replace('-', ' ');
+      } else {
+        this.actualPage = url.split('/')[1];
+      }
     } else {
       const subPageTitle = url.split('/')[2];
       this.actualPage = ['1', '2', '3', '4'].includes(subPageTitle)
@@ -38,7 +43,21 @@ export class BreadcrumbsComponent {
     if (!pathArray.length) {
       this.path = [];
     } else if (pathArray.length === 1) {
-      this.path = [{ title: pathArray[0], path: pathArray[0] }];
+      console.log(pathArray);
+      const index = pathArray[0].indexOf('?');
+      if (index > -1) {
+        const subIndex = pathArray[0].lastIndexOf('=');
+        const modeledPath = pathArray[0].substring(0, index);
+        const secondTitle = pathArray[0]
+          .substring(subIndex + 1)
+          .replace('-', ' ');
+        this.path = [
+          { title: modeledPath, path: modeledPath },
+          { title: secondTitle, path: pathArray[0] },
+        ];
+      } else {
+        this.path = [{ title: pathArray[0], path: pathArray[0] }];
+      }
     } else {
       this.path = [
         { title: pathArray[0], path: pathArray[0] },

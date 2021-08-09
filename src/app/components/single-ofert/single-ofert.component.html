@@ -1,6 +1,6 @@
-<section class="offer">
+<section class="offer sticky-top">
   <div class="container">
-    <article class="entry offer-single">
+    <article class="wrapper offer-single">
       <h2 class="offer-title">
         {{ currentOffert.title }}
       </h2>
@@ -25,7 +25,20 @@
           {{ item }}
         </p>
       </div>
-      <div class="offer-contact">Kontakt</div>
+      <div class="offer-contact">
+        <p>
+          <fa-icon [icon]="faUser"></fa-icon>
+          {{ currentOffert.contact.person }}
+        </p>
+        <p>
+          <fa-icon [icon]="faEnvelope"></fa-icon>
+          {{ currentOffert.contact.email }}
+        </p>
+        <p>
+          <fa-icon [icon]="faPhone"></fa-icon>
+          {{ currentOffert.contact.phone }}
+        </p>
+      </div>
     </article>
   </div>
 </section>

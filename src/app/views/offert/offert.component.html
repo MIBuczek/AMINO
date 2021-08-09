@@ -1,10 +1,14 @@
 <main>
   <section class="blog">
+    <header class="section-header">
+      <h2>{{ offerHeaderContent.header }}</h2>
+      <p>{{ offerHeaderContent.subHeader }}</p>
+    </header>
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
           <div class="sidebar">
-            <ng-container *ngFor="let item of offerTextContent.navigation">
+            <ng-container *ngFor="let item of offerTextContent">
               <h3 class="sidebar-title">
                 {{ item.title }}
               </h3>
@@ -26,7 +30,33 @@
         <div class="col-lg-6 entries">
           <app-single-ofert></app-single-ofert>
         </div>
-        <div class="col-lg-3 entries">Galeria</div>
+        <aside class="col-lg-3">
+          <div class="sidebar sticky-top">
+            <div class="box">
+              <img
+                class="img-fluid"
+                [src]="'../../../assets/galery/' + offerGalleryContent.img"
+                alt="Sprzedaż"
+              />
+              <h3 class="text-center">{{ offerGalleryContent.title }}</h3>
+              <p class="text-center">{{ offerGalleryContent.body }}</p>
+              <div class="text-center text-lg-start">
+                <a
+                  class="
+                    btn-read-more
+                    d-inline-flex
+                    align-items-center
+                    justify-content-center
+                    align-self-center
+                  "
+                  routerLink="/galeria"
+                  ><span> {{ offerGalleryContent.buttonText }} </span
+                  ><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </section>

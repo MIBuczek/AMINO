@@ -5,6 +5,7 @@ import {
   ISingleContent,
   singleOfferContent,
 } from './single-ofert-text-content';
+import { faUser, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-single-ofert',
@@ -13,6 +14,11 @@ import {
 })
 export class SingleOfertComponent {
   public offertUrl: string | null = null;
+
+  public faUser = faUser;
+  public faPhone = faPhone;
+  public faEnvelope = faEnvelope;
+
   constructor(
     private route: ActivatedRoute,
     public langSwitcher: LangSwitcherService

@@ -27,6 +27,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FormsModule } from '@angular/forms';
 import { SingleOfertComponent } from './components/single-ofert/single-ofert.component';
 import { GaleryComponent } from './views/galery/galery.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { GaleryComponent } from './views/galery/galery.component';
     FontAwesomeModule,
     SharedModule,
     FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent, CarouselComponent],

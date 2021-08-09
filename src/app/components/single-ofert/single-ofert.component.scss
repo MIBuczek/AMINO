@@ -1,7 +1,6 @@
 .offer {
-  .entry {
+  .wrapper {
     padding: 30px;
-    margin-bottom: 60px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     .offer-title {
       font-size: 28px;
@@ -18,11 +17,29 @@
       h3 {
         line-height: 28px;
         font-size: 20px;
-        color: #012970;
+        color: #4154f1;
       }
       p {
         line-height: 24px;
       }
     }
+    .offer-contact {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #e6e6e6;
+      font-size: 14px;
+      padding: 10px 0;
+      p {
+        padding: 10px 0;
+        margin-bottom: 0;
+        fa-icon {
+          color: #4154f1;
+        }
+      }
+    }
   }
+}
+
+.sticky-top {
+  top: 40px;
 }

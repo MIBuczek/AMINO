@@ -6,14 +6,21 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class LangSwitcherService {
   public currentLang = new BehaviorSubject('PL');
-
+  public isToggleing = new BehaviorSubject(false);
   constructor() {}
 
   langToggle(): void {
+    this.isToggleing.next(true);
     if (this.currentLang.getValue() === 'PL') {
-      this.currentLang.next('EN');
+      setTimeout(() => {
+        this.currentLang.next('EN');
+        this.isToggleing.next(false);
+      }, 800);
     } else {
-      this.currentLang.next('PL');
+      setTimeout(() => {
+        this.currentLang.next('PL');
+        this.isToggleing.next(false);
+      }, 800);
     }
   }
 

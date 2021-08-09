@@ -1,19 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component } from '@angular/core';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { offerContent } from './offert-text-content';
+import {
+  IGallery,
+  IHeader,
+  INavOffer,
+  offerContent,
+  offertGaleryContent,
+  offertHeader,
+} from './offert-text-content';
 
 @Component({
   selector: 'app-offert',
   templateUrl: './offert.component.html',
   styleUrls: ['./offert.component.scss'],
 })
-export class OffertComponent implements OnInit {
+export class OffertComponent {
   constructor(public langSwitcher: LangSwitcherService) {}
 
-  get offerTextContent(): any {
+  get offerHeaderContent(): IHeader {
+    return offertHeader[this.langSwitcher.getCurrentLang];
+  }
+  get offerTextContent(): INavOffer[] {
     return offerContent[this.langSwitcher.getCurrentLang];
   }
 
-  ngOnInit(): void {}
+  get offerGalleryContent(): IGallery {
+    return offertGaleryContent[this.langSwitcher.getCurrentLang];
+  }
 }
