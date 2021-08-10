@@ -19,7 +19,6 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from './shared/shared.module';
 import { PartnersComponent } from './components/partners/partners.component';
-import { TextComponent } from './components/text/text.component';
 import { CardComponent } from './components/card/card.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 import { PostComponent } from './components/post/post.component';
@@ -45,7 +44,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NotFoundComponent,
     CarouselComponent,
     PartnersComponent,
-    TextComponent,
     CardComponent,
     BreadcrumbsComponent,
     PostComponent,

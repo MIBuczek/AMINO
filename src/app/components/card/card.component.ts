@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { cardContent } from './card-lang-data';
+import { cardContent, ICardContent } from './card-lang-data';
 
 @Component({
   selector: 'app-card',
@@ -8,11 +8,9 @@ import { cardContent } from './card-lang-data';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  public cardContent = cardContent;
-
   constructor(public langSwitcher: LangSwitcherService) {}
 
-  get currentLang(): string {
-    return this.langSwitcher.currentLang.getValue();
+  get cardContent(): ICardContent {
+    return cardContent[this.langSwitcher.getCurrentLang];
   }
 }

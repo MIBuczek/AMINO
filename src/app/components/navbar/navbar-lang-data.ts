@@ -1,4 +1,4 @@
-interface INavItem {
+export interface INavItem {
   name: string;
   route: string;
   children?: INavItem[];

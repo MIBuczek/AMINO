@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { images, partnersContent } from './partners-lang.data';
+import { images, IPartner, partnersContent } from './partners-lang.data';
 
 @Component({
   selector: 'app-partners',
@@ -8,7 +8,10 @@ import { images, partnersContent } from './partners-lang.data';
   styleUrls: ['./partners.component.scss'],
 })
 export class PartnersComponent {
-  public partnersContent = partnersContent;
   public images = images;
   constructor(public langSwitcher: LangSwitcherService) {}
+
+  get partnersTextContent(): IPartner {
+    return partnersContent[this.langSwitcher.getCurrentLang];
+  }
 }

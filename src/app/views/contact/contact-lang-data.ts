@@ -1,4 +1,29 @@
-export const contactContent: { [x: string]: any } = {
+export interface IContact {
+  header: string;
+  subHeader: string;
+  hAddress: string;
+  address: string[];
+  hPhone: string;
+  phones: string[];
+  hEmial: string;
+  emails: string[];
+  hOpen: string;
+  hours: string[];
+  form: {
+    name: string;
+    email: string;
+    temat: string;
+    message: string;
+    error: string;
+  };
+  police: string;
+  policeError: string;
+  buttonText: string;
+  headerMap: string;
+  subHeaderMap: string;
+}
+
+export const contactContent: { [x: string]: IContact } = {
   PL: {
     header: 'kontakt',
     subHeader: 'Skontaktuj sie z nami',

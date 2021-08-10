@@ -1,4 +1,11 @@
-export const galeryContent: { [x: string]: any } = {
+export interface IGallery {
+  header: string;
+  description: string;
+  buttonText: string;
+  images: string[];
+}
+
+export const galeryContent: { [x: string]: IGallery } = {
   PL: {
     header: 'Galeria',
     description: 'Sprawdz niektóre z naszych realizacji',

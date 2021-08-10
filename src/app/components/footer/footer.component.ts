@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { footerContent } from './footer-lang-data';
+import { footerContent, IFooterContent } from './footer-lang-data';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +8,9 @@ import { footerContent } from './footer-lang-data';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  public footerContent = footerContent;
   constructor(public langSwitcher: LangSwitcherService) {}
+
+  get footerContent(): IFooterContent {
+    return footerContent[this.langSwitcher.getCurrentLang];
+  }
 }

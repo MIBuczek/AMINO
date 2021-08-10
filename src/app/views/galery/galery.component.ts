@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { galeryContent } from './galery-lang-data';
+import { galeryContent, IGallery } from './galery-lang-data';
 import {
   faChevronRight,
   faChevronLeft,
@@ -21,7 +21,7 @@ export class GaleryComponent {
 
   constructor(public langSwitcher: LangSwitcherService) {}
 
-  get galeryTextContent(): any {
+  get galeryTextContent(): IGallery {
     return galeryContent[this.langSwitcher.getCurrentLang];
   }
 

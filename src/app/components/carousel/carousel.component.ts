@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { carouselContent } from './carousel-lang-data';
+import { carouselContent, ICaruselContent } from './carousel-lang-data';
 
 @Component({
   selector: 'app-carousel',
@@ -10,13 +10,15 @@ import { carouselContent } from './carousel-lang-data';
   providers: [NgbCarouselConfig],
 })
 export class CarouselComponent {
-  public carouselContent = carouselContent;
-
   constructor(
     public config: NgbCarouselConfig,
     public langSwitcher: LangSwitcherService
   ) {
     config.interval = 3000;
     config.pauseOnHover = false;
+  }
+
+  get carouselContent(): ICaruselContent[] {
+    return carouselContent[this.langSwitcher.getCurrentLang];
   }
 }

@@ -9,7 +9,6 @@ import { IPost, postsContent } from './post-lang-data';
   styleUrls: ['./post.component.scss'],
 })
 export class PostComponent {
-  public postsContent = postsContent;
   public currentPost: any;
 
   constructor(
@@ -25,7 +24,7 @@ export class PostComponent {
   }
 
   getCurrentPost(id: number, lang: string): void {
-    const [post] = this.postsContent[lang].filter(
+    const [post] = postsContent[lang].filter(
       (postItem: IPost) => postItem.id === id
     );
     this.currentPost = post;

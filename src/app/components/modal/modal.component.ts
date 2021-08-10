@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
 import { IModalContent, modalContent } from './modal-lang-data';
@@ -6,7 +7,6 @@ import {
   faTimes,
   faExclamationCircle,
 } from '@fortawesome/free-solid-svg-icons';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-modal',

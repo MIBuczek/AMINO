@@ -1,14 +1,13 @@
-<!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
   <div class="container">
     <header class="section-header">
-      <h2>{{ cardContent[currentLang].title }}</h2>
-      <p>{{ cardContent[currentLang].description }}</p>
+      <h2>{{ cardContent.title }}</h2>
+      <p>{{ cardContent.description }}</p>
     </header>
     <div class="row gy-4 portfolio-container">
       <div
         class="col-lg-4 col-md-6 p-2 portfolio-item filter-web"
-        *ngFor="let item of cardContent[currentLang].cards"
+        *ngFor="let item of cardContent.cards"
       >
         <div class="portfolio-wrap">
           <img

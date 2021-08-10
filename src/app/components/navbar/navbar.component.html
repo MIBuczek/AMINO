@@ -24,7 +24,7 @@
     <nav id="navbar" class="navbar">
       <ul>
         <li
-          *ngFor="let item of textLangContent[currentLang]"
+          *ngFor="let item of navbarTextContent"
           [class.dropdown]="item?.children?.length"
         >
           <a
@@ -55,7 +55,7 @@
     <nav id="navbar" class="navbar navbar-mobile" [class.show]="isActive">
       <ul (click)="toggle()">
         <li
-          *ngFor="let item of textLangContent[currentLang]"
+          *ngFor="let item of navbarTextContent"
           [class.dropdown]="item?.children?.length"
         >
           <a

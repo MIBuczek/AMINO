@@ -1,4 +1,18 @@
-export const footerContent: { [x: string]: any } = {
+export interface INavItem {
+  name: string;
+  route: string;
+}
+
+export interface IFooterContent {
+  comapanyDescription: string;
+  titleAbout: string;
+  titleInformacion: string;
+  titleContact: string;
+  menuItems: INavItem[];
+  rights: string;
+}
+
+export const footerContent: { [x: string]: IFooterContent } = {
   PL: {
     comapanyDescription: `
     Ponad 20 lat doświadczenie w branży oraz dbanie o zadowolenie

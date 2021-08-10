@@ -7,11 +7,11 @@
             <span>Animo</span>
           </a>
           <p>
-            {{ footerContent[langSwitcher.getCurrentLang].comapanyDescription }}
+            {{ footerContent.comapanyDescription }}
           </p>
         </div>
         <div class="col-lg-3 col-6 footer-links">
-          <h4>{{ footerContent[langSwitcher.getCurrentLang].titleAbout }}</h4>
+          <h4>{{ footerContent.titleAbout }}</h4>
           <a routerLink="/contact">
             <img
               src="../../../assets/other/mapa.jpg"
@@ -22,14 +22,10 @@
         </div>
         <div class="col-lg-2 col-6 footer-links">
           <h4>
-            {{ footerContent[langSwitcher.getCurrentLang].titleInformacion }}
+            {{ footerContent.titleInformacion }}
           </h4>
           <ul>
-            <li
-              *ngFor="
-                let item of footerContent[langSwitcher.getCurrentLang].menuItems
-              "
-            >
+            <li *ngFor="let item of footerContent.menuItems">
               <a [routerLink]="item.route"> {{ item.name }} </a>
             </li>
           </ul>
@@ -37,7 +33,7 @@
         <div
           class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
         >
-          <h4>{{ footerContent[langSwitcher.getCurrentLang].titleContact }}</h4>
+          <h4>{{ footerContent.titleContact }}</h4>
           <p>
             ul. Starodworska 4<br />
             Mokry Dwór<br />
@@ -54,7 +50,7 @@
   <div class="container">
     <div class="copyright">
       &copy;Copyright: <strong><span>ANIMO FHU Sas Krystyn</span></strong
-      >. {{ footerContent[langSwitcher.getCurrentLang].rights }}.
+      >. {{ footerContent.rights }}.
     </div>
     <div class="credits">Created by <a href="#">GEKON Web Services</a></div>
   </div>

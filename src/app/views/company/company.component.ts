@@ -14,7 +14,6 @@ import {
   styleUrls: ['./company.component.scss'],
 })
 export class CompanyComponent {
-  public companyContent = companyContent;
   public faClock = faClock;
   public faGem = faGem;
   public faUniversity = faUniversity;

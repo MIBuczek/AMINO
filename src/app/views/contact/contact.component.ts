@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { contactContent } from './contact-lang-data';
+import { contactContent, IContact } from './contact-lang-data';
 import {
   faClock,
   faPhone,
@@ -27,7 +27,7 @@ export class ContactComponent {
 
   constructor(public langSwitcher: LangSwitcherService) {}
 
-  get contactTextContent(): any {
+  get contactTextContent(): IContact {
     return contactContent[this.langSwitcher.getCurrentLang];
   }
 

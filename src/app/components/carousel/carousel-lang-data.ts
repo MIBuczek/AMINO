@@ -1,4 +1,12 @@
-export const carouselContent: { [x: string]: any } = {
+export interface ICaruselContent {
+  header: string;
+  description: string;
+  img: string;
+  rout: string;
+  buttonText: string;
+}
+
+export const carouselContent: { [x: string]: ICaruselContent[] } = {
   PL: [
     {
       header: 'Drzwi automatyczne',

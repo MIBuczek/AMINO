@@ -25,11 +25,11 @@ export const modalContent: { [x: string]: IModalContent } = {
       error: 'To pole jest wymagane',
     },
     police: `
-          Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
-          złożenia mi zapytania ofertowego lub oferty, zgodnie z ustawą z
-          dnia 29.08.1997r. o ochronie danych osobowych (Dz. U. z 2002
-          roku, nr 101, poz. 926 tekst jednolity z późniejszymi zmianami).
-          `,
+      Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
+      złożenia mi zapytania ofertowego lub oferty, zgodnie z ustawą z
+      dnia 29.08.1997r. o ochronie danych osobowych (Dz. U. z 2002
+      roku, nr 101, poz. 926 tekst jednolity z późniejszymi zmianami).
+      `,
     policeError:
       'Przed wysłaniem wiadomości prosze wyrazic zgode na przetworzenie danych',
     buttonText: 'Wyślij wiadomość',

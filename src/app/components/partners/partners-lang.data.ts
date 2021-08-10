@@ -1,4 +1,9 @@
-export const partnersContent: { [x: string]: any } = {
+export interface IPartner {
+  shorter: string;
+  description: string;
+}
+
+export const partnersContent: { [x: string]: IPartner } = {
   PL: {
     shorter: 'Nasi Klienci',
     description: 'Firmy z którymi współpracujemy',

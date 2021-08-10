@@ -1,4 +1,18 @@
-export const cardContent: { [x: string]: any } = {
+export interface ICard {
+  header: string;
+  shortTest: string;
+  img: string;
+  rout?: string;
+  buttonText: string;
+}
+
+export interface ICardContent {
+  title: string;
+  description: string;
+  cards: ICard[];
+}
+
+export const cardContent: { [x: string]: ICardContent } = {
   PL: {
     title: 'Nasza oferta',
     description: 'Sprawdz czym sie zajmujemy',

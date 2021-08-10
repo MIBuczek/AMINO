@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
-import { navbarContent } from './navbar-lang-data';
+import { INavItem, navbarContent } from './navbar-lang-data';
 
 @Component({
   selector: 'app-navbar',
@@ -8,13 +8,16 @@ import { navbarContent } from './navbar-lang-data';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  public textLangContent = navbarContent;
   public isActive = false;
 
   constructor(public langSwitcher: LangSwitcherService) {}
 
+  get navbarTextContent(): INavItem[] {
+    return navbarContent[this.langSwitcher.getCurrentLang];
+  }
+
   get currentLang(): string {
-    return this.langSwitcher.currentLang.getValue();
+    return this.langSwitcher.getCurrentLang;
   }
 
   @HostListener('window:scroll', ['$event'])
