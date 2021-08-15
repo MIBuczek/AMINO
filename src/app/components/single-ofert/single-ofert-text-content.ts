@@ -894,10 +894,895 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
         {
           type: 'PARAGRAPH',
-          content: `ducenci dostarczają bogaty wybór łóżek w ścianie czy też szafie w różnych stylach oraz wymiarach,
+          content: `Producenci dostarczają bogaty wybór łóżek w ścianie czy też szafie w różnych stylach oraz wymiarach,
           dzięki czemu będą się one idealnie komponować z wnętrzami urządzonymi zarówno w klasycznym, jak i nowoczesnym stylu.
           To rozwiązanie nie tylko do właścicieli małych mieszkań, ale i dla miłośników maksymalnie funkcjonalnego zagospodarowania
           przestrzeni.`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+  },
+  EN: {
+    main: {
+      title: 'Offer',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Animo company offers professional services related to installation
+          and service of a wide range of doors, gates, roller shutters and smoke extraction systems.
+          State-of-the-art solutions ensure reliability and extraordinary
+          durability of our products. A wide range of design allows
+          maximum adaptation to even the most exaggerated needs or
+          or customer preferences. Animo products offer safety,
+          modernity and individuality, while maintaining simplicity
+          simplicity and good taste. Our products are covered by
+          a reliable service that responds immediately to any reported defect.`,
+        },
+      ],
+      contact: {
+        person: 'Biuro obsługi',
+        email: 'animo@animo.wroclaw.pl',
+        phone: '+48 601 956 901',
+      },
+    },
+    ['drzwi-automatyczne']: {
+      title: 'Automatic doors',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Automatic doors are nowadays a basic element of equipment in
+          This is both convenient and at the same time safe. It is a comfortable and modern
+          It is a comfortable and modern solution used both outside and inside buildings.
+          Rich design makes it possible to adjust doors to the architecture of the building or its interior.
+          architecture of the building or its interior design. Advanced automatic mechanisms offer
+          possibilities of intelligent operation and independent configuration, depending on the type of mounted wings.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `We provide service and installation of automatic doors of companies :`,
+        },
+        {
+          type: 'HEADER',
+          content: 'GEZE, ESCO, TORMAX, RECORD, BESAM, DORMA.',
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['bramy-garazowe']: {
+      title: 'Garage doors',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Gates are a key element of every garage, because they perform the function of protection against both
+          uninvited guests and unfriendly weather conditions. Customers who decide
+          choosing Animo brand garage doors, are sure of their solidity and reliability.
+          Huge possibilities of personalization make it possible to manufacture a finished product according to specific
+          requirements of the buyer - both in terms of dimensions and design.
+          Our offer includes, among others, sectional garage doors, rolling garage doors,
+          overhead garage doors or swing garage doors.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `In our offer to purchase you will find garage doors from companies:`,
+        },
+        {
+          type: 'HEADER',
+          content: `Wiśniowski, Krispol, Wayne-Dalton.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `We provide service and installation of garage doors of all manufacturers`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['rolety-zewnetrzne']: {
+      title: 'External and internal roller blinds',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Roller blinds provide excellent protection against external factors. They provide very good thermal insulation
+          providing energy savings. They insulate acoustically, protect against noise and external loads.
+          They protect against wind, rain, excessive sunlight. Undoubtedly, the main advantage of external roller blinds is
+          they ensure the safety of household members, thanks to anti-burglary protection and strong armouring
+          make it much more difficult to break in and protect against vandalism.`,
+        },
+        {
+          type: 'LIST',
+          headerList:
+            'We offer various types of building systems for external roller shutters:',
+          items: [
+            `Standard system - with visible rectangular or oval window box, mounted to the existing window frame or on the wall in front of it.
+            on the wall in front of it. Also offered in a version with integrated insect screen.`,
+            `Overlay system - a solution used during window joinery replacement. The roller shutter system is connected with the window or door frame
+            The roller shutter system is connected with the window or door frame by means of an adaptation bar. Inspection flap on the back side of the box or from the bottom (for building in).
+            An additional advantage of the system is sealing the guides and the use of noise-making brushes.
+            The shutter boxes are insulated inside and equipped with a profile supporting an external plaster.
+            It is also offered in a version with an integrated insect screen.`,
+            `The concealed system - fixed in the wall recess above the window opening, is a modern solution for newly erected buildings,
+            as well as in existing buildings, in a word for all those who are not indifferent to energy efficiency.`,
+            `We offer different variants of controls for external roller shutters:`,
+            `Manual drive - tape or cord retractor, crank retractor, crank gear.`,
+            'Spring Drive.',
+            'Electric drive - wire and radio control (individual, group or central control).',
+            `An unquestionable advantage of external roller blinds is their function of additional protection against uninvited guests.
+            External roller shutters can be equipped with a number of blockades protecting against lifting the armour from outside:`,
+            `Manual latches - which is a manual safety device mounted in the bottom bar.`,
+            `Automatic armour closing device - automatically blocks the armour when it is completely lowered and unblocks it when opened by means of
+            tape or cord, used in roller blinds with manual operation.`,
+            `Basquil lock - it is a lock mounted in the end strip with a keyed cylinder on both sides.
+            The solution used mainly in roller blinds with spring drive.`,
+          ],
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['drzwi-drewniane']: {
+      title: 'Wooden front doors and interior doors',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Doors are one of the most important, yet rarely appreciated elements of the interior.
+          Properly selected and installed, they will serve us for years, so it is worth considering their selection.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `In our offer you will find a very wide selection of doors: we propose among others wooden doors,
+          We offer wooden doors, internal doors, external doors and single and double leaf doors. Thanks to our professional installation the doors will
+          work for many years, and our service will quickly deal with any, even the smallest fault.`,
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['bramy-przemyslowe']: {
+      title: 'Industrial doors',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Animo industrial doors are the perfect solution for production halls and warehouses,
+          showrooms, workshops or car washes. They are characterized primarily by modernity
+          and safety and durability. The offer includes both carefully crafted sectional doors,
+          as well as rolling doors. Each of them can be freely adjusted to individual customer preferences.`,
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['systemy-oddymiania']: {
+      title: 'Smoke ventilation systems',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Professional smoke ventilation systems play an important role in case of fire.
+          They allow smoke and excessive heat to be removed from the affected area, facilitating
+          They also reduce the temperature inside the building, which can threaten the stability of the
+          building structure. Thanks to such actions, the firefighting action runs more efficiently and safely,
+          and material losses are reduced.`,
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['montaz-okna-pcv']: {
+      title: 'PVC and aluminium windows : VEKA',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Everyone wants to live nicely, feel good and safe in their four corners.
+          However, there is no one universal solution. It is an individual issue,
+          It depends on tastes, preferences, lifestyle and needs of household members.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Today's market meets even the most demanding needs and expectations.
+          Therefore, our company cooperates with many manufacturers, so in our offer you will find
+          wide range of assortment in terms of color and functionality.`,
+        },
+        {
+          type: 'HEADER',
+          content: `INSTALLATION OF WINDOWS IS CARRIED OUT ONLY BY AUTHORIZED GROUPS.`,
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['uslugi']: {
+      title: 'Repair services',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `In case of appearing a defect or damage to a door, the Animo company provides professional
+          advice and service. Our specialists, after getting acquainted with the details of the defect, immediately undertake the necessary
+          repairs at the customer's premises. The service has its own spare parts, which significantly reduces repair time. In case
+          the defect cannot be repaired, the Customer shall be presented with the offer of Animo company, together with the possibility of
+          products to other elements of interior design of a house, apartment or hall.`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Door repair, installation, service:',
+          items: ['Aluminum', 'PCW', 'Wooden', 'Steel', 'Automatic'],
+        },
+        {
+          type: 'LIST',
+          headerList: 'Window repair, installation, service:',
+          items: [
+            'Aluminum',
+            'PCW',
+            'Wooden',
+            'Steel',
+            'Repair, installation, maintenance of roller shutters',
+          ],
+        },
+        {
+          type: 'LIST',
+          headerList: 'General construction work:',
+          items: [
+            'Masonry',
+            'Plastering',
+            'Painting',
+            'Insulation',
+            'Floor screed',
+            'Tiling and terracotta',
+            'Forging, alterations, demolition',
+          ],
+        },
+        {
+          type: 'LIST',
+          headerList: 'Plumbing work:',
+          items: [
+            'Emergency repairs',
+            'New installations',
+            'Alteration of existing installations',
+            'Cleaning and repiping pipes up to 150 mm in diameter',
+            'Emergency repairs',
+            'New installations',
+            'Conversion of existing installations',
+            'Cleaning and repiping of installations up to 150mm in diameter',
+          ],
+        },
+        {
+          type: 'LIST',
+          headerList: 'Sewer Cleaning:',
+          items: [
+            `Electric pipe and drain cleaning machine - REMS Cobra 22/32 for cleaning of pipes Ø 20 - 150 mm, with connecting spirals,
+            Cleaning chains or cutters for efficient, fast work. Even in difficult situations,
+            e.g. with hard stubs and hard deposits`,
+            'Electric Pressure Pusher',
+            `RIDGID water jetter for drain cleaning. Flexible, lightweight pressure hose
+            penetrates through blockages of sewage sludge, soap and grease. When the hose is pulled out, the system is
+            When the hose is pulled out, the system is flushed under pressure, which flushes out the deposits and restores the patency of the sewer.`,
+          ],
+        },
+        {
+          type: 'LIST',
+          headerList: 'Electrical work up to 1 KV:',
+          items: ['Emergency repairs', 'New electrical installations'],
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['drzwi-zewnetrzne']: {
+      title: 'Wooden exterior doors',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Cooperation with leading door manufacturers, offering the highest quality of their products is
+          unquestionable asset of our company. Sales conducted by us, abounding in a rich offer in which we can
+          which includes wooden doors, gives our customers the confidence to meet even the most demanding conditions.
+          Individual approach to each Contractor allows maximum personalization of ordered goods,
+          which guarantees a successful transaction.`,
+        },
+        {
+          type: 'HEADER',
+          content: `ORDER A MEASUREMENT!`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `We encourage you to contact our consultants to arrange the details of your order.`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['drzwi-wewnetrzne']: {
+      title: 'Internal doors (with assembly) Wrocław',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Animo company has been operating in Wroclaw since 1992. It deals with comprehensive service and installation
+          automatic and industrial doors, garage doors, roller shutters and smoke removal systems.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `With over twenty years of practice, our company has gained professional experience
+          in the industry we work in. Animo is a flexible company and always acts in the best interests of our customers.
+          We offer our customers a wide range of choices, offering entrance doors and various interior doors, including automatic doors.
+          Our doors are of the highest quality and careful workmanship thanks to which they are characterized by elegant design,
+          tightness and durability. Customers who opt for them will serve in perfect condition for many years, which is undoubtedly their main advantage.
+          is their main advantage.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `The goods that we offer our customers are of course doors with installation. Wroclaw has already convinced itself many times,
+          that this service is performed quickly, efficiently and reliably. Animo company also cooperates with several other
+          companies, which in the same industry occupy a leading place in the market, which greatly increases our flexibility and ability
+          and ability to adapt to customer needs. This allows us to offer you the best interior doors on the market.
+          Wroclaw has been proud of Animo company for many years. During this time the company has gained a significant number of customers,
+          and thanks to the satisfaction of contractors their number is still growing. Our doors with installation are a high-class service, which is constantly growing in popularity among customers.
+          constantly growing popularity among customers.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `We always provide our services reliably and professionally because we care about trust and satisfaction of our customers.
+          We do not treat our work only as a duty and we devote ourselves to making doors with passion and devotion. Thanks to cooperation with
+          many leading companies we provide top class interior doors made of the highest quality products.
+          Wroclaw has already convinced itself more than once that this is the best offer on the local market. We invite you to contact and cooperate with us.`,
+        },
+        {
+          type: 'HEADER',
+          content: `ORDER A MEASUREMENT!`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `We encourage you to contact our consultants to arrange the details of your order.`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['drzwi-automatyczne-sprzedaz']: {
+      title: 'Automatic doors',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Automatic doors are nowadays a basic element of equipment in service and office facilities, among others.
+          It is a comfortable and modern solution used both outside and inside buildings. Rich design
+          rich design makes it possible to freely adjust the installed doors to the architecture of the building or its interior.
+          Advanced automatic mechanisms offer the possibility of intelligent operation and independent configuration,
+          Depending on the type of mounted wings.`,
+        },
+        {
+          type: 'HEADER',
+          content: `ZORDER A MEASUREMENT!`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `In our offer you can buy automatic doors and systems for them from`,
+        },
+        {
+          type: 'HEADER',
+          content: `GEZE`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Swing door systems:',
+          items: ['TSA', 'EMD', 'ECturn'],
+        },
+        {
+          type: 'LIST',
+          headerList: 'Sliding door systems',
+          items: ['Slimdrive', 'ECdrive', 'Powerdrive', 'TSA 360 NT'],
+        },
+        {
+          type: 'LIST',
+          headerList: 'Revolving doors:',
+          items: [
+            'TSA 325 NT  manual drive',
+            'TSA 325 NT „Push&Go"',
+            'TSA 325 NT automatic',
+          ],
+        },
+        {
+          type: 'HEADER',
+          content: `ESCO`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Products:',
+          items: [
+            'Swing Door Automation - Escomatic',
+            'Escomatic EMSL-T (EscoMatic SLiding Telescopic)',
+            'Escomatic EMSL (EscoMatic SLiding)',
+          ],
+        },
+        {
+          type: 'HEADER',
+          content: `TORMAX`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Products:',
+          items: [
+            'Sliding doors',
+            'Swinging doors',
+            'Revolving doors',
+            'Folding doors',
+          ],
+        },
+        {
+          type: 'HEADER',
+          content: `RECORD`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Products:',
+          items: [
+            'Record 20',
+            'Record 20 RED',
+            'FULL POWER (standard)',
+            'Standard 2, and 4 leaf folding doors',
+            'LOW ENERGY',
+          ],
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['bramy-garazowe-sprzedaz']: {
+      title: 'Garage doors',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `We offer products that not only affect the level of security of household members and their property,
+          but also protect your vehicle against adverse weather conditions that could damage them.
+          Garage doors, as they are herein referred to, must be characterized by the highest care in workmanship and extraordinary solidity - only
+          only then they will be able to serve you for years without the need to spend additional money on their repair.
+          Such are the products offered by us of the Wiśniowski, Krispol and Wayne-Dalton brands.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `If you are from Wroclaw or the surrounding area, we invite you to familiarize yourself with our offer. As part of our services
+          we take measurements, allowing for personalization of garage door to your needs and aesthetic preferences.
+          In addition, we also deal with the installation and service of our products.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Below are the types of products offered by our manufacturers.`,
+        },
+        {
+          type: 'HEADER',
+          content: `Wiśniowski`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Products:',
+          items: [
+            'Segmented',
+            'Roller shutter',
+            'Tilt',
+            'Turn-On',
+            'DST steel doors',
+          ],
+        },
+        {
+          type: 'HEADER',
+          content: `Krispol`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Products:',
+          items: [
+            'Segmented - steel',
+            'Segmented - aluminium',
+            'Segments with increased resistance',
+            'Roll-up',
+          ],
+        },
+        {
+          type: 'HEADER',
+          content: `Wayne-Dalton`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Products:',
+          items: ['9100 Comfort', '9600 Classic', '9500 Thermo', '9700 Design'],
+        },
+      ],
+      contact: {
+        person: 'Marcin Korzeniewski',
+        email: 'animos.marcin@gmail.com',
+        phone: '+48 607 766 901',
+      },
+    },
+    ['rolety-zewnetrzne-sprzedaz']: {
+      title: 'Internal and external roller blinds',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Products offered by Animo from Wrocław are a guarantee of quality and durability, even under heavy use.
+          Our offer consists only of products from reliable manufacturers, which ensures maximum reliability and customer satisfaction.
+          A wide range of internal and external roller blind designs makes it possible to find a product tailored to specific needs.
+          External and internal roller blinds are becoming the basic equipment of all ecological facilities, which are
+          energy-efficient passive houses. A group of qualified advisors will be happy to help you choose the most suitable offer
+          even the most demanding customers.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `We invite you to contact us for a measurement. In this way we will be able to
+          provide you with properly fitted interior and exterior roller blinds with manual, spring or electric drive,
+          which will be a perfect addition to your passive energy-saving houses.`,
+        },
+        {
+          type: 'LIST',
+          headerList:
+            'We offer different variants of controls for external blinds for passive houses:',
+          items: [
+            'Manual drive - tape or cord retractor, crank retractor, crank gear',
+            'Spring drive',
+            'Electric drive - hard-wired and radio-controlled (individual, group or central control)',
+          ],
+        },
+        {
+          type: 'LIST',
+          headerList:
+            'Additionally, energy-efficient solutions that are outside can be equipped with various safety features, such as:',
+          items: [
+            'Manual latches in lower slat',
+            'Automatic latch',
+            'Basquila locks in the end rail',
+          ],
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['okna-pcv']: {
+      title: 'PVC and aluminium windows',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Our company offers a wide range of elements that are the basis for the finishing of every house and apartment.
+          The variety of PVC and aluminium windows, which are in our assortment, will make it possible for each customer to
+          find the right solution for themselves. If you are renovating your premises and are facing the choice on which windows to bet
+          windows, our qualified consultants, who are at your disposal in our showroom in Wrocław, will gladly give you some valuable advice.
+           will give you some valuable advice.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Something that additionally distinguishes us is providing professional installation of the products we offer.`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'We have the following profiles in our assortment:',
+          items: [
+            'Alphaline',
+            'Perfectline semi-sliced',
+            'Revento',
+            'Swingline',
+          ],
+        },
+        {
+          type: 'HEADER',
+          content: `Feel free to order a professional measurement to create the perfect fit.`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['malowanie-scian']: {
+      title: 'Painting the walls',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Sometimes it is enough to make small changes to give the interior a completely new character without the need for expensive and time-consuming
+          time-consuming renovation works. That is why we offer you professional painting of walls according to your individual preferences.
+          We will also help you choose the right paint and other preparations, which will provide a spectacular and above all
+          lasting effect. We perform our services both on smaller and larger surfaces.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `You may think that painting walls is trivial and doesn't require hiring professionals. Not necessarily.
+          Sometimes it is not enough to buy paint, a brush and a roller and good intentions. If we do not have experience in this type of work or do
+          have at our disposal appropriate equipment, it is worth using the services of a reliable team. This will ensure that the interior will be
+          changed quickly and the end result will be 100% satisfactory. It is also extremely important to properly
+          preparation of the ground, as well as securing doors, radiators, furniture, windows or floors. In case of unevenness
+          unevenness of the wall, chipped or cracked plaster, as well as dirt and remains of old paint, it will be necessary to thoroughly
+          removal and priming. We will also make appropriate calculations taking into account the surface and
+          We will also make the appropriate calculations taking into account the surface, as well as the necessary number of layers to be applied, 
+          which will allow you to purchase the optimal amount of paint.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `When painting walls it is also necessary to provide adequate lighting, which will help to control
+          the accuracy of paint distribution, avoiding the formation of possible unevenness or unsightly streaks`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['ukladanie-plytek']: {
+      title: 'Tiling',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `We offer our customers comprehensive support for the installation of ceramic tiles both on the wall,
+          as well as on the floor. We know that these works require not only careful execution and special precision, but also appropriate
+          preparation. Therefore, we will make accurate calculations, which will allow you to purchase a sufficient number of tiles. This will allow you to avoid
+          unpleasant surprises and stoppage of work caused by a nervous search for identical tiles in stores or wholesalers.
+          wholesalers.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Before you start laying the tiles, prepare the surface carefully. It has to be even, clean and dry.
+          Then, make a test, i.e. arrange the tiles "dry", which will allow you to plan the arrangement.
+          It often happens that it is necessary to cut the tiles - that is why, it is worth to plan the arrangement in advance in such a way that
+          cut elements are located in less visible places. When arranging the tiles, we use distance crosses and
+          When laying the tiles, use distance crosses and strips, and regularly check the evenness of the arrangement with a spirit level.
+          This will allow you to detect any irregularities and correct them immediately before the adhesive has time to dry.
+          To increase the bonding, gently press each tile to the substrate, which ensures even distribution of
+          mortar underneath, and thus a more durable end result.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Laying tiles is also connected with the necessity of careful finishing.
+          Therefore, after the glue dries, we do the grouting, as well as installing finishing elements such as skirting boards
+          skirting boards or ceramic plinths.`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['instalacje-hydrauliczne']: {
+      title: 'Plumbing and electrical installations',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `We perform a wide range of plumbing and electrical services. These are both emergency repairs
+          emergency, as well as alterations or installation of new installations. We have not only extensive experience and knowledge,
+          but also all authorizations to perform this type of work (including electrical SEP to 1 kV). This is of particular importance
+          This is particularly important in the case of electrical installations, because repairs and alterations made by unauthorized persons could
+          cause a threat not only to the health but also the lives of people using the object (risk of overloading or short
+            short-circuit, which may cause a serious fire).`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `In case of water and sewage works, we additionally offer cleaning and piping of installations with
+          diameter up to 150 mm. For this purpose, we use both the electric and the water pressure pipe pusher RIDGID,
+          This ensures efficient and effective work even with hard deposits and plugs.
+          We remove bothersome blockages from soap, grease and sewage sludge and restore the proper permeability of the sewer, making it easy to clean.
+          We will also restore the sewer's patency so that it can be used without any problems on a daily basis. You can count on our help not only in solving
+          You can count on our assistance not only in solving emergency situations (diagnosing the source of failure and the immediate initiation of corrective measures), but also in creating installations from scratch.
+          installation from scratch.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `When performing work, we take special care to maintain all safety standards. It is also worth noting,
+          that we have many spare parts at our disposal, which in many cases allows for a significant reduction of repair time.`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['domy-kontenerowe']: {
+      title: 'Container homes',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Living in a container does not sound very interesting and many people associate it with makeshift social housing for the
+          the poorest. And this is a huge mistake! Container house is currently an extremely modern and functional
+          offer for particularly demanding people!`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Energy-saving solutions, quick construction, much less paperwork than building a traditional house,
+          as well as exceptional comfort and innovative design. This is a brief description of container houses, which in no way differ from other buildings.
+          from other buildings.`,
+        },
+        {
+          type: 'HEADER',
+          content: `What does a container house look like?`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `The container house is assembled (literally) from segments. The structure is made in the production hall and
+          is brought to the customer ready to be placed in a specific place with the help of a crane or an elevator. Container can be
+          placed on previously prepared foundations or the roof of an existing building. It takes a while and all that is left
+          only finishing according to individual preferences and connecting the necessary media.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `A container house does not mean a tin barrack associated mainly with a construction site. It is an elegant object,
+          It can be finished in any way you like - for example, glass walls will give it exclusiveness as well as elements made of wood or other materials.
+          or other materials.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Inside, it is no different from a traditional building. Depending on the project there may be a kitchen, a bathroom,
+          as well as any number of other rooms. This gives comfortable conditions for everyday living.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `With proper insulation, the interior stays warm even during cold winter weather. It also eliminates the risk of
+          overheating during the summer heat.`,
+        },
+        {
+          type: 'HEADER',
+          content: `How is it different from a traditional house?`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Above all, construction time is an important consideration. Traditional buildings often take years to build and require
+          hard work of a large number of people. In the case of modular structures, it is only a few months. The building is constructed
+           The building is constructed in a production hall and erected in the target place within one day. Thanks to this we have order on the plot and there is no
+           There is no question of any mess as on traditional construction sites. The only disadvantage of such a quick realization may be
+           financial issues. Although the costs are lower than in case of brick house construction, but we have to reckon with
+           with practically one time bigger expense - in case of traditional construction these costs are spread
+           spread in time and are associated with individual stages of work over several years.`,
+        },
+        {
+          type: 'HEADER',
+          content: `What is the Polish law on this?`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `A container house is not subject to as many legal restrictions as a traditional house. Admittedly, it is not required to obtain
+          to obtain a building permit, but it should be remembered that even here there is a "catch". If the object will be
+          used in one place for more than 180 days, then it is treated as a standard
+          If the object will be used in one place for a period exceeding 180 days, then it is treated as a standard residential building 
+          and it is required to obtain appropriate permits, including construction permits.`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['domy-na-wodze']: {
+      title: 'Houses on the water',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `It is a dream of anyone who loves unconventional solutions, as well as exceptional closeness to nature and freedom. A house 
+          on water has long been out of the realm of dreams and without any major problems you can become its owner also in Poland!`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Despite appearances, a house on the water can successfully be a year-round residential facility. Thanks to its appropriate
+          construction and finishing is fully safe and provides comfortable conditions for use. Inside, it does not differ from
+          inside it does not differ from traditional buildings - it consists not only of a room from which you can admire beautiful views.
+          It also includes a kitchen and a bathroom and everything you need for everyday living.`,
+        },
+        {
+          type: 'LIST',
+          headerList: 'Where can such a structure be placed?',
+          items: [
+            `The site must be our property - otherwise permission from the owner or the relevant authority is required`,
+            'Mooring and shoreline fees must be paid',
+            `Ensure that the site is not under the protection of a building conservation officer or already included in plans for
+            shoreline development plans`,
+            `Ensure that the facility will not obstruct vessels - a permit from the
+            Inland Waterways Authority`,
+            `The local district governor must issue a water permit (the document is valid for up to 20 years).`,
+          ],
+        },
+        {
+          type: 'HEADER',
+          content: `Afety above all`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Bearing in mind the specific use and location of the structure, the contractors use only proven
+          technologies and extremely durable materials. The structure is extremely lightweight, with a high buoyancy and is based
+          The structure is extremely light, with high buoyancy and is based on a skeleton construction connected to a float. The materials used are resistant not only to mechanical
+          The materials used are resistant not only to mechanical damage, but also to water, which could cause damage in the form of rust, cracking, swelling, etc.`,
+        },
+        {
+          type: 'HEADER',
+          content: `Access to utilities`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `In the house on the water you can easily watch TV or use the refrigerator and lighting.
+          It is powered by electricity from land or from its own generator. There are also special tanks installed
+          for water and sewage. The facilities are also heated (usually by electric heating).
+          Alternative energy sources are also available.`,
+        },
+        {
+          type: 'HEADER',
+          content: `Not just for the rich`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: ` house on water is sometimes associated with more prestige, luxury and wealth, as well as an avant-garde lifestyle.
+          However, despite appearances, it is not a solution reserved for the wealthiest. The cheapest option is to buy a ready-made object,
+          In the case of an individual project you have to reckon with slightly higher expenses. However, the cost of such construction is
+          much lower than in the case of a traditional house. It is not only about the costs associated with the construction of the object, but also the lack
+          need to purchase a plot of land. The only disadvantage may be the fact that a house on water is not treated in Polish law as a
+          treated in Polish law as a residential building, therefore it is not possible to obtain a mortgage from a bank for the
+          The only drawback here may be the fact that a house on the water is not treated as a residential building under Polish law.`,
+        },
+      ],
+      contact: {
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
+      },
+    },
+    ['lozko-w-scianie']: {
+      title: 'Bed in the wall',
+      body: [
+        {
+          type: 'PARAGRAPH',
+          content: `Designer and at the same time extremely practical solution for houses and apartments with limited space.
+          Bed in the wall will allow for optimal use of space - just hide it in the recess of the wall, to gain
+          It is enough to hide it in a recess in the wall to gain a lot of extra space during the day. This will allow you to maintain harmony, as well as order both in the bedroom,
+          as well as in the living room or in the children's room. It is not an innovative solution - a similar mechanism was already
+          It is not an innovative solution - a similar mechanism was already known many years ago and was used in the once popular half-sleeper sofa.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `We can make them ourselves - just buy a special mechanism with the bed frame. In order for everything to work
+          to work perfectly, you should check whether the mechanisms are made of durable, solid metal and the right number of springs.
+           There are also plenty of ready-made solutions on the market, also with the added convenience of remote control operation.
+           A bed in the wall is also a great option for people for whom a real torment is the daily bedding.
+           With the right straps, the bed linen can simply be clipped to the mattress and stored in the wall together with the bed.
+           This not only saves space but also time.`,
+        },
+        {
+          type: 'PARAGRAPH',
+          content: `Manufacturers provide a wide selection of beds in the wall or closet in different styles and sizes,
+          thanks to which they will perfectly fit into interiors decorated in both classic and modern style.
+          This solution is not only for owners of small apartments, but also for lovers of maximum functional use of space.
+          space.`,
         },
       ],
       contact: {
