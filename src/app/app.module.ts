@@ -27,6 +27,7 @@ import { FormsModule } from '@angular/forms';
 import { SingleOfertComponent } from './components/single-ofert/single-ofert.component';
 import { GaleryComponent } from './views/galery/galery.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidebarComponent,
     SingleOfertComponent,
     GaleryComponent,
+    ScrollTopComponent,
   ],
   imports: [
     BrowserModule,

@@ -160,6 +160,22 @@
   display: none;
   line-height: 0;
   transition: 0.5s;
+  height: 50%;
+  ul {
+    height: 50%;
+  }
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.55rem;
+  line-height: 1;
+  background-color: initial;
+  border: 1px solid #0000;
+  border-radius: 0.25rem;
+  margin-left: auto;
+  color: #012970;
+  outline: none;
 }
 
 .mobile-nav-toggle.bi-x {

@@ -1,6 +1,8 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { LangSwitcherService } from 'src/app/service/lang-switcher.service';
 import { INavItem, navbarContent } from './navbar-lang-data';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { CheckPositionService } from 'src/app/service/check-position.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,25 +10,23 @@ import { INavItem, navbarContent } from './navbar-lang-data';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  public faBars = faBars;
   public isActive = false;
 
-  constructor(public langSwitcher: LangSwitcherService) {}
+  constructor(
+    public langSwitcher: LangSwitcherService,
+    public checkPosition: CheckPositionService
+  ) {}
 
+  get isTop(): boolean {
+    return this.checkPosition.checkPosition();
+  }
   get navbarTextContent(): INavItem[] {
     return navbarContent[this.langSwitcher.getCurrentLang];
   }
 
   get currentLang(): string {
     return this.langSwitcher.getCurrentLang;
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  checkPosition(): boolean {
-    if (window.pageYOffset > 80) {
-      return true;
-    } else {
-      return false;
-    }
   }
 
   toggle(): void {

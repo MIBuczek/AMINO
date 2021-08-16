@@ -42,11 +42,10 @@ ol.carousel-indicators {
 .carousel-control-next,
 .carousel-control-prev {
   z-index: 100;
-  background-color: #29323d;
+  background-color: #012970;
   width: 60px;
   height: 80px;
   margin: auto;
-  /* border-radius: 50%; */
 }
 
 .partnerImg {
@@ -147,6 +146,7 @@ section {
   text-decoration: none;
   transition: 0.3s;
   border: none;
+  height: 40px;
   span {
     font-family: "Nunito", sans-serif;
     font-weight: 600;

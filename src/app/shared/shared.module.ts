@@ -24,6 +24,8 @@ import {
   faWindowClose,
   faUser,
   faChevronDown,
+  faBars,
+  faArrowUp,
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -51,7 +53,9 @@ export class SharedModule {
       faChevronLeft,
       faWindowClose,
       faUser,
-      faChevronDown
+      faChevronDown,
+      faBars,
+      faArrowUp
     );
   }
 }

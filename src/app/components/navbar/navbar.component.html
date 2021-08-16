@@ -1,4 +1,4 @@
-<header id="header" class="header fixed-top" [class.sticky]="checkPosition()">
+<header id="header" class="header fixed-top" [class.sticky]="isTop">
   <div
     class="
       container-fluid container
@@ -19,7 +19,7 @@
       aria-label="Toggle navigation"
       (click)="toggle()"
     >
-      <span class="navbar-toggler-icon"></span>
+      <fa-icon [icon]="faBars"></fa-icon>
     </button>
     <nav id="navbar" class="navbar">
       <ul>
