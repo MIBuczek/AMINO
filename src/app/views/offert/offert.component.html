@@ -9,12 +9,23 @@
         <div class="col-lg-3">
           <div class="sidebar">
             <ng-container *ngFor="let item of offerTextContent">
-              <h3 class="sidebar-title">
+              <h3
+                class="sidebar-title"
+                (click)="makeOpen(item.rout)"
+                [class.rotate]="showSideNavItems.includes(item.rout)"
+              >
                 {{ item.title }}
+                <fa-icon [icon]="faChevronDown"></fa-icon>
               </h3>
-              <div class="sidebar-item categories">
+              <div
+                class="categories"
+                [class.show]="showSideNavItems.includes(item.rout)"
+              >
                 <ul>
-                  <li *ngFor="let link of item.subLinks">
+                  <li
+                    *ngFor="let link of item.subLinks"
+                    [class.active]="makeActive(link.rout)"
+                  >
                     <a
                       routerLink="/oferta"
                       [queryParams]="{ title: item.rout, single: link.rout }"

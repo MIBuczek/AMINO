@@ -1527,7 +1527,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           preparation of the ground, as well as securing doors, radiators, furniture, windows or floors. In case of unevenness
           unevenness of the wall, chipped or cracked plaster, as well as dirt and remains of old paint, it will be necessary to thoroughly
           removal and priming. We will also make appropriate calculations taking into account the surface and
-          We will also make the appropriate calculations taking into account the surface, as well as the necessary number of layers to be applied, 
+          We will also make the appropriate calculations taking into account the surface, as well as the necessary number of layers to be applied,
           which will allow you to purchase the optimal amount of paint.`,
         },
         {
@@ -1676,7 +1676,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           content: `A container house is not subject to as many legal restrictions as a traditional house. Admittedly, it is not required to obtain
           to obtain a building permit, but it should be remembered that even here there is a "catch". If the object will be
           used in one place for more than 180 days, then it is treated as a standard
-          If the object will be used in one place for a period exceeding 180 days, then it is treated as a standard residential building 
+          If the object will be used in one place for a period exceeding 180 days, then it is treated as a standard residential building
           and it is required to obtain appropriate permits, including construction permits.`,
         },
       ],
@@ -1691,7 +1691,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
       body: [
         {
           type: 'PARAGRAPH',
-          content: `It is a dream of anyone who loves unconventional solutions, as well as exceptional closeness to nature and freedom. A house 
+          content: `It is a dream of anyone who loves unconventional solutions, as well as exceptional closeness to nature and freedom. A house
           on water has long been out of the realm of dreams and without any major problems you can become its owner also in Poland!`,
         },
         {

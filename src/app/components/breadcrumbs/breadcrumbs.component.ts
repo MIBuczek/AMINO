@@ -43,7 +43,6 @@ export class BreadcrumbsComponent {
     if (!pathArray.length) {
       this.path = [];
     } else if (pathArray.length === 1) {
-      console.log(pathArray);
       const index = pathArray[0].indexOf('?');
       if (index > -1) {
         const subIndex = pathArray[0].lastIndexOf('=');
