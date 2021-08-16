@@ -43,7 +43,18 @@
       <p>{{ homeContentService.header }}</p>
     </header>
     <div class="row">
-      <div class="col-lg-4" *ngFor="let item of homeContentService.offert">
+      <div
+        class="
+          col-lg-4
+          offset-lg-0
+          col-md-8
+          offset-md-2
+          col-sm-10
+          offset-sm-1
+          p-2
+        "
+        *ngFor="let item of homeContentService.offert"
+      >
         <div class="box">
           <img
             [src]="'../../../assets/service/' + item.img"
@@ -93,11 +104,14 @@
 <section class="about">
   <div
     class="container container mt-md-5 mt-sm-5"
-    *ngFor="let item of homeContentAbout"
+    *ngFor="let item of homeContentAbout; let i = index"
   >
     <div class="row">
       <div class="col-lg-6 d-flex flex-column justify-content-center">
-        <div class="content">
+        <div
+          class="content"
+          [ngClass]="{ 'order-lg-last': i === 1, 'order-sm-first': i === 1 }"
+        >
           <h3>{{ item.starter }}</h3>
           <h2>
             {{ item.header }}
@@ -121,7 +135,15 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 d-flex align-items-center">
+      <div
+        class="col-lg-6 d-flex align-items-center p-2"
+        [ngClass]="{
+          'order-lg-first': i === 1,
+          'order-sm-last': i === 1,
+          'offset-lg-0': i === 1,
+          'offset-md-1': i === 1
+        }"
+      >
         <img [src]="'../../../assets/' + item.img" class="img-fluid" alt="" />
       </div>
     </div>
