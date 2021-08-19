@@ -69,6 +69,7 @@
             <a
               *ngIf="item.rout; else btn"
               [routerLink]="item.rout"
+              [queryParams]="item.query"
               class="
                 btn-read-more
                 d-inline-flex

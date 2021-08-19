@@ -101,22 +101,30 @@
       }
     }
     .btn_close {
-      top: 20px;
+      top: 25px;
       right: 30px;
+      border: 1px solid white;
+      transition: 0.4s;
+      padding: 6px;
+      border-radius: 4px;
+      &:hover {
+        opacity: 0.6;
+        transform: none;
+      }
     }
     .btn_right {
       top: 50%;
       right: 30px;
       padding: 5px 10px;
-      border: 2px solid;
-      border-radius: 5px;
+      // border: 2px solid;
+      // border-radius: 5px;
     }
     .btn_left {
       top: 50%;
       left: 30px;
       padding: 5px 10px;
-      border: 2px solid;
-      border-radius: 5px;
+      // border: 2px solid;
+      // border-radius: 5px;
     }
     .gallery-img {
       width: 100%;

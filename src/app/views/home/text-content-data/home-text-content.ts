@@ -87,6 +87,7 @@ export interface IHomeSingleService {
   img: string;
   buttonText: string;
   rout?: string;
+  query?: { [x: string]: string };
 }
 
 export interface IHomeContentServices {
@@ -106,6 +107,7 @@ export const homeServices: { [x: string]: IHomeContentServices } = {
         img: 'sell.svg',
         buttonText: 'Oferta',
         rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'drzwi-zewnetrzne' },
       },
       {
         title: 'Montaż i Serwis',
@@ -113,6 +115,7 @@ export const homeServices: { [x: string]: IHomeContentServices } = {
         img: 'service.svg',
         buttonText: 'Oferta',
         rout: '/oferta',
+        query: { title: 'montaz', single: 'drzwi-automatyczne' },
       },
       {
         title: 'Zgłoś usterkę',
@@ -133,6 +136,7 @@ export const homeServices: { [x: string]: IHomeContentServices } = {
         img: 'sell.svg',
         buttonText: 'Offert',
         rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'drzwi-zewnetrzne' },
       },
       {
         title: 'Installation and service',
@@ -140,6 +144,7 @@ export const homeServices: { [x: string]: IHomeContentServices } = {
         img: 'service.svg',
         buttonText: 'Offert',
         rout: '/oferta',
+        query: { title: 'montaz', single: 'drzwi-automatyczne' },
       },
       {
         title: 'Report a trouble',

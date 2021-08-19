@@ -4,7 +4,7 @@ import { galeryContent, IGallery } from './galery-lang-data';
 import {
   faChevronRight,
   faChevronLeft,
-  faWindowClose,
+  faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -17,7 +17,7 @@ export class GaleryComponent {
 
   public faChevronRight = faChevronRight;
   public faChevronLeft = faChevronLeft;
-  public faWindowClose = faWindowClose;
+  public faWindowClose = faTimes;
 
   constructor(public langSwitcher: LangSwitcherService) {}
 
