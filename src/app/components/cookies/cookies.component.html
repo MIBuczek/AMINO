@@ -1,8 +1,10 @@
-<article class="cookies">
+<article class="cookies" *ngIf="showCookies">
   <p>
     Ta strona używa ciasteczek (cookies), dzięki którym nasz serwis może działać
     lepiej.
   </p>
-  <a> Zobacz Politykę Cookies.</a>
-  <button>Akceptuje</button>
+  <a href="../../../assets/polityka_cookies.pdf" target="_blank">
+    Zobacz Politykę Cookies.
+  </a>
+  <button role="button" (click)="showCookies = false">Akceptuje</button>
 </article>

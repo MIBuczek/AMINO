@@ -11,13 +11,15 @@
   color: white;
   padding: 10px;
   font-size: 12px;
-  z-index: 400;
+  z-index: 8888;
+  border-top: 1.5px solid white;
   p {
     margin: 0;
   }
   a {
     margin-left: 10px;
     transition: 0.3s;
+    color: inherit;
     &:hover {
       color: #4154f1;
     }
@@ -32,8 +34,9 @@
     transition: 0.3s;
     border: none;
     margin-left: 15px;
+    border: 1px solid #4154f1;
     &:hover {
-      transform: scale(1.05);
+      border-color: white;
     }
   }
 }

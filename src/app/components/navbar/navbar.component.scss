@@ -1,17 +1,10 @@
-/**
-* Toggler
-*/
 .navbar-mobile {
   display: none;
 }
 
 .navbar-mobile.show {
-  display: block;
+  display: flex;
 }
-
-/**
-* Main Navigation 
-*/
 
 .header {
   transition: all 0.5s;
@@ -150,9 +143,6 @@
   }
 }
 
-/**
-* Mobile Navigation 
-*/
 .mobile-nav-toggle {
   color: #012970;
   font-size: 28px;
@@ -161,9 +151,6 @@
   line-height: 0;
   transition: 0.5s;
   height: 50%;
-  ul {
-    height: 50%;
-  }
 }
 
 .navbar-toggler {
@@ -177,18 +164,18 @@
   color: #012970;
   box-shadow: none;
   transition: 0.3s;
+  display: none;
   &:hover {
     transform: scale(1.05);
   }
 }
 
-.mobile-nav-toggle.bi-x {
-  color: #fff;
-}
-
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
+  .navbar-toggler {
     display: block;
+  }
+  .mobile-nav-toggle {
+    display: flex;
   }
   .navbar ul {
     display: none;
@@ -223,6 +210,9 @@
     background-color: #fff;
     overflow-y: auto;
     transition: 0.3s;
+    width: 80vh;
+    height: 80vh;
+    margin: auto;
     li {
       button.lang-switcher {
         margin: 0;
