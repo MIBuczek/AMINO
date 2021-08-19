@@ -28,6 +28,7 @@ import { SingleOfertComponent } from './components/single-ofert/single-ofert.com
 import { GaleryComponent } from './views/galery/galery.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ScrollTopComponent } from './components/scroll-top/scroll-top.component
     SingleOfertComponent,
     GaleryComponent,
     ScrollTopComponent,
+    CookiesComponent,
   ],
   imports: [
     BrowserModule,

@@ -175,7 +175,11 @@
   border-radius: 0.25rem;
   margin-left: auto;
   color: #012970;
-  outline: none;
+  box-shadow: none;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .mobile-nav-toggle.bi-x {
@@ -206,7 +210,9 @@
     right: 15px;
   }
   ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     top: 55px;
     right: 15px;
@@ -217,6 +223,11 @@
     background-color: #fff;
     overflow-y: auto;
     transition: 0.3s;
+    li {
+      button.lang-switcher {
+        margin: 0;
+      }
+    }
   }
   a {
     padding: 10px 20px;

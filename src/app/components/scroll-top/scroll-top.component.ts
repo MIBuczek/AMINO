@@ -14,4 +14,8 @@ export class ScrollTopComponent {
   get isTop(): boolean {
     return this.checkPosition.checkPosition();
   }
+
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
+  }
 }

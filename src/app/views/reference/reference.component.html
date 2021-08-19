@@ -26,22 +26,22 @@
       </div>
     </div>
   </aside>
-  <section class="testimonials col-lg-9">
+  <section class="references col-lg-9">
     <div class="container">
       <header class="section-header">
         <h2>{{ referenceTextContent.subHeader }}</h2>
         <p>{{ referenceTextContent.header }}</p>
       </header>
       <div
-        class="testimonials-slider swiper-container"
+        class="references-slider swiper-container"
         *ngFor="let item of referenceTextContent.reference"
       >
         <div class="swiper-wrapper">
-          <div class="testimonial-item row">
-            <div class="testimonial-img col-4">
+          <div class="reference-item row">
+            <div class="reference-img col-lg-4 col-md-10 col-sm-12">
               <img [src]="'../../../assets/references/' + item.img" />
             </div>
-            <div class="col-8 comment">
+            <div class="col-lg-8 col-sm-12 col-xs-12 comment">
               <div class="stars">
                 <fa-icon [icon]="faStar"></fa-icon>
                 <fa-icon [icon]="faStar"></fa-icon>

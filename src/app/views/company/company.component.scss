@@ -17,7 +17,7 @@
     }
   }
 }
-.services {
+.values {
   .about {
     margin-bottom: 3rem;
     .content {
@@ -51,7 +51,7 @@
     }
   }
 
-  .service-box {
+  .value-box {
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
     height: 100%;
     padding: 60px 30px;
@@ -86,7 +86,7 @@
       }
     }
   }
-  .service-box.blue {
+  .value-box.blue {
     border-bottom: 3px solid #2db6fa;
     fa-icon {
       color: #2db6fa;
@@ -96,7 +96,7 @@
       background: #2db6fa;
     }
   }
-  .service-box.orange {
+  .value-box.orange {
     border-bottom: 3px solid #f68c09;
     fa-icon {
       color: #f68c09;
@@ -107,7 +107,7 @@
       background: #f68c09;
     }
   }
-  .service-box.green {
+  .value-box.green {
     border-bottom: 3px solid #08da4e;
     fa-icon {
       color: #08da4e;
@@ -118,7 +118,7 @@
       background: #08da4e;
     }
   }
-  .service-box.red {
+  .value-box.red {
     border-bottom: 3px solid #e9222c;
     fa-icon {
       color: #e9222c;
@@ -129,7 +129,7 @@
       background: #e9222c;
     }
   }
-  .service-box.purple {
+  .value-box.purple {
     border-bottom: 3px solid #b50edf;
     fa-icon {
       color: #b50edf;
@@ -140,7 +140,7 @@
       background: #b50edf;
     }
   }
-  .service-box.pink {
+  .value-box.pink {
     border-bottom: 3px solid #f51f9c;
     fa-icon {
       color: #f51f9c;
