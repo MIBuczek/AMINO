@@ -9,6 +9,7 @@ import {
   IHomeContentAbout,
   IHomeContentServices,
 } from './text-content-data/home-text-content';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

@@ -1,6 +1,6 @@
 export const companyContent: { [x: string]: any } = {
   PL: {
-    sideBarImg: 'sell.jpg',
+    sideBarImg: 'sell.svg',
     sideBarTitle: 'Nasza Oferta',
     sideBarText: `Oferujemy szeroką gamę produktów znanych i cenionych
       producentów okien, drzwi, rolet i systemów fotowoltaicznych.`,
@@ -54,7 +54,7 @@ export const companyContent: { [x: string]: any } = {
     ],
   },
   EN: {
-    sideBarImg: 'sell.jpg',
+    sideBarImg: 'sell.svg',
     sideBarTitle: 'Our Offer',
     sideBarText: `We offer a wide range of products from well-known and respected
     manufacturers of windows, doors, roller shutters and photovoltaic systems.`,
