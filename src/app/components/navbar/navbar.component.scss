@@ -7,7 +7,7 @@
 }
 
 .header {
-  transition: all 0.5s;
+  transition: all 0.3s;
   padding: 20px 0;
   .header-scrolled {
     background: #fff;
@@ -119,38 +119,23 @@
       }
     }
   }
-}
-
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover > a {
-  color: #4154f1;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #4154f1;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
+  a,
+  .active {
+    &:hover {
+      color: #4154f1;
+    }
   }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
+  .dropdown {
+    ul {
+      a,
+      .active,
+      li {
+        &:hover {
+          color: #4154f1;
+        }
+      }
+    }
   }
-}
-
-.mobile-nav-toggle {
-  color: #012970;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-  height: 50%;
 }
 
 .navbar-toggler {
@@ -170,18 +155,6 @@
   }
 }
 
-@media (max-width: 991px) {
-  .navbar-toggler {
-    display: block;
-  }
-  .mobile-nav-toggle {
-    display: flex;
-  }
-  .navbar ul {
-    display: none;
-  }
-}
-
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -191,11 +164,6 @@
   bottom: 0;
   background: rgba(1, 22, 61, 0.9);
   transition: 0.3s;
-  .mobile-nav-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
   ul {
     display: flex;
     flex-direction: column;
@@ -246,20 +214,39 @@
       }
     }
   }
+  a,
+  .active {
+    &:hover {
+      color: #4154f1;
+    }
+  }
+  .dropdown {
+    ul {
+      a,
+      .active,
+      li {
+        &:hover {
+          color: #4154f1;
+        }
+      }
+    }
+  }
 }
 
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover > a {
-  color: #4154f1;
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
 }
 
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
-  color: #4154f1;
-}
-
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
 }

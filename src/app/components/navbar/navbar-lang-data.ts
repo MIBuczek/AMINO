@@ -1,6 +1,7 @@
 export interface INavItem {
   name: string;
   route: string;
+  query?: { [x: string]: string };
   children?: INavItem[];
 }
 
@@ -13,29 +14,33 @@ export const navbarContent: { [x: string]: INavItem[] } = {
     {
       name: 'Oferta',
       route: '/oferta',
-      // children: [
-      //   {
-      //     name: 'Montaż i serwis',
-      //     route: '/oferta',
-      //     // query : ''
-      //   },
-      //   {
-      //     name: 'Usługi naprawcze',
-      //     route: '/oferta/uslugi-naprawcze',
-      //   },
-      //   {
-      //     name: 'Sprzedaż',
-      //     route: '/oferta/sprzedaz',
-      //   },
-      //   {
-      //     name: 'Remonty budowlane',
-      //     route: '/oferta/remonty-budowlane',
-      //   },
-      //   {
-      //     name: 'Domy energoszczędne',
-      //     route: '/oferta/domy-energoszczedne',
-      //   },
-      // ],
+      children: [
+        {
+          name: 'Montaż i serwis',
+          route: '/oferta',
+          query: { title: 'montaz', single: 'drzwi-automatyczne' },
+        },
+        {
+          name: 'Usługi naprawcze',
+          route: '/oferta',
+          query: { title: 'uslugi-naprawcze', single: 'uslugi' },
+        },
+        {
+          name: 'Sprzedaż',
+          route: '/oferta',
+          query: { title: 'sprzedaz', single: 'drzwi-zewnetrzne' },
+        },
+        {
+          name: 'Remonty budowlane',
+          route: '/oferta',
+          query: { title: 'remont', single: 'malowanie-scian' },
+        },
+        {
+          name: 'Domy energoszczędne',
+          route: '/oferta',
+          query: { title: 'domy', single: 'domy-kontenerowe' },
+        },
+      ],
     },
     {
       name: 'O firmie',
@@ -83,23 +88,28 @@ export const navbarContent: { [x: string]: INavItem[] } = {
       children: [
         {
           name: 'Installation and service',
-          route: '/oferta/serwis',
+          route: '/oferta',
+          query: { title: 'montaz', single: 'drzwi-automatyczne' },
         },
         {
           name: 'Repair services',
-          route: '/oferta/naprawa',
-        },
-        {
-          name: 'Sprzedaż',
-          route: '/oferta/sprzedaz',
+          route: '/oferta',
+          query: { title: 'uslugi-naprawcze', single: 'uslugi' },
         },
         {
           name: 'Sales',
-          route: '/oferta/remont',
+          route: '/oferta',
+          query: { title: 'sprzedaz', single: 'drzwi-zewnetrzne' },
+        },
+        {
+          name: 'Building repairs',
+          route: '/oferta',
+          query: { title: 'remont', single: 'malowanie-scian' },
         },
         {
           name: 'Energy efficient houses',
-          route: '/oferta/domy',
+          route: '/oferta',
+          query: { title: 'domy', single: 'domy-kontenerowe' },
         },
       ],
     },

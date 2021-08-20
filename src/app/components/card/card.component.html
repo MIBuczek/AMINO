@@ -1,29 +1,33 @@
-<section id="portfolio" class="portfolio">
+<section class="card">
   <div class="container">
     <header class="section-header">
       <h2>{{ cardContent.title }}</h2>
       <p>{{ cardContent.description }}</p>
     </header>
-    <div class="row gy-4 portfolio-container">
+    <div class="row gy-4 card-container">
       <div
-        class="col-lg-4 col-md-6 p-2 portfolio-item filter-web"
+        class="col-lg-4 col-md-6 p-2 card-item"
         *ngFor="let item of cardContent.cards"
       >
-        <div class="portfolio-wrap">
+        <div class="card-wrap">
           <img
             [src]="'../../../assets/offert/' + item.img"
             class="img-fluid"
             alt=""
           />
-          <div class="portfolio-info">
+          <div class="card-info">
             <h4>{{ item.header }}</h4>
             <p>
               {{ item.shortTest }}
             </p>
-            <div class="portfolio-links">
-              <a [routerLink]="item.rout" title="More Details">{{
-                item.buttonText
-              }}</a>
+            <div class="card-links">
+              <a
+                [routerLink]="item.rout"
+                [queryParams]="item.query"
+                title="More Details"
+              >
+                {{ item.buttonText }}
+              </a>
             </div>
           </div>
         </div>

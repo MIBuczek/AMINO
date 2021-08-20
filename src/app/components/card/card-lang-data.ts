@@ -3,6 +3,7 @@ export interface ICard {
   shortTest: string;
   img: string;
   rout?: string;
+  query?: { [x: string]: string };
   buttonText: string;
 }
 
@@ -20,10 +21,11 @@ export const cardContent: { [x: string]: ICardContent } = {
       {
         header: 'DRZWI AUTOMATYCZNE',
         shortTest: `
-      W naszej ofercie do nabycia znajdą Państwo drzwi automatyczne oraz
-      systemy do nich firm: GEZE oraz ESCO.`,
+        W naszej ofercie do nabycia znajdą Państwo drzwi automatyczne oraz
+        systemy do nich firm: GEZE oraz ESCO.`,
         img: 'oferta-1.jpg',
         rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'drzwi-automatyczne-sprzedaz' },
         buttonText: 'czytaj wiecej',
       },
       {
@@ -32,6 +34,8 @@ export const cardContent: { [x: string]: ICardContent } = {
         W naszej ofercie do nabycia znajdą Państwo szeroki asortyment
         drzwi zwykłych. Zapewniamy serwis i montaż.`,
         img: 'oferta-2.jpg',
+        rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'drzwi-wewnetrzne' },
         buttonText: 'czytaj wiecej',
       },
       {
@@ -41,6 +45,7 @@ export const cardContent: { [x: string]: ICardContent } = {
         Wiśniowski, Krispol, Wayne-Dalton.`,
         img: 'oferta-3.jpg',
         rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'bramy-garazowe-sprzedaz' },
         buttonText: 'czytaj wiecej',
       },
       {
@@ -49,6 +54,7 @@ export const cardContent: { [x: string]: ICardContent } = {
         Oferujemy montaż oraz serwis rolet.`,
         img: 'oferta-4.jpg',
         rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'rolety-zewnetrzne-sprzedaz' },
         buttonText: 'czytaj wiecej',
       },
       {
@@ -58,6 +64,7 @@ export const cardContent: { [x: string]: ICardContent } = {
         zabezpieczeń pożarowych.`,
         img: 'oferta-5.jpg',
         rout: '/oferta',
+        query: { title: 'montaz', single: 'systemy-oddymiania' },
         buttonText: 'czytaj wiecej',
       },
       {
@@ -66,6 +73,7 @@ export const cardContent: { [x: string]: ICardContent } = {
         Oferujemy szeroką gamę bram przemysłowych.`,
         img: 'oferta-6.jpg',
         rout: '/oferta',
+        query: { title: 'montaz', single: 'bramy-przemyslowe' },
         buttonText: 'czytaj wiecej',
       },
       {
@@ -75,6 +83,7 @@ export const cardContent: { [x: string]: ICardContent } = {
         stolarki otworowej, naprawy zamków.`,
         img: 'oferta-7.jpg',
         rout: '/oferta',
+        query: { title: 'uslugi-naprawcze', single: 'uslugi' },
         buttonText: 'czytaj wiecej',
       },
       {
@@ -94,67 +103,74 @@ export const cardContent: { [x: string]: ICardContent } = {
       {
         header: 'AUTOMATIC DOORS',
         shortTest: `
-      In our offer you will find automatic doors and
-      systems for them: GEZE and ESCO.`,
+        In our offer you will find automatic doors and
+        systems for them: GEZE and ESCO.`,
         img: 'oferta-1.jpg',
         rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'drzwi-automatyczne-sprzedaz' },
         buttonText: 'read more',
       },
       {
         header: 'ENTRY AND INTERIOR DOORS',
         shortTest: `
-      In our offer you will find a wide range of
-      ordinary doors. We provide service and installation.`,
+        In our offer you will find a wide range of
+        ordinary doors. We provide service and installation.`,
         img: 'oferta-2.jpg',
+        query: { title: 'sprzedaz', single: 'drzwi-wewnetrzne' },
         buttonText: 'read more',
       },
       {
         header: 'GARAGE DOORS',
         shortTest: `
-      In our offer to purchase you will find garage doors from companies:
-      Wiśniowski, Krispol, Wayne-Dalton.`,
+        In our offer to purchase you will find garage doors from companies:
+        Wiśniowski, Krispol, Wayne-Dalton.`,
         img: 'oferta-3.jpg',
         rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'bramy-garazowe-sprzedaz' },
         buttonText: 'read more',
       },
       {
         header: 'EXTERNAL AND INTERNAL SHUTTERS.',
         shortTest: `
-      We offer installation and service of roller shutters.`,
+        We offer installation and service of roller shutters.`,
         img: 'oferta-4.jpg',
         rout: '/oferta',
+        query: { title: 'sprzedaz', single: 'rolety-zewnetrzne-sprzedaz' },
         buttonText: 'read more',
       },
       {
         header: 'SMOKE EXTRACTION SYSTEMS',
         shortTest: `
-      We offer installation and service of smoke and heat exhaust systems as well as
-      fire protection systems.`,
+        We offer installation and service of smoke and heat exhaust systems as well as
+        fire protection systems.`,
         img: 'oferta-5.jpg',
         rout: '/oferta',
+        query: { title: 'montaz', single: 'systemy-oddymiania' },
         buttonText: 'read more',
       },
       {
         header: 'INDUSTRIAL GATES',
         shortTest: `
-      We offer a wide range of industrial doors.`,
+        We offer a wide range of industrial doors.`,
         img: 'oferta-6.jpg',
         rout: '/oferta',
+        query: { title: 'montaz', single: 'bramy-przemyslowe' },
         buttonText: 'read more',
       },
       {
         header: 'EPAIR SERVICES',
         shortTest: `
-      We offer a wide range of services, among others in the field of
-      woodworking, repairing locks.`,
+        We offer a wide range of services, among others in the field of
+        woodworking, repairing locks.`,
         img: 'oferta-7.jpg',
         rout: '/oferta',
+        query: { title: 'uslugi-naprawcze', single: 'uslugi' },
         buttonText: 'read more',
       },
       {
         header: 'THE WHOLE OFFER',
         shortTest: `
-      Check out our full range of services.`,
+       Check out our full range of services.`,
         img: 'oferta-8.jpg',
         rout: '/oferta',
         buttonText: 'read more',

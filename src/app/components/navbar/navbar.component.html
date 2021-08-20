@@ -36,7 +36,9 @@
           </a>
           <ul *ngIf="item?.children?.length">
             <li *ngFor="let subItem of item?.children">
-              <a [routerLink]="[subItem.route]">{{ subItem.name }}</a>
+              <a [routerLink]="[subItem.route]" [queryParams]="subItem.query">
+                {{ subItem.name }}
+              </a>
             </li>
           </ul>
         </li>
@@ -66,7 +68,9 @@
           </a>
           <ul *ngIf="item?.children?.length">
             <li *ngFor="let subItem of item?.children">
-              <a [routerLink]="[subItem.route]">{{ subItem.name }}</a>
+              <a [routerLink]="[subItem.route]" [queryParams]="subItem.query">
+                {{ subItem.name }}
+              </a>
             </li>
           </ul>
         </li>
