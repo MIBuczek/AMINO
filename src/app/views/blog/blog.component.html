@@ -1,47 +1,45 @@
-<main>
-  <section class="blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 entries">
-          <article
-            class="entry"
-            *ngFor="
-              let post of printPostPerActiveTags(
-                blogContent,
-                langSwitcher.getCurrentLang
-              )
-            "
-          >
-            <div class="entry-img">
-              <img
-                [src]="'../../../assets/blog/' + post.img"
-                alt=""
-                class="img-fluid"
-              />
+<section class="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 entries">
+        <article
+          class="entry"
+          *ngFor="
+            let post of printPostPerActiveTags(
+              blogContent,
+              langSwitcher.getCurrentLang
+            )
+          "
+        >
+          <div class="entry-img">
+            <img
+              [src]="'../../../assets/blog/' + post.img"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <h2 class="entry-title">{{ post.header }}</h2>
+          <div class="entry-meta">
+            <ul>
+              <li class="d-flex align-items-center">
+                <time datetime="2020-01-01">{{ post.date }}</time>
+              </li>
+            </ul>
+            <ul class="tags">
+              <li *ngFor="let tag of post.tags">{{ tag.toLowerCase() }}</li>
+            </ul>
+          </div>
+          <div class="entry-content">
+            <p>{{ post.textBody }}</p>
+            <div class="read-more">
+              <a [routerLink]="post.rout">{{ post.textButton }}</a>
             </div>
-            <h2 class="entry-title">{{ post.header }}</h2>
-            <div class="entry-meta">
-              <ul>
-                <li class="d-flex align-items-center">
-                  <time datetime="2020-01-01">{{ post.date }}</time>
-                </li>
-              </ul>
-              <ul class="tags">
-                <li *ngFor="let tag of post.tags">{{ tag.toLowerCase() }}</li>
-              </ul>
-            </div>
-            <div class="entry-content">
-              <p>{{ post.textBody }}</p>
-              <div class="read-more">
-                <a [routerLink]="post.rout">{{ post.textButton }}</a>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4">
-          <app-sidebar [activeTags]="activeTags"></app-sidebar>
-        </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4">
+        <app-sidebar [activeTags]="activeTags"></app-sidebar>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+</section>

@@ -32,8 +32,4 @@ export class HomeComponent {
   get homeContentAbout(): IHomeContentAbout[] {
     return homeAbout[this.langSwitcher.getCurrentLang];
   }
-
-  get currentLang(): string {
-    return this.langSwitcher.currentLang.getValue();
-  }
 }

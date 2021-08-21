@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'galeria', component: GaleryComponent },
   { path: 'referencje', component: ReferenceComponent },
   { path: 'kontakt', component: ContactComponent },
-  { path: '*', component: NotFoundComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

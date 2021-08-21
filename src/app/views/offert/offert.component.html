@@ -1,74 +1,72 @@
-<main>
-  <section class="blog">
-    <header class="section-header">
-      <h2>{{ offerHeaderContent.header }}</h2>
-      <p>{{ offerHeaderContent.subHeader }}</p>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-7 col-xs-12">
-          <div class="sidebar">
-            <ng-container *ngFor="let item of offerTextContent">
-              <h3
-                class="sidebar-title"
-                (click)="makeOpen(item.rout)"
-                [class.rotate]="showSideNavItems.includes(item.rout)"
-              >
-                {{ item.title }}
-                <fa-icon [icon]="faChevronDown"></fa-icon>
-              </h3>
-              <div
-                class="categories"
-                [class.show]="showSideNavItems.includes(item.rout)"
-              >
-                <ul>
-                  <li
-                    *ngFor="let link of item.subLinks"
-                    [class.active]="makeActive(link.rout)"
+<section class="blog">
+  <header class="section-header">
+    <h2>{{ offerHeaderContent.header }}</h2>
+    <p>{{ offerHeaderContent.subHeader }}</p>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-7 col-xs-12">
+        <div class="sidebar">
+          <ng-container *ngFor="let item of offerTextContent">
+            <h3
+              class="sidebar-title"
+              (click)="makeOpen(item.rout)"
+              [class.rotate]="showSideNavItems.includes(item.rout)"
+            >
+              {{ item.title }}
+              <fa-icon [icon]="faChevronDown"></fa-icon>
+            </h3>
+            <div
+              class="categories"
+              [class.show]="showSideNavItems.includes(item.rout)"
+            >
+              <ul>
+                <li
+                  *ngFor="let link of item.subLinks"
+                  [class.active]="makeActive(link.rout)"
+                >
+                  <a
+                    routerLink="/oferta"
+                    [queryParams]="{ title: item.rout, single: link.rout }"
                   >
-                    <a
-                      routerLink="/oferta"
-                      [queryParams]="{ title: item.rout, single: link.rout }"
-                    >
-                      {{ link.name }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </ng-container>
-          </div>
+                    {{ link.name }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
         </div>
-        <div class="col-lg-6 col-sm-12 order-sm-last col-xs-12 entries">
-          <app-single-ofert></app-single-ofert>
-        </div>
-        <aside class="col-lg-3 col-sm-5 col-s order-lg-last col-xs-12">
-          <div class="sidebar sticky-top">
-            <div class="box">
-              <img
-                class="img-fluid"
-                [src]="'../../../assets/galery/' + offerGalleryContent.img"
-                alt="Sprzedaż"
-              />
-              <h3 class="text-center">{{ offerGalleryContent.title }}</h3>
-              <p class="text-center">{{ offerGalleryContent.body }}</p>
-              <div class="text-center">
-                <a
-                  class="
-                    btn-read-more
-                    d-inline-flex
-                    align-items-center
-                    justify-content-center
-                    align-self-center
-                  "
-                  routerLink="/galeria"
-                  ><span> {{ offerGalleryContent.buttonText }} </span
-                  ><i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
+      </div>
+      <div class="col-lg-6 col-sm-12 order-sm-last col-xs-12 entries">
+        <app-single-ofert></app-single-ofert>
+      </div>
+      <aside class="col-lg-3 col-sm-5 col-s order-lg-last col-xs-12">
+        <div class="sidebar sticky-top">
+          <div class="box">
+            <img
+              class="img-fluid"
+              [src]="'../../../assets/galery/' + offerGalleryContent.img"
+              alt="Sprzedaż"
+            />
+            <h3 class="text-center">{{ offerGalleryContent.title }}</h3>
+            <p class="text-center">{{ offerGalleryContent.body }}</p>
+            <div class="text-center">
+              <a
+                class="
+                  btn-read-more
+                  d-inline-flex
+                  align-items-center
+                  justify-content-center
+                  align-self-center
+                "
+                routerLink="/galeria"
+                ><span> {{ offerGalleryContent.buttonText }} </span
+                ><i class="bi bi-arrow-right"></i
+              ></a>
             </div>
           </div>
-        </aside>
-      </div>
+        </div>
+      </aside>
     </div>
-  </section>
-</main>
+  </div>
+</section>
