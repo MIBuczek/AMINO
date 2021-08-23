@@ -3,7 +3,9 @@
     <ol>
       <li><a routerLink="/">strona główna</a></li>
       <li *ngFor="let p of path">
-        <a [routerLink]="'/' + p.path">{{ p.title }}</a>
+        <a [routerLink]="'/' + p.path" [queryParams]="p.query">
+          {{ p.title }}
+        </a>
       </li>
     </ol>
     <h2>{{ actualPage }}</h2>

@@ -7,7 +7,11 @@ import { NavigationStart, Router } from '@angular/router';
   styleUrls: ['./breadcrumbs.component.scss'],
 })
 export class BreadcrumbsComponent {
-  public path: { title: string; path: string }[] = [];
+  public path: {
+    title: string;
+    path: string;
+    query?: { [x: string]: string };
+  }[] = [];
   public actualPage = '';
 
   constructor(private router: Router) {
@@ -45,14 +49,25 @@ export class BreadcrumbsComponent {
     } else if (pathArray.length === 1) {
       const index = pathArray[0].indexOf('?');
       if (index > -1) {
-        const subIndex = pathArray[0].lastIndexOf('=');
+        const equalFirstIndext = pathArray[0].indexOf('=');
+        const equalLastIndex = pathArray[0].lastIndexOf('=');
+        const amperIndext = pathArray[0].indexOf('&');
         const modeledPath = pathArray[0].substring(0, index);
         const secondTitle = pathArray[0]
-          .substring(subIndex + 1)
+          .substring(equalLastIndex + 1)
           .replace('-', ' ');
+        const modeledTitleQury = pathArray[0].substring(
+          equalFirstIndext + 1,
+          amperIndext
+        );
+        const modeleSingledQuery = pathArray[0].substring(equalLastIndex + 1);
         this.path = [
           { title: modeledPath, path: modeledPath },
-          { title: secondTitle, path: pathArray[0] },
+          {
+            title: secondTitle,
+            path: modeledPath,
+            query: { title: modeledTitleQury, single: modeleSingledQuery },
+          },
         ];
       } else {
         this.path = [{ title: pathArray[0], path: pathArray[0] }];
