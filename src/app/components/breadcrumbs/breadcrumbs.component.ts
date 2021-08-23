@@ -30,7 +30,7 @@ export class BreadcrumbsComponent {
     } else if (checkUrl === 1) {
       const index = url.lastIndexOf('=');
       if (index > -1) {
-        this.actualPage = url.substring(index + 1).replace('-', ' ');
+        this.actualPage = url.substring(index + 1).replace(/[^a-zA-Z ]/g, ' ');
       } else {
         this.actualPage = url.split('/')[1];
       }
