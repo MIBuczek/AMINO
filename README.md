@@ -6,8 +6,8 @@ https://amino-test.netlify.app/
 
 ## TECHNOLOGIES
 
-Angular
-Typescritpt
+Angular /n
+Typescritpt \n
 rxjs
 
 ## Status
