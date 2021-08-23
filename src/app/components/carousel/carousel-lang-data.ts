@@ -3,6 +3,7 @@ export interface ICaruselContent {
   description: string;
   img: string;
   rout: string;
+  query: { [x: string]: string };
   buttonText: string;
 }
 
@@ -14,6 +15,7 @@ export const carouselContent: { [x: string]: ICaruselContent[] } = {
       automatycznych oraz systemów drzwiowych.`,
       img: 'drzewi-automatyczne.jpg',
       rout: '/oferta',
+      query: { title: 'sprzedaz', single: 'drzwi-automatyczne-sprzedaz' },
       buttonText: 'zobacz wiecej',
     },
     {
@@ -22,6 +24,7 @@ export const carouselContent: { [x: string]: ICaruselContent[] } = {
         Krispol, Wayne-Dalton.`,
       img: 'drzewi-garazowe.jpg',
       rout: '/oferta',
+      query: { title: 'sprzedaz', single: 'bramy-garazowe-sprzedaz' },
       buttonText: 'zobacz wiecej',
     },
     {
@@ -30,6 +33,7 @@ export const carouselContent: { [x: string]: ICaruselContent[] } = {
         zewnętrznych oraz wewnętrznych.`,
       img: 'rolety.jpg',
       rout: '/oferta',
+      query: { title: 'sprzedaz', single: 'rolety-zewnetrzne-sprzedaz' },
       buttonText: 'zobacz wiecej',
     },
   ],
@@ -40,6 +44,7 @@ export const carouselContent: { [x: string]: ICaruselContent[] } = {
       automatic doors and door systems.`,
       img: 'drzewi-automatyczne.jpg',
       rout: '/oferta',
+      query: { title: 'sprzedaz', single: 'drzwi-automatyczne-sprzedaz' },
       buttonText: 'read more',
     },
     {
@@ -48,6 +53,7 @@ export const carouselContent: { [x: string]: ICaruselContent[] } = {
       Krispol, Wayne-Dalton.`,
       img: 'drzewi-garazowe.jpg',
       rout: '/oferta',
+      query: { title: 'sprzedaz', single: 'bramy-garazowe-sprzedaz' },
       buttonText: 'read more',
     },
     {
@@ -56,6 +62,7 @@ export const carouselContent: { [x: string]: ICaruselContent[] } = {
       external and internal.`,
       img: 'rolety.jpg',
       rout: '/oferta',
+      query: { title: 'sprzedaz', single: 'rolety-zewnetrzne-sprzedaz' },
       buttonText: 'read more',
     },
   ],

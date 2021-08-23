@@ -1,6 +1,6 @@
 <ngb-carousel>
   <ng-template ngbSlide *ngFor="let item of carouselContent">
-    <section id="hero" class="hero d-flex align-items-center">
+    <section class="hero d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -12,6 +12,7 @@
               <div class="text-center text-lg-start">
                 <a
                   [routerLink]="item.rout"
+                  [queryParams]="item.query"
                   class="
                     btn-get-started
                     scrollto
@@ -21,7 +22,7 @@
                     align-self-center
                   "
                 >
-                  <a href="#">{{ item.buttonText }}</a>
+                  {{ item.buttonText }}
                 </a>
               </div>
             </div>

@@ -11,7 +11,7 @@
   transition: 0.4s;
   visibility: hidden;
   .modal-header {
-    background: #4154f1;
+    background: #16c1f3;
     .btn {
       border: 1px solid white;
       transition: 0.4s;
@@ -51,7 +51,7 @@
       font-size: 14px;
       border-radius: 0;
       &:focus {
-        border-color: #4154f1;
+        border-color: #16c1f3;
       }
     }
     input {
@@ -76,7 +76,7 @@
     }
     .sendMessage,
     button[type="submit"] {
-      background: #4154f1;
+      background: #16c1f3;
       border: 0;
       padding: 10px 30px;
       color: #fff;

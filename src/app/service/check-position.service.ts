@@ -6,7 +6,7 @@ import { HostListener, Injectable } from '@angular/core';
 export class CheckPositionService {
   @HostListener('window:scroll', ['$event'])
   checkPosition(): boolean {
-    if (window.pageYOffset > 80) {
+    if (window.pageYOffset > 60) {
       return true;
     } else {
       return false;

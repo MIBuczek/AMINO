@@ -1,4 +1,5 @@
 .card {
+  border: none;
   .card-wrap {
     transition: 0.3s;
     position: relative;
@@ -85,7 +86,7 @@
       }
       h4 {
         font-size: 20px;
-        color: #012970;
+        color: #16c1f3;
         font-weight: 700;
       }
       p {
@@ -101,7 +102,7 @@
         z-index: 4;
         a {
           color: #fff;
-          background: #4154f1;
+          background: #16c1f3;
           margin: 15px 2px;
           display: inline-flex;
           align-items: center;
@@ -110,7 +111,7 @@
           transition: 0.3s;
           padding: 6px 14px;
           &:hover {
-            background: #5969f3;
+            background: #012970;
             transform: scale(1.05);
           }
         }

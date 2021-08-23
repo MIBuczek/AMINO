@@ -11,10 +11,10 @@ body {
   font-family: "Nunito", "Open Sans", sans-serif !important;
   color: #444444;
   a {
-    color: #4154f1;
+    color: #16c1f3;
     text-decoration: none;
     &:hover {
-      color: #717ff5;
+      color: white;
       text-decoration: none;
     }
   }
@@ -42,6 +42,7 @@ ol.carousel-indicators {
   width: 60px;
   height: 80px;
   margin: auto;
+  transition: 0.3s;
 }
 
 .partnerImg {
@@ -69,7 +70,7 @@ section {
     letter-spacing: 1px;
     font-weight: 700;
     margin: 0;
-    color: #4154f1;
+    color: #16c1f3;
     text-transform: uppercase;
   }
   p {
@@ -87,8 +88,7 @@ section {
   padding: 15px 40px;
   border-radius: 4px;
   color: #fff;
-  background: #4154f1;
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  background: #16c1f3;
   text-decoration: none;
   transition: 0.3s;
   border: none;
@@ -101,5 +101,6 @@ section {
   }
   &:hover {
     transform: scale(1.05);
+    background: #012970;
   }
 }

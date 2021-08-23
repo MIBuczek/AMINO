@@ -1,5 +1,5 @@
 .sidebar {
-  padding: 30px;
+  padding: 0 30px;
   margin: 0 0 60px 20px;
   top: 100px;
   .sidebar-title {
@@ -32,7 +32,7 @@
         color: #012970;
         transition: 0.3s;
         &:hover {
-          color: #4154f1;
+          color: #16c1f3;
         }
       }
     }
@@ -58,16 +58,17 @@
         border: 1px solid #d7e6ff;
         display: inline-block;
         transition: 0.3s;
+        cursor: pointer;
         &:hover {
           color: #fff;
-          border: 1px solid #4154f1;
-          background: #4154f1;
+          border: 1px solid #16c1f3;
+          background: #16c1f3;
         }
       }
       li.active {
         color: #fff;
-        border: 1px solid #4154f1;
-        background: #4154f1;
+        border: 1px solid #16c1f3;
+        background: #16c1f3;
       }
     }
   }
