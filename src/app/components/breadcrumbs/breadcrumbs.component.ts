@@ -55,7 +55,7 @@ export class BreadcrumbsComponent {
         const modeledPath = pathArray[0].substring(0, index);
         const secondTitle = pathArray[0]
           .substring(equalLastIndex + 1)
-          .replace('-', ' ');
+          .replace(/[^a-zA-Z ]/g, ' ');
         const modeledTitleQury = pathArray[0].substring(
           equalFirstIndext + 1,
           amperIndext
