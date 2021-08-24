@@ -24,3 +24,9 @@
     transform: scale(1.05);
   }
 }
+
+@media (max-width: 1020px) {
+  .scroll-top {
+    bottom: 55px;
+  }
+}
