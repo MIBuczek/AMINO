@@ -4,6 +4,12 @@
 
 https://amino-test.netlify.app/
 
+## TECHNOLOGIES
+
+Angular <br/>
+Typescritpt <br/>
+rxjs
+
 ## Status
 
-Develop in progress
+Published
