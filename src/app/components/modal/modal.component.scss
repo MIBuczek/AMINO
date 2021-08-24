@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffffffad;
+  background: #012a7077;
   transition: 0.4s;
   visibility: hidden;
   .modal-header {
@@ -43,7 +43,6 @@
         margin-left: 5px;
       }
     }
-
     input,
     textarea {
       border-radius: 0;
@@ -89,6 +88,9 @@
     .sendMessage {
       position: relative;
       top: 10px;
+    }
+    .button-pannel {
+      height: 40px;
     }
   }
 }

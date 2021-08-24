@@ -32,8 +32,9 @@ export class ModalComponent {
       return;
     }
     const message = `
-    ${myForm.value.name}
-    ${myForm.value.email}
+    Imię i nazwisko: ${myForm.value.name}\n
+    Email: ${myForm.value.email}\n
+    Wiadomość:\n
     ${myForm.value.message}
     `;
     this.mailMessage = `mailto:animo@animo.wroclaw.pl?subject=${myForm.value.subject}&body=${message}`;

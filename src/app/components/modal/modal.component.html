@@ -110,10 +110,7 @@
             </div>
           </div>
           <div class="col-md-12 text-center button-pannel">
-            <button
-              type="submit"
-              *ngIf="reportForm.invalid && !reportForm.value.agree; else anhore"
-            >
+            <button type="submit" *ngIf="reportForm.invalid; else anhore">
               {{ modalTextContent.buttonText }}
             </button>
             <ng-template #anhore>
