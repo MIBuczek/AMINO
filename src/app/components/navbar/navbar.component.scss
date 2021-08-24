@@ -172,7 +172,7 @@
     background-color: #fff;
     overflow-y: auto;
     transition: 0.3s;
-    width: 80vh;
+    max-width: 80vh;
     height: 80vh;
     margin: auto;
     li {
@@ -247,5 +247,10 @@
   }
   .navbar ul {
     display: none;
+  }
+  .navbar-mobile {
+    ul {
+      height: 70vh;
+    }
   }
 }

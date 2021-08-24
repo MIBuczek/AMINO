@@ -101,6 +101,13 @@
   .footer {
     .footer-top {
       background-position: center bottom;
+      .footer-links {
+        ul {
+          li {
+            justify-content: center;
+          }
+        }
+      }
     }
   }
 }
