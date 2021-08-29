@@ -41,7 +41,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
       contact: {
         person: 'Biuro obsługi',
         email: 'animo@animo.wroclaw.pl',
-        phone: '+48 601 956 901',
+        phone: '+48 695 025 538',
       },
     },
     ['drzwi-automatyczne']: {
@@ -66,9 +66,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['bramy-garazowe']: {
@@ -78,7 +78,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           type: 'PARAGRAPH',
           content: `Bramy są kluczowym elementem każdego garażu, ponieważ pełnią funkcję zabezpieczającą zarówno przed
         nieproszonymi gośćmi, jak i nieprzyjaznymi pojazdom warunkami atmosferycznymi. Klienci decydujący
-        się na wybór bram garażowych marki Animo, mają pewność ich solidności i niezawodności.
+        się na wybór bram garażowych oferowanych przez Animo, mają pewność ich solidności i niezawodności.
         Ogromne możliwości personalizacji umożliwiają wykonanie gotowego produktu według ściśle
         określonych wymogów kupującego – zarówno jeśli chodzi o wymiary, jak i wzornictwo.
         W naszej ofercie znajdują się między innymi segmentowe bramy garażowe, bramy garażowe rolowane,
@@ -90,7 +90,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
         {
           type: 'HEADER',
-          content: `Wiśniowski, Krispol, Wayne-Dalton.`,
+          content: `Wiśniowski, Krispol, Fart, Big Tor.`,
         },
         {
           type: 'PARAGRAPH',
@@ -144,9 +144,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['drzwi-drewniane']: {
@@ -165,9 +165,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['bramy-przemyslowe']: {
@@ -175,16 +175,16 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
       body: [
         {
           type: 'PARAGRAPH',
-          content: `Bramy przemysłowe firmy Animo stanowią doskonałe rozwiązanie do hal produkcyjnych i magazynowych,
+          content: `Bramy przemysłowe oferowane przez Animo stanowią doskonałe rozwiązanie do hal produkcyjnych i magazynowych,
           salonów sprzedaży, warsztatów czy myjni samochodowych. Cechuje je przede wszystkim nowoczesność
           oraz bezpieczeństwo i trwałość. W ofercie dostępne są zarówno starannie wykonane bramy segmentowe,
           jak i rolowane. Każde z nich można ponadto dowolnie dostosować do indywidualnych upodobań Klienta.`,
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['systemy-oddymiania']: {
@@ -200,9 +200,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['montaz-okna-pcv']: {
@@ -222,13 +222,13 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
         {
           type: 'HEADER',
-          content: `MONTAŻ OKIEN WYKONUJEMY TYLKO PRZEZ AUTORYZOWANE GRUPY.`,
+          content: `MONTAŻ OKIEN WYKONUJEMY PRZEZ AUTORYZOWANE GRUPY.`,
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['uslugi']: {
@@ -307,9 +307,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['drzwi-zewnetrzne']: {
@@ -473,9 +473,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['bramy-garazowe-sprzedaz']: {
@@ -487,7 +487,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           ale również chronią posiadany pojazd przez niekorzystnymi warunkami pogodowymi, które mogłyby je uszkodzić.
           Bramy garażowe, bo o nich tu mowa, muszą cechować się najwyższą starannością wykonania i niezwykłą solidnością – tylko
           wtedy będą w stanie służyć Państwu przez lata bez konieczności wydawania dodatkowych pieniędzy na ich naprawy.
-          Właśnie takie są oferowane przez nas produkty marek Wiśniowski, Krispol i Wayne-Dalton.`,
+          Właśnie takie są oferowane przez nas produkty marek Wiśniowski, Krispol, Fart i Big Tor.`,
         },
         {
           type: 'PARAGRAPH',
@@ -528,20 +528,11 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
             'Rolowe',
           ],
         },
-        {
-          type: 'HEADER',
-          content: `Wayne-Dalton`,
-        },
-        {
-          type: 'LIST',
-          headerList: 'Produkty:',
-          items: ['9100 Comfort', '9600 Classic', '9500 Thermo', '9700 Design'],
-        },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Ryszard Piegza',
+        email: 'stolarka@animo.wroclaw.pl',
+        phone: '+48 601 95 56 56',
       },
     },
     ['rolety-zewnetrzne-sprzedaz']: {
@@ -560,26 +551,16 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           type: 'PARAGRAPH',
           content: `Zapraszamy Państwa do skontaktowania się z nami w celu wykonania pomiaru. Dzięki temu będziemy w stanie
           zapewnić Państwu odpowiednio dopasowane rolety wewnętrzne i zewnętrzne o napędzie ręcznym, sprężynowym bądź elektrycznym,
-          które doskonale wzbogacą Państwa pasywne domy energooszczędne.`,
+          które doskonale wzbogacą Państwa domy.`,
         },
         {
           type: 'LIST',
           headerList:
-            'Proponujemy różne warianty sterowań do rolet zewnętrznych dla domów pasywnych:',
+            'Proponujemy różne warianty sterowań do rolet zewnętrznych:',
           items: [
             'Napęd ręczny – zwijacz taśmy lub linki, zwijacz korbowy, przekładnia korbowa',
             'Napęd sprężynowy',
             'Napęd elektryczny - sterowanie elektryczne przewodowe i radiowe (sterowania indywidualne, grupowe lub centralne)',
-          ],
-        },
-        {
-          type: 'LIST',
-          headerList:
-            'Dodatkowo energooszczędne rozwiązania, znajdujące się na dworze, mogą zostać wyposażone w różne zabezpieczenia, takie jak:',
-          items: [
-            'Zasuwki ręczne w dolnej listwie',
-            'Rygiel automatyczny',
-            'Zamki baskwilowe w końcowej listwie',
           ],
         },
       ],
@@ -597,8 +578,8 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           content: `Nasza firma oferuje szeroki wybór elementów, które stanowią podstawę wykończenia każdego domu i mieszkania.
           Różnorodność okien PVC i aluminiowych, znajdujących się w naszym asortymencie, sprawi, że każdy Klient będzie w stanie
           znaleźć odpowiednie dla siebie rozwiązanie. Jeśli remontują Państwo swoje lokum i stoją przed wyborem, na które okna
-          postawić, nasi wykwalifikowani konsultanci, będący do Państwa dyspozycji w naszym salonie we Wrocławiu, z przyjemnością
-           udzielą Państwu kilku wartościowych porad.`,
+          postawić, nasi wykwalifikowani konsultanci będący do Państwa dyspozycji, z przyjemnością
+          udzielą Państwu kilku wartościowych porad.`,
         },
         {
           type: 'PARAGRAPH',
@@ -606,12 +587,13 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
         {
           type: 'LIST',
-          headerList: 'W naszym asortymencie posiadamy następujące profile:',
+          headerList: 'W naszym asortymencie posiadamy między innymi systemy:',
           items: [
-            'Alphaline',
-            'Perfectline półzlicowany',
-            'Revento',
-            'Swingline',
+            'Synergic Classic',
+            'Advance',
+            'Energetic',
+            'Aluprof',
+            'Yawal',
           ],
         },
         {
@@ -653,9 +635,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['ukladanie-plytek']: {
@@ -688,9 +670,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['instalacje-hydrauliczne']: {
@@ -722,9 +704,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['domy-kontenerowe']: {
@@ -796,9 +778,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['domy-na-wodze']: {
@@ -867,9 +849,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['lozko-w-scianie']: {
@@ -901,9 +883,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
   },
@@ -927,7 +909,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
       contact: {
         person: 'Biuro obsługi',
         email: 'animo@animo.wroclaw.pl',
-        phone: '+48 601 956 901',
+        phone: '+48 695 025 538',
       },
     },
     ['drzwi-automatyczne']: {
@@ -952,9 +934,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['bramy-garazowe']: {
@@ -976,7 +958,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
         {
           type: 'HEADER',
-          content: `Wiśniowski, Krispol, Wayne-Dalton.`,
+          content: `Wiśniowski, Krispol, Fart, Big Tor.`,
         },
         {
           type: 'PARAGRAPH',
@@ -1029,9 +1011,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['drzwi-drewniane']: {
@@ -1050,9 +1032,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['bramy-przemyslowe']: {
@@ -1067,9 +1049,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['systemy-oddymiania']: {
@@ -1085,9 +1067,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['montaz-okna-pcv']: {
@@ -1111,9 +1093,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['uslugi']: {
@@ -1190,9 +1172,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['drzwi-zewnetrzne']: {
@@ -1356,9 +1338,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['bramy-garazowe-sprzedaz']: {
@@ -1370,7 +1352,7 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           but also protect your vehicle against adverse weather conditions that could damage them.
           Garage doors, as they are herein referred to, must be characterized by the highest care in workmanship and extraordinary solidity - only
           only then they will be able to serve you for years without the need to spend additional money on their repair.
-          Such are the products offered by us of the Wiśniowski, Krispol and Wayne-Dalton brands.`,
+          Such are the products offered by us of the Wiśniowski, Krispol, Fart and Big Tor brands.`,
         },
         {
           type: 'PARAGRAPH',
@@ -1411,20 +1393,11 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
             'Roll-up',
           ],
         },
-        {
-          type: 'HEADER',
-          content: `Wayne-Dalton`,
-        },
-        {
-          type: 'LIST',
-          headerList: 'Products:',
-          items: ['9100 Comfort', '9600 Classic', '9500 Thermo', '9700 Design'],
-        },
       ],
       contact: {
-        person: 'Marcin Korzeniewski',
-        email: 'animos.marcin@gmail.com',
-        phone: '+48 607 766 901',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 695 025 538',
       },
     },
     ['rolety-zewnetrzne-sprzedaz']: {
@@ -1443,26 +1416,16 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           type: 'PARAGRAPH',
           content: `We invite you to contact us for a measurement. In this way we will be able to
           provide you with properly fitted interior and exterior roller blinds with manual, spring or electric drive,
-          which will be a perfect addition to your passive energy-saving houses.`,
+          which will be a perfect addition to your houses.`,
         },
         {
           type: 'LIST',
           headerList:
-            'We offer different variants of controls for external blinds for passive houses:',
+            'We offer different variants of controls for external blinds:',
           items: [
             'Manual drive - tape or cord retractor, crank retractor, crank gear',
             'Spring drive',
             'Electric drive - hard-wired and radio-controlled (individual, group or central control)',
-          ],
-        },
-        {
-          type: 'LIST',
-          headerList:
-            'Additionally, energy-efficient solutions that are outside can be equipped with various safety features, such as:',
-          items: [
-            'Manual latches in lower slat',
-            'Automatic latch',
-            'Basquila locks in the end rail',
           ],
         },
       ],
@@ -1480,8 +1443,8 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           content: `Our company offers a wide range of elements that are the basis for the finishing of every house and apartment.
           The variety of PVC and aluminium windows, which are in our assortment, will make it possible for each customer to
           find the right solution for themselves. If you are renovating your premises and are facing the choice on which windows to bet
-          windows, our qualified consultants, who are at your disposal in our showroom in Wrocław, will gladly give you some valuable advice.
-           will give you some valuable advice.`,
+          windows, our qualified consultants, who are at your disposal, will gladly give you some valuable advice.
+          will give you some valuable advice.`,
         },
         {
           type: 'PARAGRAPH',
@@ -1491,10 +1454,11 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
           type: 'LIST',
           headerList: 'We have the following profiles in our assortment:',
           items: [
-            'Alphaline',
-            'Perfectline semi-sliced',
-            'Revento',
-            'Swingline',
+            'Synergic Classic',
+            'Advance',
+            'Energetic',
+            'Aluprof',
+            'Yawal',
           ],
         },
         {
@@ -1537,9 +1501,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['ukladanie-plytek']: {
@@ -1572,9 +1536,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['instalacje-hydrauliczne']: {
@@ -1606,9 +1570,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['domy-kontenerowe']: {
@@ -1681,9 +1645,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['domy-na-wodze']: {
@@ -1752,9 +1716,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
     ['lozko-w-scianie']: {
@@ -1786,9 +1750,9 @@ export const singleOfferContent: { [x: string]: ISingleOffert } = {
         },
       ],
       contact: {
-        person: 'Ryszard Piegza',
-        email: 'stolarka@animo.wroclaw.pl',
-        phone: '+48 601 95 56 56',
+        person: 'Sebastian Sas',
+        email: 'animosebsas@gmail.com',
+        phone: '+48 607 766 901',
       },
     },
   },
