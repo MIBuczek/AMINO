@@ -21,7 +21,7 @@ export const carouselContent: { [x: string]: ICaruselContent[] } = {
     {
       header: 'Bramy garażowe',
       description: `Posiadamy szeroki asortyment drzwi garażowych firm: Wiśniowski,
-        Krispol, Fart, Big TOR, Ditex.`,
+        Krispol, Fart, Big Tor, Ditex.`,
       img: 'drzewi-garazowe.jpg',
       rout: '/oferta',
       query: { title: 'sprzedaz', single: 'bramy-garazowe-sprzedaz' },
@@ -50,7 +50,7 @@ export const carouselContent: { [x: string]: ICaruselContent[] } = {
     {
       header: 'Garage doors',
       description: `We carry a wide assortment of garage doors by: Wiśniowski,
-      Krispol, Wayne-Dalton.`,
+      Krispol, Fart, Big Tor, Ditex.`,
       img: 'drzewi-garazowe.jpg',
       rout: '/oferta',
       query: { title: 'sprzedaz', single: 'bramy-garazowe-sprzedaz' },

@@ -21,7 +21,7 @@ export const homeOffert: { [x: string]: IHomeContentOffert[] } = {
     },
     {
       cardTitle: 'BRAMY GARAŻOWE',
-      cardBody: `W naszej ofercie do nabycia znajdą Państwo bramy garażowe firm: Wiśniowski, Krispol, Wayne-Dalton.`,
+      cardBody: `W naszej ofercie do nabycia znajdą Państwo bramy garażowe firm: Wiśniowski, Krispol, Fart, Big Tor, Ditex.`,
       cardImgSrc: 'offers-3.png',
       cardButton: 'Czytaj wiecej',
     },

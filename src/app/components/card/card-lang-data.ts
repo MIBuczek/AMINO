@@ -42,7 +42,7 @@ export const cardContent: { [x: string]: ICardContent } = {
         header: 'BRAMY GARAŻOWE',
         shortTest: `
         W naszej ofercie do nabycia znajdą Państwo bramy garażowe firm:
-        Wiśniowski, Krispol, Wayne-Dalton.`,
+        Wiśniowski, Krispol, Fart, Big Tor, Ditex.`,
         img: 'oferta-3.jpg',
         rout: '/oferta',
         query: { title: 'sprzedaz', single: 'bramy-garazowe-sprzedaz' },
@@ -123,7 +123,7 @@ export const cardContent: { [x: string]: ICardContent } = {
         header: 'GARAGE DOORS',
         shortTest: `
         In our offer to purchase you will find garage doors from companies:
-        Wiśniowski, Krispol, Wayne-Dalton.`,
+        Wiśniowski, Krispol, Fart, Big Tor, Ditex.`,
         img: 'oferta-3.jpg',
         rout: '/oferta',
         query: { title: 'sprzedaz', single: 'bramy-garazowe-sprzedaz' },
