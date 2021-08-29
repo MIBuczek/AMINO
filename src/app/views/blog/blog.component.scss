@@ -71,7 +71,8 @@
           font-size: 14px;
           border-radius: 4px;
           &:hover {
-            background: #5969f3;
+            transform: scale(1.05);
+            background: #012970;
           }
         }
         h3 {

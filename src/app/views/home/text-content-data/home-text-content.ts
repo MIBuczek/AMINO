@@ -3,6 +3,8 @@ export interface IHomeContentValue {
   header: string;
   content: string;
   hideContent: string[];
+  buttonOpen: string;
+  buttonHidden: string;
 }
 
 export const homeValue: { [x: string]: IHomeContentValue } = {
@@ -42,6 +44,8 @@ export const homeValue: { [x: string]: IHomeContentValue } = {
       indywidualnych i przedsiębiorstwa nie tylko z Wrocławia, ale i całej Polski.
       `,
     ],
+    buttonOpen: 'Zwiń',
+    buttonHidden: 'Rozwiń',
   },
   EN: {
     starter: 'OUR VALUES',
@@ -78,6 +82,8 @@ export const homeValue: { [x: string]: IHomeContentValue } = {
       installation - have been appreciated by individual customers and
       and enterprises not only from Wrocław but also from the whole Poland.`,
     ],
+    buttonOpen: 'Hide',
+    buttonHidden: 'Show more',
   },
 };
 

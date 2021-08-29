@@ -27,7 +27,11 @@
                 align-self-center
               "
             >
-              <span>{{ show ? "Zwiń" : "Rozwiń" }}</span>
+              <span>{{
+                show
+                  ? homeContentValue.buttonOpen
+                  : homeContentValue.buttonHidden
+              }}</span>
               <i class="bi bi-arrow-right"></i>
             </a>
           </div>
